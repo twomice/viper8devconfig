@@ -1,0 +1,21 @@
+uuid: a0a7e3fc-b700-4930-a613-30e5723389fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instructor_experience
+    - node.type.problem_set
+  module:
+    - text
+id: node.problem_set.field_instructor_experience
+field_name: field_instructor_experience
+entity_type: node
+bundle: problem_set
+label: 'Evaluation Results'
+description: 'Report how your students performed—typical responses, misconceptions, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

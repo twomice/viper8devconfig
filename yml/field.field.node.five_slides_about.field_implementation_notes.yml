@@ -1,0 +1,21 @@
+uuid: 15b04762-fa49-4e97-9fd1-214df39f0fc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implementation_notes
+    - node.type.five_slides_about
+  module:
+    - text
+id: node.five_slides_about.field_implementation_notes
+field_name: field_implementation_notes
+entity_type: node
+bundle: five_slides_about
+label: 'Implementation Notes'
+description: 'Helpful hints or notes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

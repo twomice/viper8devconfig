@@ -1,0 +1,21 @@
+uuid: d1bc22d9-f807-4acf-97b8-d8d8210a5fea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_public_name
+  module:
+    - text
+    - user
+id: user.user.profile_public_name
+field_name: profile_public_name
+entity_type: user
+bundle: user
+label: 'Public Name'
+description: 'Publicly-viewable, full name.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

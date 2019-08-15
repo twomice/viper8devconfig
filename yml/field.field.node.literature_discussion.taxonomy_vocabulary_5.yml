@@ -1,0 +1,26 @@
+uuid: ce81c281-b34c-4294-a408-a84b7f60ebe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_5
+    - node.type.literature_discussion
+    - taxonomy.vocabulary.vocabulary_5
+id: node.literature_discussion.taxonomy_vocabulary_5
+field_name: taxonomy_vocabulary_5
+entity_type: node
+bundle: literature_discussion
+label: 'Topics Covered'
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_5: vocabulary_5
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: d585911c-796c-47ca-aa1c-ac18410cc144
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-2014-workshop
+  module:
+    - system
+  theme:
+    - fusion_starter_lite
+id: fusion_starter_lite_menu_menu_2014_workshop
+theme: fusion_starter_lite
+region: ''
+weight: -30
+provider: null
+plugin: 'system_menu_block:menu-2014-workshop'
+settings:
+  id: 'system_menu_block:menu-2014-workshop'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/2411\n/node/2412\n/node/2413\n/node/2414"

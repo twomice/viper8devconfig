@@ -1,0 +1,21 @@
+uuid: 5b38375e-9e5b-476c-b92e-e61cec0437c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_expertise
+  module:
+    - options
+    - user
+id: user.user.profile_expertise
+field_name: profile_expertise
+entity_type: user
+bundle: user
+label: 'Area of Expertise - Primary'
+description: 'Choose your primary area of expertise.  If your focus is outside of inorganic chemistry, please describe that below.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

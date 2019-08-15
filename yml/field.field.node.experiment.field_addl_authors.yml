@@ -1,0 +1,21 @@
+uuid: 86c2bc01-1920-42ce-ba27-c3d7531f827d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_addl_authors
+    - node.type.experiment
+id: node.experiment.field_addl_authors
+field_name: field_addl_authors
+entity_type: node
+bundle: experiment
+label: 'Additional Authors'
+description: 'Control or command click to add more than one additional author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

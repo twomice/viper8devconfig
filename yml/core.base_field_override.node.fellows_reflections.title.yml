@@ -1,0 +1,18 @@
+uuid: a53e7d89-ff81-46af-b988-f535a31eba36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fellows_reflections
+id: node.fellows_reflections.title
+field_name: title
+entity_type: node
+bundle: fellows_reflections
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

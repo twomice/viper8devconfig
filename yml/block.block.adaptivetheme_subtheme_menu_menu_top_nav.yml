@@ -1,0 +1,25 @@
+uuid: 088c0097-db1b-4e82-99d1-b3c5982b0dba
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-top-nav
+  module:
+    - system
+  theme:
+    - adaptivetheme_subtheme
+id: adaptivetheme_subtheme_menu_menu_top_nav
+theme: adaptivetheme_subtheme
+region: ''
+weight: -29
+provider: null
+plugin: 'system_menu_block:menu-top-nav'
+settings:
+  id: 'system_menu_block:menu-top-nav'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

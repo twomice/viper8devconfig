@@ -1,0 +1,27 @@
+uuid: 4052100c-afaf-4ce4-8cbc-885f8b23c1d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_problem_set
+    - field.field.comment.comment_node_problem_set.comment_body
+  module:
+    - text
+id: comment.comment_node_problem_set.default
+targetEntityType: comment
+bundle: comment_node_problem_set
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

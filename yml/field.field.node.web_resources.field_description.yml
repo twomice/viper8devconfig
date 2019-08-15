@@ -1,0 +1,25 @@
+uuid: 0cd5e4d0-e878-472e-a0c0-2a0399c54c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.web_resources
+  module:
+    - text
+id: node.web_resources.field_description
+field_name: field_description
+entity_type: node
+bundle: web_resources
+label: Description
+description: 'For apps, please include available platforms for the app, if known.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    format: '1'
+    _error_element: 'default_value_widget][field_description][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

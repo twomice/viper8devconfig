@@ -1,0 +1,21 @@
+uuid: 08dec885-6eaa-449b-9f0c-6af092dbff1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_required
+    - node.type.literature_discussion
+id: node.literature_discussion.field_time_required
+field_name: field_time_required
+entity_type: node
+bundle: literature_discussion
+label: 'Time Required'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

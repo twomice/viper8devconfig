@@ -1,0 +1,8 @@
+uuid: cd575c57-aa48-43a8-8092-cc51c6d7d459
+langcode: en
+status: true
+dependencies: {  }
+name: Tags
+vid: vocabulary_10
+description: ''
+weight: 0

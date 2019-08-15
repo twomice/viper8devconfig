@@ -1,0 +1,38 @@
+uuid: c01e71e9-285b-4058-9a1a-b931236fa4ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.forum.body
+    - field.field.node.forum.comment_forum
+    - field.field.node.forum.taxonomy_forums
+    - field.field.node.forum.taxonomy_vocabulary_10
+    - field.field.node.forum.upload
+    - node.type.forum
+  module:
+    - file
+    - user
+id: node.forum.rss
+targetEntityType: node
+bundle: forum
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_forum: true
+  taxonomy_forums: true
+  taxonomy_vocabulary_10: true

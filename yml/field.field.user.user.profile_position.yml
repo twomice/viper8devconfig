@@ -1,0 +1,21 @@
+uuid: 62036727-25c0-45a4-8f28-5247e18e2377
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_position
+  module:
+    - text
+    - user
+id: user.user.profile_position
+field_name: profile_position
+entity_type: user
+bundle: user
+label: Position
+description: 'Position or rank you hold at your primary institution.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

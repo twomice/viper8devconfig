@@ -1,0 +1,21 @@
+uuid: edadb37a-09d2-4ba2-8cfa-4dc911992977
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coll_learning_objects
+    - node.type.collection
+id: node.collection.field_coll_learning_objects
+field_name: field_coll_learning_objects
+entity_type: node
+bundle: collection
+label: 'Learning Objects'
+description: 'Enter the Learning Object title, starting at the beginning. Once enough information is entered, you can select from the list that appears. To add another item, click the button below after finishing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

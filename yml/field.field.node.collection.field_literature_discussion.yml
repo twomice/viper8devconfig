@@ -1,0 +1,21 @@
+uuid: a7e2bb7d-597d-44ad-9f90-b20bf46b5cb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_literature_discussion
+    - node.type.collection
+id: node.collection.field_literature_discussion
+field_name: field_literature_discussion
+entity_type: node
+bundle: collection
+label: 'Literature Discussion'
+description: 'Enter the Learning Object title, starting at the beginning. Once enough information is entered, you can select from the list that appears. To add another item, click the button below after finishing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: a5b57813-5a99-4557-a043-61db9805964c
+langcode: en
+status: true
+dependencies: {  }
+name: Prerequisites
+vid: vocabulary_6
+description: ''
+weight: 1

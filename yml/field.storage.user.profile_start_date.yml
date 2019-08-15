@@ -1,0 +1,20 @@
+uuid: 5ba74794-184e-48bd-bea9-5414f9d6d7c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_start_date
+field_name: profile_start_date
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

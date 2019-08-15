@@ -1,0 +1,64 @@
+uuid: 6f3fb348-a7c4-411c-ba10-e2b98d7c7069
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.problem_set.comment_node_problem_set
+    - field.field.node.problem_set.field_addl_authors
+    - field.field.node.problem_set.field_assessment
+    - field.field.node.problem_set.field_couples
+    - field.field.node.problem_set.field_description
+    - field.field.node.problem_set.field_exam_question
+    - field.field.node.problem_set.field_implementation_notes
+    - field.field.node.problem_set.field_instructor_experience
+    - field.field.node.problem_set.field_lc_moderator_new
+    - field.field.node.problem_set.field_learning_goals
+    - field.field.node.problem_set.field_time_required
+    - field.field.node.problem_set.field_web_resources
+    - field.field.node.problem_set.taxonomy_vocabulary_3
+    - field.field.node.problem_set.taxonomy_vocabulary_4
+    - field.field.node.problem_set.taxonomy_vocabulary_5
+    - field.field.node.problem_set.taxonomy_vocabulary_6
+    - field.field.node.problem_set.taxonomy_vocabulary_7
+    - field.field.node.problem_set.upload
+    - node.type.problem_set
+  module:
+    - file
+    - user
+id: node.problem_set.rss
+targetEntityType: node
+bundle: problem_set
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_problem_set: true
+  field_addl_authors: true
+  field_assessment: true
+  field_couples: true
+  field_description: true
+  field_exam_question: true
+  field_implementation_notes: true
+  field_instructor_experience: true
+  field_lc_moderator_new: true
+  field_learning_goals: true
+  field_time_required: true
+  field_web_resources: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true

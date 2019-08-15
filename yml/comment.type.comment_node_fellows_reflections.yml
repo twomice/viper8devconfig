@@ -1,0 +1,8 @@
+uuid: 93bda733-a251-45e2-b976-4b44c5a0cb2a
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_fellows_reflections
+label: 'Fellows Reflections comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,26 @@
+uuid: 51b2b6ee-a305-4fe9-917c-51ed335e1070
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_7
+    - node.type.five_slides_about
+    - taxonomy.vocabulary.vocabulary_7
+id: node.five_slides_about.taxonomy_vocabulary_7
+field_name: taxonomy_vocabulary_7
+entity_type: node
+bundle: five_slides_about
+label: Corequisites
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_7: vocabulary_7
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

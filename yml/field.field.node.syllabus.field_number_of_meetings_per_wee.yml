@@ -1,0 +1,21 @@
+uuid: 359a7d90-c3d7-4c35-8c15-97246aac060a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_meetings_per_wee
+    - node.type.syllabus
+  module:
+    - options
+id: node.syllabus.field_number_of_meetings_per_wee
+field_name: field_number_of_meetings_per_wee
+entity_type: node
+bundle: syllabus
+label: 'Number of meetings per week'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

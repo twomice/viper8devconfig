@@ -1,0 +1,26 @@
+uuid: bf0ee179-8d56-42dc-a409-827cd7903088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_7
+    - node.type.experiment
+    - taxonomy.vocabulary.vocabulary_7
+id: node.experiment.taxonomy_vocabulary_7
+field_name: taxonomy_vocabulary_7
+entity_type: node
+bundle: experiment
+label: Corequisites
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_7: vocabulary_7
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: a468765b-5d83-4a13-88c2-dd644b3ad1b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.profile_url1
+field_name: profile_url1
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

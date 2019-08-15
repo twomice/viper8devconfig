@@ -1,0 +1,21 @@
+uuid: defca1de-ecfc-439e-aa08-3fc9029f4809
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_addl_authors
+    - node.type.syllabus
+id: node.syllabus.field_addl_authors
+field_name: field_addl_authors
+entity_type: node
+bundle: syllabus
+label: 'Additional Instructors'
+description: 'If this was a collaboratively developed course or syllabus, scroll through the alphabetical list (A–Z by first name) to find additional author names.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

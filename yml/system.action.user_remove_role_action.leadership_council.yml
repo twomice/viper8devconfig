@@ -1,0 +1,14 @@
+uuid: dd6938f8-4af3-401f-847a-03f43d731cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.leadership_council
+  module:
+    - user
+id: user_remove_role_action.leadership_council
+label: 'Remove the Leadership Council role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: leadership_council

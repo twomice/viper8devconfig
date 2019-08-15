@@ -1,0 +1,51 @@
+uuid: 7b0213da-6295-4aec-bc8e-5187f4bd0002
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_time_per_meeting_minutes_
+field_name: field_time_per_meeting_minutes_
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 45
+      label: '45 min / meeting'
+    -
+      value: 50
+      label: '50 min / meeting'
+    -
+      value: 55
+      label: '55 min / meeting'
+    -
+      value: 60
+      label: '60 min / meeting'
+    -
+      value: 65
+      label: '65 min / meeting'
+    -
+      value: 70
+      label: '70 min / meeting'
+    -
+      value: 75
+      label: '75 min / meeting'
+    -
+      value: 80
+      label: '80 min / meeting'
+    -
+      value: 85
+      label: '85 min / meeting'
+    -
+      value: 90
+      label: '90 min / meeting'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

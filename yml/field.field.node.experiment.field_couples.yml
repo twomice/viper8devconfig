@@ -1,0 +1,21 @@
+uuid: 5801a677-e950-4b6b-aeec-91bd066d6c5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_couples
+    - node.type.experiment
+id: node.experiment.field_couples
+field_name: field_couples
+entity_type: node
+bundle: experiment
+label: 'Related activities'
+description: 'Enter some title text to search for a related activity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 8043c4f1-8ae7-4a6f-89df-89ed4a21dc46
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_syllabus
+    - field.field.comment.comment_node_syllabus.comment_body
+  module:
+    - text
+id: comment.comment_node_syllabus.default
+targetEntityType: comment
+bundle: comment_node_syllabus
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

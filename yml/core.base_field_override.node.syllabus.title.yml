@@ -1,0 +1,18 @@
+uuid: fd5a10cc-009a-443d-a18b-58721a99ba04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.syllabus
+id: node.syllabus.title
+field_name: title
+entity_type: node
+bundle: syllabus
+label: 'Course Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

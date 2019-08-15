@@ -1,0 +1,21 @@
+uuid: 0fe08bf8-2e7a-4a3e-929d-a44548ec975d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reflection_piece
+    - node.type.fellows_reflections
+  module:
+    - options
+id: node.fellows_reflections.field_reflection_piece
+field_name: field_reflection_piece
+entity_type: node
+bundle: fellows_reflections
+label: 'Reflection Piece'
+description: 'Which reflection piece is this?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

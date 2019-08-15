@@ -1,0 +1,39 @@
+uuid: 7fe7da6f-90de-4929-9e9a-0a49445ff4d3
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_menu
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: Menus
+source:
+  plugin: menu
+process:
+  id:
+    -
+      plugin: static_map
+      bypass: true
+      source: menu_name
+      map:
+        main-menu: main
+        management: admin
+        navigation: tools
+        user-menu: account
+  label:
+    -
+      plugin: get
+      source: title
+  description:
+    -
+      plugin: get
+      source: description
+destination:
+  plugin: 'entity:menu'
+migration_dependencies:
+  required: {  }
+  optional: {  }

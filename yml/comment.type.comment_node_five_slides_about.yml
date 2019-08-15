@@ -1,0 +1,8 @@
+uuid: db6cc616-443a-4bfc-b116-b904017ffc58
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_five_slides_about
+label: 'Five Slides About comment'
+target_entity_type_id: node
+description: null

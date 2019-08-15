@@ -1,0 +1,21 @@
+uuid: 3ec9225e-ba32-433a-a298-89630e083367
+langcode: en
+status: true
+dependencies: {  }
+name: 'Filtered HTML'
+format: '1'
+weight: -1
+filters:
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

@@ -1,0 +1,21 @@
+uuid: 113cd2f8-141a-4aee-b48d-54059a72d162
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment
+    - node.type.experiment
+  module:
+    - text
+id: node.experiment.field_assessment
+field_name: field_assessment
+entity_type: node
+bundle: experiment
+label: 'Evaluation Methods'
+description: 'How do you assess student learning or performance?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: a2f332d0-2f72-418a-be07-90b1fb140fe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_addl_authors
+    - node.type.collection
+id: node.collection.field_addl_authors
+field_name: field_addl_authors
+entity_type: node
+bundle: collection
+label: 'Additional Authors'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: f2227412-0e59-4fcb-a5c0-a5e590dd643b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_least_fav_element
+  module:
+    - text
+    - user
+id: user.user.profile_least_fav_element
+field_name: profile_least_fav_element
+entity_type: user
+bundle: user
+label: 'Least Favorite Element'
+description: 'Your least favorite element.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

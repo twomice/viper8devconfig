@@ -1,0 +1,212 @@
+uuid: 93af4f79-e434-4a87-aff3-cec2d4a28af1
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_syllabus
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Syllabus)'
+source:
+  plugin: d7_node
+  node_type: syllabus
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_syllabus/0/status:
+    -
+      plugin: get
+      source: comment
+  field_course_area_and_number:
+    -
+      plugin: get
+      source: field_course_area_and_number
+  field_institution:
+    -
+      plugin: get
+      source: field_institution
+  field_description:
+    -
+      plugin: get
+      source: field_description
+  field_location:
+    -
+      plugin: get
+      source: field_location
+  field_addl_authors:
+    -
+      plugin: get
+      source: field_addl_authors
+  field_textbook:
+    -
+      plugin: get
+      source: field_textbook
+  field_number_of_meetings_per_wee:
+    -
+      plugin: get
+      source: field_number_of_meetings_per_wee
+  field_time_per_meeting_minutes_:
+    -
+      plugin: get
+      source: field_time_per_meeting_minutes_
+  field_number_of_weeks:
+    -
+      plugin: get
+      source: field_number_of_weeks
+  field_lab_associated:
+    -
+      plugin: get
+      source: field_lab_associated
+  field_average_class_size:
+    -
+      plugin: get
+      source: field_average_class_size
+  field_typical_student_population:
+    -
+      plugin: get
+      source: field_typical_student_population
+  upload:
+    -
+      plugin: sub_process
+      source: upload
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_faculty_files:
+    -
+      plugin: sub_process
+      source: field_faculty_files
+      process:
+        target_id: fid
+        display: display
+        description: description
+  taxonomy_vocabulary_4:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_4
+      process:
+        target_id: tid
+  taxonomy_vocabulary_5:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_5
+      process:
+        target_id: tid
+  taxonomy_vocabulary_6:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_6
+      process:
+        target_id: tid
+  taxonomy_vocabulary_7:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_7
+      process:
+        target_id: tid
+  field_learning_goals:
+    -
+      plugin: get
+      source: field_learning_goals
+  field_how_the_course_is_taught:
+    -
+      plugin: get
+      source: field_how_the_course_is_taught
+  field_web_resources:
+    -
+      plugin: field_link
+      source: field_web_resources
+  field_couples:
+    -
+      plugin: get
+      source: field_couples
+  field_related_syllabi:
+    -
+      plugin: get
+      source: field_related_syllabi
+  field_grading_scheme:
+    -
+      plugin: get
+      source: field_grading_scheme
+  field_lc_comments:
+    -
+      plugin: get
+      source: field_lc_comments
+  field_creative_commons:
+    -
+      plugin: get
+      source: field_creative_commons
+  field_vote:
+    -
+      plugin: get
+      source: field_vote
+  field_lc_moderator_new:
+    -
+      plugin: get
+      source: field_lc_moderator_new
+destination:
+  plugin: 'entity:node'
+  default_bundle: syllabus
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

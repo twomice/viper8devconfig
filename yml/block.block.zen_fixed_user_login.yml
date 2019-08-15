@@ -1,0 +1,20 @@
+uuid: ddff41c4-2249-40b9-a277-9f69a24ee09f
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - zen-fixed
+id: zen_fixed_user_login
+theme: zen-fixed
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

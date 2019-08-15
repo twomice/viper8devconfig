@@ -1,0 +1,19 @@
+uuid: 042ffe25-37a0-445b-b8d7-5e66584b8ccb
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_research
+field_name: profile_research
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

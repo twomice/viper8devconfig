@@ -1,0 +1,8 @@
+uuid: f6dcae0d-ce2e-42a2-ad54-e76dc6c7433d
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_web_resources
+label: 'Web Resources and Apps comment'
+target_entity_type_id: node
+description: null

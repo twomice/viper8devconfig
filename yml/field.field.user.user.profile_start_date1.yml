@@ -1,0 +1,21 @@
+uuid: 25e875ae-64b8-42d4-9fd4-f6cd87f775ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_start_date1
+  module:
+    - text
+    - user
+id: user.user.profile_start_date1
+field_name: profile_start_date1
+entity_type: user
+bundle: user
+label: 'Start Year'
+description: 'When you started your current position (faculty only).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

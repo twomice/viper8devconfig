@@ -1,0 +1,186 @@
+uuid: 8f3a20db-e0c5-4f10-aada-36d16ba00faf
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_collection
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Collection)'
+source:
+  plugin: d7_node_revision
+  node_type: collection
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_collection/0/status:
+    -
+      plugin: get
+      source: comment
+  taxonomy_vocabulary_3:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_3
+      process:
+        target_id: tid
+  taxonomy_vocabulary_4:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_4
+      process:
+        target_id: tid
+  taxonomy_vocabulary_5:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_5
+      process:
+        target_id: tid
+  taxonomy_vocabulary_6:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_6
+      process:
+        target_id: tid
+  taxonomy_vocabulary_7:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_7
+      process:
+        target_id: tid
+  body:
+    -
+      plugin: get
+      source: body
+  upload:
+    -
+      plugin: sub_process
+      source: upload
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_coll_learning_objects:
+    -
+      plugin: get
+      source: field_coll_learning_objects
+  field_vote:
+    -
+      plugin: get
+      source: field_vote
+  field_addl_authors:
+    -
+      plugin: get
+      source: field_addl_authors
+  field_five_slides_about:
+    -
+      plugin: get
+      source: field_five_slides_about
+  field_in_class_activity:
+    -
+      plugin: get
+      source: field_in_class_activity
+  field_lab_experiment:
+    -
+      plugin: get
+      source: field_lab_experiment
+  field_literature_discussion:
+    -
+      plugin: get
+      source: field_literature_discussion
+  field_problem_set:
+    -
+      plugin: get
+      source: field_problem_set
+  field_syllabus:
+    -
+      plugin: get
+      source: field_syllabus
+  field_textbook_lo:
+    -
+      plugin: get
+      source: field_textbook_lo
+  field_web_resources_and_apps:
+    -
+      plugin: get
+      source: field_web_resources_and_apps
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: collection
+migration_dependencies:
+  required:
+    - upgrade_d7_node_page
+    - upgrade_d7_node_profile
+    - upgrade_d7_node_story
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_experiment
+    - upgrade_d7_node_class_activity
+    - upgrade_d7_node_literature_discussion
+    - upgrade_d7_node_textbook
+    - upgrade_d7_node_problem_set
+    - upgrade_d7_node_event
+    - upgrade_d7_node_web_resources
+    - upgrade_d7_node_five_slides_about
+    - upgrade_d7_node_webform
+    - upgrade_d7_node_collection
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_jmol
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_syllabus
+    - upgrade_d7_node_fellows_news
+    - upgrade_d7_node_fellows_reflections
+  optional: {  }

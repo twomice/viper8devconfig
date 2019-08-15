@@ -1,0 +1,8 @@
+uuid: 58f9db1e-2938-4920-9016-e7ea82a4ae7f
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_problem_set
+label: 'Problem Set comment'
+target_entity_type_id: node
+description: null

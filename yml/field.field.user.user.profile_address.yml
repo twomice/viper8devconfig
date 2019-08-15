@@ -1,0 +1,21 @@
+uuid: c667a2b1-cd16-430d-973a-732ca64ced08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_address
+  module:
+    - text
+    - user
+id: user.user.profile_address
+field_name: profile_address
+entity_type: user
+bundle: user
+label: 'Mailing Address'
+description: 'Complete snail mail address, only visible to privileged users.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

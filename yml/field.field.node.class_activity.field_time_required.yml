@@ -1,0 +1,21 @@
+uuid: 96843aa6-e51e-4480-b357-a3ea1d04d988
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_required
+    - node.type.class_activity
+id: node.class_activity.field_time_required
+field_name: field_time_required
+entity_type: node
+bundle: class_activity
+label: 'Time Required'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

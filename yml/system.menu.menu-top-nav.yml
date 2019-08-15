@@ -1,0 +1,8 @@
+uuid: d7cf99b8-b056-417a-bfca-ae4762165fd2
+langcode: en
+status: true
+dependencies: {  }
+id: menu-top-nav
+label: 'Left Navigation'
+description: 'This is the IONiC VIPEr left navigation menu.'
+locked: false

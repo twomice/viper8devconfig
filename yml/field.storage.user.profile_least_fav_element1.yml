@@ -1,0 +1,20 @@
+uuid: c4b4bb01-7b6d-401b-98dd-063553c17cf6
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_least_fav_element1
+field_name: profile_least_fav_element1
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 88cd9d6c-136a-4eb3-add2-e71844d01909
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-what-s-new
+  module:
+    - system
+  theme:
+    - bartik
+id: bamboo_viper_menu_menu_what_s_new
+theme: bartik
+region: content
+weight: -36
+provider: null
+plugin: 'system_menu_block:menu-what-s-new'
+settings:
+  id: 'system_menu_block:menu-what-s-new'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

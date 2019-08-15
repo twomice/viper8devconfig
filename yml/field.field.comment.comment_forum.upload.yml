@@ -1,0 +1,27 @@
+uuid: 12aada46-54b9-408f-b2b0-90703da04397
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_forum
+    - field.storage.comment.upload
+  module:
+    - file
+id: comment.comment_forum.upload
+field_name: upload
+entity_type: comment
+bundle: comment_forum
+label: 'File attachments'
+description: '2 MB limit'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'rtf jpg jpeg gif png txt html doc xls pdf ppt pps odt ods odp zip tar log out chk chm pdb cif cmdf jmol cdx docx xlsx pptx jcamp xrdml mry dae'
+  max_filesize: '2 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,21 @@
+uuid: 1cae3094-d6cc-4ab9-a726-df46cb24a910
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implementation_notes
+    - node.type.class_activity
+  module:
+    - text
+id: node.class_activity.field_implementation_notes
+field_name: field_implementation_notes
+entity_type: node
+bundle: class_activity
+label: 'Implementation Notes'
+description: 'Helpful hints or notes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

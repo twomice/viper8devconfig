@@ -1,0 +1,64 @@
+uuid: 21e71be4-0168-42a3-b9d9-c31ee68491d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.web_resources.comment_node_web_resources
+    - field.field.node.web_resources.field_addl_authors
+    - field.field.node.web_resources.field_assessment
+    - field.field.node.web_resources.field_couples
+    - field.field.node.web_resources.field_description
+    - field.field.node.web_resources.field_faculty_files
+    - field.field.node.web_resources.field_implementation_notes
+    - field.field.node.web_resources.field_instructor_experience
+    - field.field.node.web_resources.field_lc_moderator_new
+    - field.field.node.web_resources.field_learning_goals
+    - field.field.node.web_resources.field_time_required
+    - field.field.node.web_resources.field_web_resources
+    - field.field.node.web_resources.taxonomy_vocabulary_3
+    - field.field.node.web_resources.taxonomy_vocabulary_4
+    - field.field.node.web_resources.taxonomy_vocabulary_5
+    - field.field.node.web_resources.taxonomy_vocabulary_6
+    - field.field.node.web_resources.taxonomy_vocabulary_7
+    - field.field.node.web_resources.upload
+    - node.type.web_resources
+  module:
+    - file
+    - user
+id: node.web_resources.rss
+targetEntityType: node
+bundle: web_resources
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_web_resources: true
+  field_addl_authors: true
+  field_assessment: true
+  field_couples: true
+  field_description: true
+  field_faculty_files: true
+  field_implementation_notes: true
+  field_instructor_experience: true
+  field_lc_moderator_new: true
+  field_learning_goals: true
+  field_time_required: true
+  field_web_resources: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true

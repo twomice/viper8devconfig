@@ -1,0 +1,8 @@
+uuid: 5cf33baf-5030-46de-b6a1-514d82e8dc50
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_syllabus
+label: 'Syllabus comment'
+target_entity_type_id: node
+description: null

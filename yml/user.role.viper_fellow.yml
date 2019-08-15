@@ -1,0 +1,16 @@
+uuid: 2e84e5e1-162c-4a7a-814b-e941c9ec7102
+langcode: en
+status: true
+dependencies: {  }
+id: viper_fellow
+label: 'VIPEr fellow'
+weight: 2
+is_admin: null
+permissions:
+  - 'create fellows_news content'
+  - 'create fellows_reflections content'
+  - 'delete own fellows_news content'
+  - 'delete own fellows_reflections content'
+  - 'edit own fellows_news content'
+  - 'edit own fellows_reflections content'
+  - 'participate in workflow'

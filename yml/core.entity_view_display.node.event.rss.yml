@@ -1,0 +1,36 @@
+uuid: 238972f9-7625-4782-99c7-d15133852b46
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_description
+    - field.field.node.event.upload
+    - node.type.event
+  module:
+    - file
+    - user
+id: node.event.rss
+targetEntityType: node
+bundle: event
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_event: true
+  field_event_date: true
+  field_event_description: true

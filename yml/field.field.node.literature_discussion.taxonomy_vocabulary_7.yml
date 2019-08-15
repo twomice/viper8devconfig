@@ -1,0 +1,26 @@
+uuid: 7235ae0b-5d5b-42c3-8909-e25103bfbb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_7
+    - node.type.literature_discussion
+    - taxonomy.vocabulary.vocabulary_7
+id: node.literature_discussion.taxonomy_vocabulary_7
+field_name: taxonomy_vocabulary_7
+entity_type: node
+bundle: literature_discussion
+label: Corequisites
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_7: vocabulary_7
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

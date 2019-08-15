@@ -1,0 +1,19 @@
+uuid: 7a5ad66e-ce07-45a9-88c5-8246b8cc3301
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institution
+    - node.type.syllabus
+id: node.syllabus.field_institution
+field_name: field_institution
+entity_type: node
+bundle: syllabus
+label: Institution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

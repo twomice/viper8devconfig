@@ -1,0 +1,29 @@
+uuid: 8e87cc6a-4096-40e0-b1c5-8117ec89b5fc
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-browse-by-activ
+  module:
+    - system
+  theme:
+    - adaptivetheme_subtheme
+id: adaptivetheme_subtheme_menu_menu_browse_by_activ
+theme: adaptivetheme_subtheme
+region: ''
+weight: -36
+provider: null
+plugin: 'system_menu_block:menu-browse-by-activ'
+settings:
+  id: 'system_menu_block:menu-browse-by-activ'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

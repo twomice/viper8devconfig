@@ -1,0 +1,13 @@
+uuid: f09c0f1b-3b6a-4b01-88c7-676f93b9a508
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - forum
+_core:
+  default_config_hash: ESGfHGDVWjnc2BiSFq58LOhBU6-f_2AGcwGjbqegYfo
+name: Forums
+vid: forums
+description: ''
+weight: -10

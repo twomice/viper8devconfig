@@ -1,0 +1,21 @@
+uuid: d88f1f51-bdca-4c1a-896e-b192bea68247
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_problem_set
+    - node.type.collection
+id: node.collection.field_problem_set
+field_name: field_problem_set
+entity_type: node
+bundle: collection
+label: 'Problem Set'
+description: 'Enter the Learning Object title, starting at the beginning. Once enough information is entered, you can select from the list that appears. To add another item, click the button below after finishing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

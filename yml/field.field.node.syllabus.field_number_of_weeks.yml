@@ -1,0 +1,21 @@
+uuid: c191f0ca-1a2b-48c8-98a0-6a2bc202c130
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_weeks
+    - node.type.syllabus
+  module:
+    - options
+id: node.syllabus.field_number_of_weeks
+field_name: field_number_of_weeks
+entity_type: node
+bundle: syllabus
+label: 'Number of weeks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,13 @@
+uuid: eed298ac-2da7-464b-8ca3-a62d880adc3e
+langcode: en
+status: true
+dependencies: {  }
+id: blogger
+label: Blogger
+weight: 1
+is_admin: null
+permissions:
+  - 'create blog content'
+  - 'delete own blog content'
+  - 'edit own blog content'
+  - 'participate in workflow'

@@ -1,0 +1,21 @@
+uuid: f3ec84f8-a53e-4f6b-b2f8-963e5bb47f68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_research
+  module:
+    - text
+    - user
+id: user.user.profile_research
+field_name: profile_research
+entity_type: user
+bundle: user
+label: 'Research Description'
+description: 'Overview of your research experience and interests.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

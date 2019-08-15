@@ -1,0 +1,22 @@
+uuid: 6dd8cbc0-6322-42cf-8d85-0556108268a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_couples
+    - node.type.textbook
+id: node.textbook.field_couples
+field_name: field_couples
+entity_type: node
+bundle: textbook
+label: 'Related activities'
+description: 'Enter some title text to search for a related activity.'
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

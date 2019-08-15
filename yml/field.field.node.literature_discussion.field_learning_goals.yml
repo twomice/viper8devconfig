@@ -1,0 +1,21 @@
+uuid: 577f5aea-914e-4dec-b472-d5f450c27c67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learning_goals
+    - node.type.literature_discussion
+  module:
+    - text
+id: node.literature_discussion.field_learning_goals
+field_name: field_learning_goals
+entity_type: node
+bundle: literature_discussion
+label: 'Learning Goals'
+description: 'For example, ''A student should be able to explain..'' or ''A student should be able to apply his/her knowledge of ___ to determine...'''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

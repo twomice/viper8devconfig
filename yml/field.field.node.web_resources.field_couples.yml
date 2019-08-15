@@ -1,0 +1,21 @@
+uuid: 98908e58-76af-4cbc-9673-a3aa06de24bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_couples
+    - node.type.web_resources
+id: node.web_resources.field_couples
+field_name: field_couples
+entity_type: node
+bundle: web_resources
+label: 'Related activities'
+description: 'Enter some title text to search for a related activity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

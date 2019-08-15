@@ -1,0 +1,29 @@
+uuid: e0175eb0-434b-4743-83f1-6e9fc2583884
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-what-s-new
+  module:
+    - system
+  theme:
+    - zen
+id: zen_menu_menu_what_s_new
+theme: zen
+region: ''
+weight: -37
+provider: null
+plugin: 'system_menu_block:menu-what-s-new'
+settings:
+  id: 'system_menu_block:menu-what-s-new'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

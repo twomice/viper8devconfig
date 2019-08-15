@@ -1,0 +1,8 @@
+uuid: d382054b-9d85-484e-b96b-580c1dff9cd5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Course Level'
+vid: vocabulary_4
+description: ''
+weight: -3

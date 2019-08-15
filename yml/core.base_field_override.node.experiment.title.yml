@@ -1,0 +1,18 @@
+uuid: 3dc8903b-99e3-46ae-93c2-18fd94c7274d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.experiment
+id: node.experiment.title
+field_name: title
+entity_type: node
+bundle: experiment
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

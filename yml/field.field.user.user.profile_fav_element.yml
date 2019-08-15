@@ -1,0 +1,21 @@
+uuid: 7bcb7bb4-ae57-4438-b0fa-092d821ec22f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_fav_element
+  module:
+    - text
+    - user
+id: user.user.profile_fav_element
+field_name: profile_fav_element
+entity_type: user
+bundle: user
+label: 'Favorite Element'
+description: 'Your favorite element.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

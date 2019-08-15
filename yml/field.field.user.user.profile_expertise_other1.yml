@@ -1,0 +1,21 @@
+uuid: f2d90e44-ea77-4b48-a2e8-564bd50504b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_expertise_other1
+  module:
+    - text
+    - user
+id: user.user.profile_expertise_other1
+field_name: profile_expertise_other1
+entity_type: user
+bundle: user
+label: 'Area of Expertise - Other'
+description: 'Area of Expertise outside of inorganic chemistry.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

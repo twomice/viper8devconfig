@@ -1,0 +1,21 @@
+uuid: 278c110f-fa3e-4b70-85b0-23da0bca0f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment
+    - node.type.problem_set
+  module:
+    - text
+id: node.problem_set.field_assessment
+field_name: field_assessment
+entity_type: node
+bundle: problem_set
+label: 'Evaluation Methods'
+description: 'How do you assess student learning or performance? This could be a grading scheme or rubric.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: 1233734a-14a3-4900-a2c1-9610d4c57890
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_class_activity
+label: 'In-Class Activity comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,32 @@
+uuid: ed69694c-dec5-47f6-ba2d-69edc1f73bef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fellows_news.body
+    - field.field.node.fellows_news.comment_node_fellows_news
+    - node.type.fellows_news
+  module:
+    - text
+    - user
+id: node.fellows_news.teaser
+targetEntityType: node
+bundle: fellows_news
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_fellows_news: true

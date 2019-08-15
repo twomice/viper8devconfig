@@ -1,0 +1,29 @@
+uuid: a7e996f3-3b42-40f8-928c-18c3936f86db
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-2014-workshop
+  module:
+    - system
+  theme:
+    - viper
+id: viper_menu_menu_2014_workshop
+theme: viper
+region: ''
+weight: -30
+provider: null
+plugin: 'system_menu_block:menu-2014-workshop'
+settings:
+  id: 'system_menu_block:menu-2014-workshop'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/2411\n/node/2412\n/node/2413\n/node/2414"

@@ -1,0 +1,66 @@
+uuid: c67fbdf2-1de1-435c-899b-f6988cba6c3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.class_activity.comment_node_class_activity
+    - field.field.node.class_activity.field_addl_authors
+    - field.field.node.class_activity.field_assessment
+    - field.field.node.class_activity.field_couples
+    - field.field.node.class_activity.field_description
+    - field.field.node.class_activity.field_faculty_files
+    - field.field.node.class_activity.field_implementation_notes
+    - field.field.node.class_activity.field_instructor_experience
+    - field.field.node.class_activity.field_instrumentation
+    - field.field.node.class_activity.field_lc_moderator_new
+    - field.field.node.class_activity.field_learning_goals
+    - field.field.node.class_activity.field_time_required
+    - field.field.node.class_activity.field_web_resources
+    - field.field.node.class_activity.taxonomy_vocabulary_3
+    - field.field.node.class_activity.taxonomy_vocabulary_4
+    - field.field.node.class_activity.taxonomy_vocabulary_5
+    - field.field.node.class_activity.taxonomy_vocabulary_6
+    - field.field.node.class_activity.taxonomy_vocabulary_7
+    - field.field.node.class_activity.upload
+    - node.type.class_activity
+  module:
+    - file
+    - user
+id: node.class_activity.search_index
+targetEntityType: node
+bundle: class_activity
+mode: search_index
+content:
+  field_faculty_files:
+    label: above
+    weight: 7
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_class_activity: true
+  field_addl_authors: true
+  field_assessment: true
+  field_couples: true
+  field_description: true
+  field_implementation_notes: true
+  field_instructor_experience: true
+  field_instrumentation: true
+  field_lc_moderator_new: true
+  field_learning_goals: true
+  field_time_required: true
+  field_web_resources: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true
+  upload: true

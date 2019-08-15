@@ -1,0 +1,21 @@
+uuid: e5296080-e28d-4e31-929b-fd1e72d03f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textbook_lo
+    - node.type.collection
+id: node.collection.field_textbook_lo
+field_name: field_textbook_lo
+entity_type: node
+bundle: collection
+label: Textbook
+description: 'Enter the Learning Object title, starting at the beginning. Once enough information is entered, you can select from the list that appears. To add another item, click the button below after finishing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

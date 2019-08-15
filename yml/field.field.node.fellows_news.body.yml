@@ -1,0 +1,22 @@
+uuid: a3ec2d49-7504-4c00-a215-83503bb9d63c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.fellows_news
+  module:
+    - text
+id: node.fellows_news.body
+field_name: body
+entity_type: node
+bundle: fellows_news
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

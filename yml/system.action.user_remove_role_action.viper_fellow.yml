@@ -1,0 +1,14 @@
+uuid: f8132b76-3a4e-45cd-9fad-3ca461f63c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.viper_fellow
+  module:
+    - user
+id: user_remove_role_action.viper_fellow
+label: 'Remove the VIPEr fellow role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: viper_fellow

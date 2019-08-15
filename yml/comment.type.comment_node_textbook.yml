@@ -1,0 +1,8 @@
+uuid: 69ef96a1-a49f-4349-9eea-9b31bd06f391
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_textbook
+label: 'Textbook comment'
+target_entity_type_id: node
+description: null

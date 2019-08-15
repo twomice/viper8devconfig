@@ -1,0 +1,18 @@
+uuid: a85af3cc-9fb7-4c6d-87ee-28f526b53fe1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: 'Problem Set'
+type: problem_set
+description: 'A set of problems or exam questions.'
+help: "Be sure to attach all problems and solutions before submitting!\r\n\r\nThe problem set Learning Object type is only visible to registered users who have requested faculty status (including some graduate students and post docs). These users have been verified by a member of the leadership council before their status was upgraded."
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,21 @@
+uuid: a2b93142-4dbb-431c-a2e2-df09a08f480c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_preferred_contact
+  module:
+    - options
+    - user
+id: user.user.profile_preferred_contact
+field_name: profile_preferred_contact
+entity_type: user
+bundle: user
+label: 'Preferred Contact Method'
+description: 'How you''d like other VIPEr members to contact you.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

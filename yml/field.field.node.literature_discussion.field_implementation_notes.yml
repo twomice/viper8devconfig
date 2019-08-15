@@ -1,0 +1,21 @@
+uuid: 451b434d-ef4f-42ee-a8e5-726e05486267
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implementation_notes
+    - node.type.literature_discussion
+  module:
+    - text
+id: node.literature_discussion.field_implementation_notes
+field_name: field_implementation_notes
+entity_type: node
+bundle: literature_discussion
+label: 'Implementation Notes'
+description: 'Helpful hints or notes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

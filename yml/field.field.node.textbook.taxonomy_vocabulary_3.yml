@@ -1,0 +1,26 @@
+uuid: 8ecf2dc7-1c2d-4f25-a46a-f078fe689110
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_3
+    - node.type.textbook
+    - taxonomy.vocabulary.vocabulary_3
+id: node.textbook.taxonomy_vocabulary_3
+field_name: taxonomy_vocabulary_3
+entity_type: node
+bundle: textbook
+label: Subdiscipline
+description: 'Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_3: vocabulary_3
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

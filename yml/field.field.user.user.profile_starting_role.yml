@@ -1,0 +1,21 @@
+uuid: d8359e63-a24d-44c9-be27-04b4f259e35d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_starting_role
+  module:
+    - options
+    - user
+id: user.user.profile_starting_role
+field_name: profile_starting_role
+entity_type: user
+bundle: user
+label: 'I am'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

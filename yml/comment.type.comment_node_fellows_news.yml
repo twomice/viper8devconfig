@@ -1,0 +1,8 @@
+uuid: 5612821e-e0ec-4a9a-9de9-45e9aac5f519
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_fellows_news
+label: 'Fellows News comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,320 @@
+uuid: adc756f4-8eee-43ee-aa71-ef9ac5bf33b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.profile_address
+    - field.field.user.user.profile_address1
+    - field.field.user.user.profile_degrees
+    - field.field.user.user.profile_degrees1
+    - field.field.user.user.profile_expertise
+    - field.field.user.user.profile_expertise1
+    - field.field.user.user.profile_expertise2
+    - field.field.user.user.profile_expertise21
+    - field.field.user.user.profile_expertise3
+    - field.field.user.user.profile_expertise31
+    - field.field.user.user.profile_expertise_other
+    - field.field.user.user.profile_expertise_other1
+    - field.field.user.user.profile_faculty_privilege_revi
+    - field.field.user.user.profile_faculty_privilege_revi1
+    - field.field.user.user.profile_fav_element
+    - field.field.user.user.profile_fav_element1
+    - field.field.user.user.profile_institution
+    - field.field.user.user.profile_institution1
+    - field.field.user.user.profile_institution_website
+    - field.field.user.user.profile_institution_website1
+    - field.field.user.user.profile_least_fav_element
+    - field.field.user.user.profile_least_fav_element1
+    - field.field.user.user.profile_name
+    - field.field.user.user.profile_name1
+    - field.field.user.user.profile_orbital
+    - field.field.user.user.profile_orbital1
+    - field.field.user.user.profile_phone
+    - field.field.user.user.profile_phone1
+    - field.field.user.user.profile_position
+    - field.field.user.user.profile_position1
+    - field.field.user.user.profile_preferred_contact
+    - field.field.user.user.profile_preferred_contact1
+    - field.field.user.user.profile_public_name
+    - field.field.user.user.profile_public_name1
+    - field.field.user.user.profile_request_privs
+    - field.field.user.user.profile_request_privs1
+    - field.field.user.user.profile_research
+    - field.field.user.user.profile_research1
+    - field.field.user.user.profile_start_date
+    - field.field.user.user.profile_start_date1
+    - field.field.user.user.profile_starting_role
+    - field.field.user.user.profile_starting_role1
+    - field.field.user.user.profile_url
+    - field.field.user.user.profile_url1
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - link
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 5
+    region: content
+  profile_degrees:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  profile_degrees1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 31
+    third_party_settings: {  }
+    region: content
+  profile_expertise:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 13
+    third_party_settings: {  }
+    region: content
+  profile_expertise1:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 29
+    third_party_settings: {  }
+    region: content
+  profile_expertise2:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 20
+    third_party_settings: {  }
+    region: content
+  profile_expertise21:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 36
+    third_party_settings: {  }
+    region: content
+  profile_expertise3:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 19
+    third_party_settings: {  }
+    region: content
+  profile_expertise31:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 35
+    third_party_settings: {  }
+    region: content
+  profile_expertise_other:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 14
+    third_party_settings: {  }
+    region: content
+  profile_expertise_other1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 30
+    third_party_settings: {  }
+    region: content
+  profile_fav_element:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 10
+    third_party_settings: {  }
+    region: content
+  profile_fav_element1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 26
+    third_party_settings: {  }
+    region: content
+  profile_institution:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 6
+    third_party_settings: {  }
+    region: content
+  profile_institution1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 22
+    third_party_settings: {  }
+    region: content
+  profile_institution_website:
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    type: link
+    weight: 17
+    third_party_settings: {  }
+    region: content
+  profile_institution_website1:
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    type: link
+    weight: 33
+    third_party_settings: {  }
+    region: content
+  profile_least_fav_element:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 9
+    third_party_settings: {  }
+    region: content
+  profile_least_fav_element1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 25
+    third_party_settings: {  }
+    region: content
+  profile_orbital:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 11
+    third_party_settings: {  }
+    region: content
+  profile_orbital1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 27
+    third_party_settings: {  }
+    region: content
+  profile_public_name:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 7
+    third_party_settings: {  }
+    region: content
+  profile_public_name1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 23
+    third_party_settings: {  }
+    region: content
+  profile_request_privs:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 18
+    third_party_settings: {  }
+    region: content
+  profile_request_privs1:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 34
+    third_party_settings: {  }
+    region: content
+  profile_research:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 12
+    third_party_settings: {  }
+    region: content
+  profile_research1:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 28
+    third_party_settings: {  }
+    region: content
+  profile_starting_role:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  profile_starting_role1:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 32
+    third_party_settings: {  }
+    region: content
+  profile_url:
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    type: link
+    weight: 8
+    third_party_settings: {  }
+    region: content
+  profile_url1:
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    type: link
+    weight: 24
+    third_party_settings: {  }
+    region: content
+  user_picture:
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    type: image
+    weight: 37
+    third_party_settings: {  }
+    region: content
+hidden:
+  profile_address: true
+  profile_address1: true
+  profile_faculty_privilege_revi: true
+  profile_faculty_privilege_revi1: true
+  profile_name: true
+  profile_name1: true
+  profile_phone: true
+  profile_phone1: true
+  profile_position: true
+  profile_position1: true
+  profile_preferred_contact: true
+  profile_preferred_contact1: true
+  profile_start_date: true
+  profile_start_date1: true

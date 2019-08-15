@@ -1,0 +1,114 @@
+uuid: 75869d6c-af4d-42cf-a793-879060b0e39e
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_fellows_reflections
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: alterFieldFormatterMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Fellows Reflections)'
+source:
+  plugin: d7_node_revision
+  node_type: fellows_reflections
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_fellows_reflections/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_fellows_cohort:
+    -
+      plugin: sub_process
+      source: field_fellows_cohort
+      process:
+        target_id: tid
+  field_reflection_piece:
+    -
+      plugin: get
+      source: field_reflection_piece
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: fellows_reflections
+migration_dependencies:
+  required:
+    - upgrade_d7_node_page
+    - upgrade_d7_node_profile
+    - upgrade_d7_node_story
+    - upgrade_d7_node_forum
+    - upgrade_d7_node_experiment
+    - upgrade_d7_node_class_activity
+    - upgrade_d7_node_literature_discussion
+    - upgrade_d7_node_textbook
+    - upgrade_d7_node_problem_set
+    - upgrade_d7_node_event
+    - upgrade_d7_node_web_resources
+    - upgrade_d7_node_five_slides_about
+    - upgrade_d7_node_webform
+    - upgrade_d7_node_collection
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_jmol
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_syllabus
+    - upgrade_d7_node_fellows_news
+    - upgrade_d7_node_fellows_reflections
+  optional: {  }

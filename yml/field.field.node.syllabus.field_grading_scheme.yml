@@ -1,0 +1,19 @@
+uuid: b1184840-635a-42ca-90f0-9fea1af422c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grading_scheme
+    - node.type.syllabus
+id: node.syllabus.field_grading_scheme
+field_name: field_grading_scheme
+entity_type: node
+bundle: syllabus
+label: 'Grading Scheme'
+description: 'Describe how you assign overall points and grades in the course (e.g. percentage weighting of activities). '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

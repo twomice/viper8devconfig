@@ -1,0 +1,144 @@
+uuid: 9eb9183c-20cb-4d4d-96ec-a905533ce839
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_textbook.default
+    - field.field.node.textbook.comment_node_textbook
+    - field.field.node.textbook.field_addl_authors
+    - field.field.node.textbook.field_couples
+    - field.field.node.textbook.field_description
+    - field.field.node.textbook.field_implementation_notes
+    - field.field.node.textbook.field_lc_moderator_new
+    - field.field.node.textbook.field_web_resources
+    - field.field.node.textbook.taxonomy_vocabulary_3
+    - field.field.node.textbook.taxonomy_vocabulary_4
+    - field.field.node.textbook.taxonomy_vocabulary_5
+    - field.field.node.textbook.taxonomy_vocabulary_6
+    - field.field.node.textbook.taxonomy_vocabulary_7
+    - field.field.node.textbook.upload
+    - node.type.textbook
+  module:
+    - comment
+    - file
+    - link
+    - text
+    - user
+id: node.textbook.default
+targetEntityType: node
+bundle: textbook
+mode: default
+content:
+  comment_node_textbook:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_addl_authors:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_couples:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_implementation_notes:
+    label: above
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lc_moderator_new:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_web_resources:
+    label: above
+    weight: 8
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_3:
+    label: above
+    weight: 31
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: above
+    weight: 28
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_5:
+    label: above
+    weight: 30
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 27
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    label: above
+    weight: 26
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden: {  }

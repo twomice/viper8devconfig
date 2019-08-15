@@ -1,0 +1,26 @@
+uuid: 9cf59bb0-37ae-4a1f-85e1-b581f0353669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_3
+    - node.type.web_resources
+    - taxonomy.vocabulary.vocabulary_3
+id: node.web_resources.taxonomy_vocabulary_3
+field_name: taxonomy_vocabulary_3
+entity_type: node
+bundle: web_resources
+label: Subdiscipline
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_3: vocabulary_3
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

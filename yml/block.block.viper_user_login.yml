@@ -1,0 +1,20 @@
+uuid: 129f90a0-2c1c-4e57-b072-d77aba215bc5
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - viper
+id: viper_user_login
+theme: viper
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

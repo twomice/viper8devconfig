@@ -1,0 +1,23 @@
+uuid: 29b4b758-e483-4bb2-9bf0-f57999c4f722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_resources
+    - node.type.five_slides_about
+  module:
+    - link
+id: node.five_slides_about.field_web_resources
+field_name: field_web_resources
+entity_type: node
+bundle: five_slides_about
+label: 'Web Resources'
+description: 'Enter a <a href="http://www.doi.org">DOI</a> link as <b>http://dx.doi.org/doi:10.1000/182</b>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

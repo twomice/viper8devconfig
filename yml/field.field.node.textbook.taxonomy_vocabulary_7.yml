@@ -1,0 +1,26 @@
+uuid: 7ad81e76-9081-40a4-aaae-9e6165d197fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_7
+    - node.type.textbook
+    - taxonomy.vocabulary.vocabulary_7
+id: node.textbook.taxonomy_vocabulary_7
+field_name: taxonomy_vocabulary_7
+entity_type: node
+bundle: textbook
+label: Corequisites
+description: 'Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_7: vocabulary_7
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,66 @@
+uuid: c1810204-3aaa-472d-af85-5a75540db315
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.profile_expertise21
+field_name: profile_expertise21
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Bioinorganic '
+      label: 'Bioinorganic '
+    -
+      value: 'Organometallic '
+      label: 'Organometallic '
+    -
+      value: 'Solid state and materials '
+      label: 'Solid state and materials '
+    -
+      value: 'Coordination chemistry '
+      label: 'Coordination chemistry '
+    -
+      value: 'Actinides and lanthanides '
+      label: 'Actinides and lanthanides '
+    -
+      value: 'Main group '
+      label: 'Main group '
+    -
+      value: Computational
+      label: Computational
+    -
+      value: 'Other (describe below)'
+      label: 'Other (describe below)'
+    -
+      value: '0'
+      label: '0'
+    -
+      value: 'Coordination chemistry'
+      label: 'Coordination chemistry'
+    -
+      value: Organometallic
+      label: Organometallic
+    -
+      value: 'Actinides and lanthanides'
+      label: 'Actinides and lanthanides'
+    -
+      value: 'Solid state and materials'
+      label: 'Solid state and materials'
+    -
+      value: 'Main group'
+      label: 'Main group'
+    -
+      value: Bioinorganic
+      label: Bioinorganic
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

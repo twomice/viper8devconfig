@@ -1,0 +1,18 @@
+uuid: 7fffdbab-588a-49ec-a184-b8d1cb66f5dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.problem_set
+id: node.problem_set.title
+field_name: title
+entity_type: node
+bundle: problem_set
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

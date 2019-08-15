@@ -1,0 +1,51 @@
+uuid: 1d46dc43-1eb4-40ba-9eba-6d28b54b44fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_fellows_reflections.default
+    - field.field.node.fellows_reflections.body
+    - field.field.node.fellows_reflections.comment_node_fellows_reflections
+    - field.field.node.fellows_reflections.field_fellows_cohort
+    - field.field.node.fellows_reflections.field_reflection_piece
+    - node.type.fellows_reflections
+  module:
+    - comment
+    - options
+    - text
+    - user
+id: node.fellows_reflections.default
+targetEntityType: node
+bundle: fellows_reflections
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_fellows_reflections:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_reflection_piece:
+    label: hidden
+    weight: 2
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_fellows_cohort: true

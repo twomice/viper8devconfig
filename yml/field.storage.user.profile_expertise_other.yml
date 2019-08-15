@@ -1,0 +1,20 @@
+uuid: 1bbe24b2-3290-4d15-8086-06a0fe55d086
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_expertise_other
+field_name: profile_expertise_other
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

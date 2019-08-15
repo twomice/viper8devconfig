@@ -1,0 +1,14 @@
+uuid: 82938675-11b1-43d1-b6ce-0694ec4866dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.leadership_council
+  module:
+    - user
+id: user_add_role_action.leadership_council
+label: 'Add the Leadership Council role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: leadership_council

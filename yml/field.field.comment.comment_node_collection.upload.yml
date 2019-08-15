@@ -1,0 +1,27 @@
+uuid: 67a112ca-d4a5-4b23-acaa-52cf9b62085b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_collection
+    - field.storage.comment.upload
+  module:
+    - file
+id: comment.comment_node_collection.upload
+field_name: upload
+entity_type: comment
+bundle: comment_node_collection
+label: 'File attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: txt
+  file_directory: ''
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

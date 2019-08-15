@@ -1,0 +1,19 @@
+uuid: 1c6e5eb3-4036-4c60-ac4c-b10b73321801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textbook
+    - node.type.syllabus
+id: node.syllabus.field_textbook
+field_name: field_textbook
+entity_type: node
+bundle: syllabus
+label: Textbook
+description: 'For example: Inorganic Chemistry (5th Edition), Miessler, Fischer & Tarr'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

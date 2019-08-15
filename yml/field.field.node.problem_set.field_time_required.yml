@@ -1,0 +1,21 @@
+uuid: 6c67d7a6-96a6-42cd-8fdc-a97b1c970392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_required
+    - node.type.problem_set
+id: node.problem_set.field_time_required
+field_name: field_time_required
+entity_type: node
+bundle: problem_set
+label: 'Time Required'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

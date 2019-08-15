@@ -1,0 +1,21 @@
+uuid: 8e05e7a5-b264-468e-b4c3-c542a75fbac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_couples
+    - node.type.literature_discussion
+id: node.literature_discussion.field_couples
+field_name: field_couples
+entity_type: node
+bundle: literature_discussion
+label: 'Related activities'
+description: 'Enter some title text to search for a related activity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,54 @@
+uuid: 31ece3f1-6a72-482e-b80e-aec381e6dc0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.textbook.comment_node_textbook
+    - field.field.node.textbook.field_addl_authors
+    - field.field.node.textbook.field_couples
+    - field.field.node.textbook.field_description
+    - field.field.node.textbook.field_implementation_notes
+    - field.field.node.textbook.field_lc_moderator_new
+    - field.field.node.textbook.field_web_resources
+    - field.field.node.textbook.taxonomy_vocabulary_3
+    - field.field.node.textbook.taxonomy_vocabulary_4
+    - field.field.node.textbook.taxonomy_vocabulary_5
+    - field.field.node.textbook.taxonomy_vocabulary_6
+    - field.field.node.textbook.taxonomy_vocabulary_7
+    - field.field.node.textbook.upload
+    - node.type.textbook
+  module:
+    - file
+    - user
+id: node.textbook.rss
+targetEntityType: node
+bundle: textbook
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_textbook: true
+  field_addl_authors: true
+  field_couples: true
+  field_description: true
+  field_implementation_notes: true
+  field_lc_moderator_new: true
+  field_web_resources: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true

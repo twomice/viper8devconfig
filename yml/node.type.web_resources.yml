@@ -1,0 +1,18 @@
+uuid: 654e5c63-2e55-482f-b4f2-7119735645c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: 'Web Resources and Apps'
+type: web_resources
+description: 'Web Resources and Apps'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

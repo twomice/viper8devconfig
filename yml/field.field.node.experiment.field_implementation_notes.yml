@@ -1,0 +1,21 @@
+uuid: 7f7b4798-3e56-4cf6-9a60-81339af457ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implementation_notes
+    - node.type.experiment
+  module:
+    - text
+id: node.experiment.field_implementation_notes
+field_name: field_implementation_notes
+entity_type: node
+bundle: experiment
+label: 'Implementation Notes'
+description: 'Helpful hints or notes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

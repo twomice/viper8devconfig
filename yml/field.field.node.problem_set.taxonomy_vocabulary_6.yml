@@ -1,0 +1,26 @@
+uuid: 4773839a-c407-4e28-9359-c77bb0f7df44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_6
+    - node.type.problem_set
+    - taxonomy.vocabulary.vocabulary_6
+id: node.problem_set.taxonomy_vocabulary_6
+field_name: taxonomy_vocabulary_6
+entity_type: node
+bundle: problem_set
+label: Prerequisites
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_6: vocabulary_6
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

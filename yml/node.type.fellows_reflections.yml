@@ -1,0 +1,16 @@
+uuid: a884353a-c85a-4c33-a7ee-82746a45c6f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Fellows Reflections'
+type: fellows_reflections
+description: 'VIPEr fellows reflections'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,19 @@
+uuid: 59fce5b1-ce2e-4d71-93d2-c09dfd8d5860
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_address1
+field_name: profile_address1
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

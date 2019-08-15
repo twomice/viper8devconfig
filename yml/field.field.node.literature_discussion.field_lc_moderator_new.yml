@@ -1,0 +1,21 @@
+uuid: 319b02ed-48e1-4d25-b73f-5f6e912dcd1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_moderator_new
+    - node.type.literature_discussion
+id: node.literature_discussion.field_lc_moderator_new
+field_name: field_lc_moderator_new
+entity_type: node
+bundle: literature_discussion
+label: 'LC Moderator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 2afd97a8-2448-4412-b9ce-be4ab48f3de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_poll
+    - field.field.comment.comment_node_poll.comment_body
+  module:
+    - text
+id: comment.comment_node_poll.default
+targetEntityType: comment
+bundle: comment_node_poll
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  subject: true

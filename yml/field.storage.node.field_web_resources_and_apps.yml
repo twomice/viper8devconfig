@@ -1,0 +1,19 @@
+uuid: 16320bd8-ea68-40c3-bc83-f5deb4573959
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_web_resources_and_apps
+field_name: field_web_resources_and_apps
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

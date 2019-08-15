@@ -1,0 +1,23 @@
+uuid: 8228a7c7-d29f-4374-a88b-083e0636713c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exam_question
+    - node.type.problem_set
+  module:
+    - options
+id: node.problem_set.field_exam_question
+field_name: field_exam_question
+entity_type: node
+bundle: problem_set
+label: 'Suitable as Exam Question'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

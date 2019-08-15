@@ -1,0 +1,8 @@
+uuid: 2f89e442-6465-415a-aa24-923347d751a8
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_event
+label: 'Event comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,27 @@
+uuid: d17fd42d-6e03-4d89-a327-be9c6b6f5130
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_files
+    - node.type.syllabus
+  module:
+    - file
+id: node.syllabus.field_faculty_files
+field_name: field_faculty_files
+entity_type: node
+bundle: syllabus
+label: 'Faculty-only Files'
+description: 'The files you add here are visible only to faculty (this would be a good place to put answer keys).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[uid]'
+  file_extensions: 'rtf jpg jpeg gif png txt html doc xls pdf ppt pps odt ods odp zip tar log out chk chm pdb cif cmdf jmol cdx docx xlsx pptx jcamp xrdml mry dae cdf'
+  max_filesize: 8M
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

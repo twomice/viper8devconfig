@@ -1,0 +1,43 @@
+uuid: 425540c5-18ab-4651-bede-0a337dacfa57
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fellows_reflections.body
+    - field.field.node.fellows_reflections.comment_node_fellows_reflections
+    - field.field.node.fellows_reflections.field_fellows_cohort
+    - field.field.node.fellows_reflections.field_reflection_piece
+    - node.type.fellows_reflections
+  module:
+    - options
+    - text
+    - user
+id: node.fellows_reflections.teaser
+targetEntityType: node
+bundle: fellows_reflections
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 2
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_reflection_piece:
+    label: hidden
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_fellows_reflections: true
+  field_fellows_cohort: true

@@ -1,0 +1,29 @@
+uuid: 67bba3e0-0221-439b-9a90-6cfcf712569c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-2014-workshop
+  module:
+    - system
+  theme:
+    - bartik
+id: bamboo_viper_menu_menu_2014_workshop
+theme: bartik
+region: content
+weight: -28
+provider: null
+plugin: 'system_menu_block:menu-2014-workshop'
+settings:
+  id: 'system_menu_block:menu-2014-workshop'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/2411\n/node/2412\n/node/2413\n/node/2414"

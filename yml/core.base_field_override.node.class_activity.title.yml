@@ -1,0 +1,18 @@
+uuid: 3d1f5151-d53b-4129-9bfc-4647d852855c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.class_activity
+id: node.class_activity.title
+field_name: title
+entity_type: node
+bundle: class_activity
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

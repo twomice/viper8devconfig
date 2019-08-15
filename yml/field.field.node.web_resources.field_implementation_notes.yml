@@ -1,0 +1,21 @@
+uuid: 208fc098-5402-4f3f-8817-1cf781fe34f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implementation_notes
+    - node.type.web_resources
+  module:
+    - text
+id: node.web_resources.field_implementation_notes
+field_name: field_implementation_notes
+entity_type: node
+bundle: web_resources
+label: 'Implementation Notes'
+description: 'Why you like this site and how you use it in your teaching.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

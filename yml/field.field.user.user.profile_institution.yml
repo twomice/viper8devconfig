@@ -1,0 +1,21 @@
+uuid: f6529be0-e984-462b-8435-91a52f2d9b82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_institution
+  module:
+    - text
+    - user
+id: user.user.profile_institution
+field_name: profile_institution
+entity_type: user
+bundle: user
+label: 'Institutional Affiliation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

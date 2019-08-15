@@ -1,0 +1,38 @@
+uuid: 5340941d-fca8-4339-8673-676e09983e02
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_forum
+    - field.field.comment.comment_forum.comment_body
+    - field.field.comment.comment_forum.upload
+  module:
+    - file
+    - text
+_core:
+  default_config_hash: FbD0Vvben3VEPcKqe88Y_ABUUW3RKq0AGFLwtZtYaVY
+id: comment.comment_forum.default
+targetEntityType: comment
+bundle: comment_forum
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  upload:
+    weight: 2
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+hidden:
+  subject: true

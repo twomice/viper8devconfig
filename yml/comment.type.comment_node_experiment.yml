@@ -1,0 +1,8 @@
+uuid: ddffdaf6-4186-44d5-abc9-c899873607dc
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_experiment
+label: 'Lab Experiment comment'
+target_entity_type_id: node
+description: null

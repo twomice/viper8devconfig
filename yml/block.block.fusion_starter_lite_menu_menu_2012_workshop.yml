@@ -1,0 +1,29 @@
+uuid: 4d5f0ba8-b1c7-4c9f-bcd5-3d8e07dce61d
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-2012-workshop
+  module:
+    - system
+  theme:
+    - fusion_starter_lite
+id: fusion_starter_lite_menu_menu_2012_workshop
+theme: fusion_starter_lite
+region: ''
+weight: -34
+provider: null
+plugin: 'system_menu_block:menu-2012-workshop'
+settings:
+  id: 'system_menu_block:menu-2012-workshop'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/workshop/inorganic-chemistry-frontiers-catalysis-2012-workshop\n/workshop/2012-workshop-schedule\n/workshop/2012-workshop-presenters\n/workshop/2012-workshop-participants"

@@ -1,0 +1,22 @@
+uuid: 50863533-f4c9-4d2a-8ebc-e4a8031a276b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jmol
+  module:
+    - text
+id: node.jmol.body
+field_name: body
+entity_type: node
+bundle: jmol
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

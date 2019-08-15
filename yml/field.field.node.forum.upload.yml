@@ -1,0 +1,27 @@
+uuid: a96a7e67-0750-4041-a732-3b366ed98f8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.forum
+  module:
+    - file
+id: node.forum.upload
+field_name: upload
+entity_type: node
+bundle: forum
+label: 'File attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'rtf jpg jpeg gif png txt html doc xls pdf ppt pps odt ods odp zip tar log out chk chm pdb cif cmdf jmol cdx docx xlsx pptx jcamp xrdml mry dae cdf'
+  max_filesize: '8 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

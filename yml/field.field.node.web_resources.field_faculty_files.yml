@@ -1,0 +1,27 @@
+uuid: 68874ccd-4d41-4683-b43b-ad25f58752c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_files
+    - node.type.web_resources
+  module:
+    - file
+id: node.web_resources.field_faculty_files
+field_name: field_faculty_files
+entity_type: node
+bundle: web_resources
+label: 'Faculty-only Files'
+description: 'The files you add here are visibly only by faculty.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'rtf jpg jpeg gif png txt html doc xls pdf ppt pps odt ods odp zip tar log out chk chm pdb cif cmdf jmol cdx docx xlsx pptx jcamp xrdml mry dae cdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

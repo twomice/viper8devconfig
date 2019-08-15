@@ -1,0 +1,21 @@
+uuid: 18b0ef91-5b88-448a-b04c-0aafb0f030a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_moderator_new
+    - node.type.experiment
+id: node.experiment.field_lc_moderator_new
+field_name: field_lc_moderator_new
+entity_type: node
+bundle: experiment
+label: 'LC Moderator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

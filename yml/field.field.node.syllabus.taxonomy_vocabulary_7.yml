@@ -1,0 +1,26 @@
+uuid: da86a43e-de96-4b4d-b1dc-c30fe1e98502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_7
+    - node.type.syllabus
+    - taxonomy.vocabulary.vocabulary_7
+id: node.syllabus.taxonomy_vocabulary_7
+field_name: taxonomy_vocabulary_7
+entity_type: node
+bundle: syllabus
+label: Corequisites
+description: 'Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_7: vocabulary_7
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 6af8f383-fc2a-4e00-8cf1-ed79687d418c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.five_slides_about
+id: node.five_slides_about.title
+field_name: title
+entity_type: node
+bundle: five_slides_about
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

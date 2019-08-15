@@ -1,0 +1,21 @@
+uuid: fccf7d52-4860-451e-8ce1-462579e6ca5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_syllabus
+    - node.type.collection
+id: node.collection.field_syllabus
+field_name: field_syllabus
+entity_type: node
+bundle: collection
+label: Syllabus
+description: 'Enter the Learning Object title, starting at the beginning. Once enough information is entered, you can select from the list that appears. To add another item, click the button below after finishing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

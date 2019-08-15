@@ -1,0 +1,18 @@
+uuid: bf012576-dd9d-4791-92b1-f0e044482189
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.literature_discussion
+id: node.literature_discussion.title
+field_name: title
+entity_type: node
+bundle: literature_discussion
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

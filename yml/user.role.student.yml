@@ -1,0 +1,40 @@
+uuid: dfd4bbde-a31d-4419-9324-f04025373857
+langcode: en
+status: true
+dependencies: {  }
+id: student
+label: Student
+weight: 0
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access news feeds'
+  - 'access own webform submissions'
+  - 'access site-wide contact form'
+  - 'add write-ins'
+  - 'attach creative commons'
+  - 'cancel own vote'
+  - 'create forum content'
+  - 'delete own webform submissions'
+  - 'edit own forum content'
+  - 'edit own page content'
+  - 'edit own story content'
+  - 'edit own webform submissions'
+  - 'participate in workflow'
+  - 'post comments'
+  - 'rate content'
+  - 'search by category'
+  - 'search by node type'
+  - 'search content'
+  - 'show vote results'
+  - 'upload files'
+  - 'use advanced search'
+  - 'use custom search'
+  - 'use custom search blocks'
+  - 'use keyword search'
+  - 'use text format 1'
+  - 'view Terms and Conditions'
+  - 'view files uploaded to comments'
+  - 'view uploaded files'
+  - 'vote on polls'

@@ -1,0 +1,29 @@
+uuid: 9e236224-7d5b-4841-b88f-3a0c00430977
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-prior-workshops
+  module:
+    - system
+  theme:
+    - zen
+id: zen_menu_menu_prior_workshops
+theme: zen
+region: ''
+weight: -26
+provider: null
+plugin: 'system_menu_block:menu-prior-workshops'
+settings:
+  id: 'system_menu_block:menu-prior-workshops'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/3393\n/node/3271\n/node/3309\n/node/3310\n/node/3311\n/node/3126\n/node/3127\n/node/3128\n/node/3129\n/node/2272\n/node/2273\n/node/2274\n/node/2275\n/node/2154\n/node/2159\n/node/2156\n/node/2157\n/node/2276\n/node/2277\n/node/2411\n/node/2412\n/node/2413\n/node/2414\n/node/2664\n/node/2665\n/node/2666\n/node/2667\n/node/2921\n/node/2922\n/node/2923\n/node/2924"

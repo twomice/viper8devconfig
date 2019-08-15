@@ -1,0 +1,21 @@
+uuid: f2a3b7fd-1a32-4fae-a347-5d5f3ca49b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_faculty_privilege_revi
+  module:
+    - text
+    - user
+id: user.user.profile_faculty_privilege_revi
+field_name: profile_faculty_privilege_revi
+entity_type: user
+bundle: user
+label: 'Faculty Privilege Reviewer'
+description: 'For administrative use only. LC will note if reviewing a faculty role request.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

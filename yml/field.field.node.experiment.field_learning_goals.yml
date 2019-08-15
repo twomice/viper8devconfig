@@ -1,0 +1,21 @@
+uuid: 9c1c9f71-f515-4776-bb4a-a4dc778b4169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learning_goals
+    - node.type.experiment
+  module:
+    - text
+id: node.experiment.field_learning_goals
+field_name: field_learning_goals
+entity_type: node
+bundle: experiment
+label: 'Learning Goals'
+description: 'For example, ''A student should be able to explain..'' or ''A student should be able to apply his/her knowledge of ___ to determine...'''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

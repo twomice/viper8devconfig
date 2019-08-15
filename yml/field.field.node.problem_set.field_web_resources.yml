@@ -1,0 +1,23 @@
+uuid: 6b128557-3610-4b27-9b72-17c84e1e1bd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_resources
+    - node.type.problem_set
+  module:
+    - link
+id: node.problem_set.field_web_resources
+field_name: field_web_resources
+entity_type: node
+bundle: problem_set
+label: 'Web Resources'
+description: 'Enter a <a href="http://www.doi.org">DOI</a> link as <b>http://dx.doi.org/doi:10.1000/182</b>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

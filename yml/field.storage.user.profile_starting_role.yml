@@ -1,0 +1,42 @@
+uuid: 4840c03a-6420-47a9-b6c9-eff1f3e9c281
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.profile_starting_role
+field_name: profile_starting_role
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'An undergraduate student'
+      label: 'An undergraduate student'
+    -
+      value: 'A graduate student'
+      label: 'A graduate student'
+    -
+      value: 'A post-doctoral researcher'
+      label: 'A post-doctoral researcher'
+    -
+      value: 'A faculty member'
+      label: 'A faculty member'
+    -
+      value: Other
+      label: Other
+    -
+      value: 'A graduate student/postdoc/faculty member'
+      label: 'A graduate student/postdoc/faculty member'
+    -
+      value: '0'
+      label: '0'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

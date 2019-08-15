@@ -1,0 +1,8 @@
+uuid: 44e02681-f9f2-4314-b43a-df3bcbb613b4
+langcode: en
+status: true
+dependencies: {  }
+name: Corequisites
+vid: vocabulary_7
+description: ''
+weight: 3

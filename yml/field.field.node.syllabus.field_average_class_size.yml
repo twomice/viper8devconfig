@@ -1,0 +1,21 @@
+uuid: 7ca1e19f-8d71-4bdd-84f1-e017a8fdcbe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_average_class_size
+    - node.type.syllabus
+  module:
+    - options
+id: node.syllabus.field_average_class_size
+field_name: field_average_class_size
+entity_type: node
+bundle: syllabus
+label: 'Average Class Size'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

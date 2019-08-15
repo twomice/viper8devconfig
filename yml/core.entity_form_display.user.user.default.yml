@@ -1,0 +1,320 @@
+uuid: ea0e4614-e807-4797-818b-f2a83755fdf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.profile_address
+    - field.field.user.user.profile_address1
+    - field.field.user.user.profile_degrees
+    - field.field.user.user.profile_degrees1
+    - field.field.user.user.profile_expertise
+    - field.field.user.user.profile_expertise1
+    - field.field.user.user.profile_expertise2
+    - field.field.user.user.profile_expertise21
+    - field.field.user.user.profile_expertise3
+    - field.field.user.user.profile_expertise31
+    - field.field.user.user.profile_expertise_other
+    - field.field.user.user.profile_expertise_other1
+    - field.field.user.user.profile_faculty_privilege_revi
+    - field.field.user.user.profile_faculty_privilege_revi1
+    - field.field.user.user.profile_fav_element
+    - field.field.user.user.profile_fav_element1
+    - field.field.user.user.profile_institution
+    - field.field.user.user.profile_institution1
+    - field.field.user.user.profile_institution_website
+    - field.field.user.user.profile_institution_website1
+    - field.field.user.user.profile_least_fav_element
+    - field.field.user.user.profile_least_fav_element1
+    - field.field.user.user.profile_name
+    - field.field.user.user.profile_name1
+    - field.field.user.user.profile_orbital
+    - field.field.user.user.profile_orbital1
+    - field.field.user.user.profile_phone
+    - field.field.user.user.profile_phone1
+    - field.field.user.user.profile_position
+    - field.field.user.user.profile_position1
+    - field.field.user.user.profile_preferred_contact
+    - field.field.user.user.profile_preferred_contact1
+    - field.field.user.user.profile_public_name
+    - field.field.user.user.profile_public_name1
+    - field.field.user.user.profile_request_privs
+    - field.field.user.user.profile_request_privs1
+    - field.field.user.user.profile_research
+    - field.field.user.user.profile_research1
+    - field.field.user.user.profile_start_date
+    - field.field.user.user.profile_start_date1
+    - field.field.user.user.profile_starting_role
+    - field.field.user.user.profile_starting_role1
+    - field.field.user.user.profile_url
+    - field.field.user.user.profile_url1
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  language:
+    weight: 0
+    region: content
+  profile_degrees:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  profile_degrees1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 32
+    third_party_settings: {  }
+    region: content
+  profile_expertise:
+    type: options_select
+    settings: {  }
+    weight: 14
+    third_party_settings: {  }
+    region: content
+  profile_expertise1:
+    type: options_select
+    settings: {  }
+    weight: 30
+    third_party_settings: {  }
+    region: content
+  profile_expertise2:
+    type: options_select
+    settings: {  }
+    weight: 21
+    third_party_settings: {  }
+    region: content
+  profile_expertise21:
+    type: options_select
+    settings: {  }
+    weight: 37
+    third_party_settings: {  }
+    region: content
+  profile_expertise3:
+    type: options_select
+    settings: {  }
+    weight: 20
+    third_party_settings: {  }
+    region: content
+  profile_expertise31:
+    type: options_select
+    settings: {  }
+    weight: 36
+    third_party_settings: {  }
+    region: content
+  profile_expertise_other:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  profile_expertise_other1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 31
+    third_party_settings: {  }
+    region: content
+  profile_fav_element:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 11
+    third_party_settings: {  }
+    region: content
+  profile_fav_element1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 27
+    third_party_settings: {  }
+    region: content
+  profile_institution:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 7
+    third_party_settings: {  }
+    region: content
+  profile_institution1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 23
+    third_party_settings: {  }
+    region: content
+  profile_institution_website:
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    weight: 18
+    third_party_settings: {  }
+    region: content
+  profile_institution_website1:
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    weight: 34
+    third_party_settings: {  }
+    region: content
+  profile_least_fav_element:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 10
+    third_party_settings: {  }
+    region: content
+  profile_least_fav_element1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 26
+    third_party_settings: {  }
+    region: content
+  profile_orbital:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 12
+    third_party_settings: {  }
+    region: content
+  profile_orbital1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 28
+    third_party_settings: {  }
+    region: content
+  profile_public_name:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 8
+    third_party_settings: {  }
+    region: content
+  profile_public_name1:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 24
+    third_party_settings: {  }
+    region: content
+  profile_request_privs:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 19
+    third_party_settings: {  }
+    region: content
+  profile_request_privs1:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 35
+    third_party_settings: {  }
+    region: content
+  profile_research:
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    weight: 13
+    third_party_settings: {  }
+    region: content
+  profile_research1:
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    weight: 29
+    third_party_settings: {  }
+    region: content
+  profile_starting_role:
+    type: options_select
+    settings: {  }
+    weight: 17
+    third_party_settings: {  }
+    region: content
+  profile_starting_role1:
+    type: options_select
+    settings: {  }
+    weight: 33
+    third_party_settings: {  }
+    region: content
+  profile_url:
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    weight: 9
+    third_party_settings: {  }
+    region: content
+  profile_url1:
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    weight: 25
+    third_party_settings: {  }
+    region: content
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    type: image_image
+    weight: 38
+    third_party_settings: {  }
+    region: content
+hidden:
+  profile_address: true
+  profile_address1: true
+  profile_faculty_privilege_revi: true
+  profile_faculty_privilege_revi1: true
+  profile_name: true
+  profile_name1: true
+  profile_phone: true
+  profile_phone1: true
+  profile_position: true
+  profile_position1: true
+  profile_preferred_contact: true
+  profile_preferred_contact1: true
+  profile_start_date: true
+  profile_start_date1: true

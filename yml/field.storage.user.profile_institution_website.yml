@@ -1,0 +1,19 @@
+uuid: 68246332-e3f4-4dfe-8d8d-b3150e1a6c13
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.profile_institution_website
+field_name: profile_institution_website
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,99 @@
+uuid: 9a10558d-2237-4ac8-ae47-b0f662d5fc96
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.collection.body
+    - field.field.node.collection.comment_node_collection
+    - field.field.node.collection.field_addl_authors
+    - field.field.node.collection.field_coll_learning_objects
+    - field.field.node.collection.field_five_slides_about
+    - field.field.node.collection.field_in_class_activity
+    - field.field.node.collection.field_lab_experiment
+    - field.field.node.collection.field_literature_discussion
+    - field.field.node.collection.field_problem_set
+    - field.field.node.collection.field_syllabus
+    - field.field.node.collection.field_textbook_lo
+    - field.field.node.collection.field_web_resources_and_apps
+    - field.field.node.collection.taxonomy_vocabulary_3
+    - field.field.node.collection.taxonomy_vocabulary_4
+    - field.field.node.collection.taxonomy_vocabulary_5
+    - field.field.node.collection.taxonomy_vocabulary_6
+    - field.field.node.collection.taxonomy_vocabulary_7
+    - field.field.node.collection.upload
+    - node.type.collection
+  module:
+    - text
+    - user
+id: node.collection.teaser
+targetEntityType: node
+bundle: collection
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_3:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_5:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_collection: true
+  field_addl_authors: true
+  field_coll_learning_objects: true
+  field_five_slides_about: true
+  field_in_class_activity: true
+  field_lab_experiment: true
+  field_literature_discussion: true
+  field_problem_set: true
+  field_syllabus: true
+  field_textbook_lo: true
+  field_web_resources_and_apps: true
+  upload: true

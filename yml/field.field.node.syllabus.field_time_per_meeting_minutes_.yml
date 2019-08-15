@@ -1,0 +1,21 @@
+uuid: a86ae0f0-6c9e-4c61-9751-a408021f0d05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_per_meeting_minutes_
+    - node.type.syllabus
+  module:
+    - options
+id: node.syllabus.field_time_per_meeting_minutes_
+field_name: field_time_per_meeting_minutes_
+entity_type: node
+bundle: syllabus
+label: 'Time per meeting (minutes)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

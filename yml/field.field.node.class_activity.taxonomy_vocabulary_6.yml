@@ -1,0 +1,26 @@
+uuid: 70168f10-da50-4d42-b7c4-1b989ac087ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_6
+    - node.type.class_activity
+    - taxonomy.vocabulary.vocabulary_6
+id: node.class_activity.taxonomy_vocabulary_6
+field_name: taxonomy_vocabulary_6
+entity_type: node
+bundle: class_activity
+label: Prerequisites
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_6: vocabulary_6
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

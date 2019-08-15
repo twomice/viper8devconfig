@@ -1,0 +1,50 @@
+uuid: 3fbba200-50a8-4160-8e8c-9dd831dbf6a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_jmol.default
+    - field.field.node.jmol.body
+    - field.field.node.jmol.comment_node_jmol
+    - field.field.node.jmol.field_jmol_file
+    - node.type.jmol
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.jmol.default
+targetEntityType: node
+bundle: jmol
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_jmol:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_jmol_file:
+    label: hidden
+    weight: 2
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

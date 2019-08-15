@@ -1,0 +1,174 @@
+uuid: 2aa7c6c8-7ece-42d2-bda7-7a3febcbca85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.literature_discussion.field_addl_authors
+    - field.field.node.literature_discussion.field_assessment
+    - field.field.node.literature_discussion.field_couples
+    - field.field.node.literature_discussion.field_description
+    - field.field.node.literature_discussion.field_faculty_files
+    - field.field.node.literature_discussion.field_implementation_notes
+    - field.field.node.literature_discussion.field_instructor_experience
+    - field.field.node.literature_discussion.field_lc_moderator_new
+    - field.field.node.literature_discussion.field_learning_goals
+    - field.field.node.literature_discussion.field_time_required
+    - field.field.node.literature_discussion.field_web_resources
+    - field.field.node.literature_discussion.taxonomy_vocabulary_3
+    - field.field.node.literature_discussion.taxonomy_vocabulary_4
+    - field.field.node.literature_discussion.taxonomy_vocabulary_5
+    - field.field.node.literature_discussion.taxonomy_vocabulary_6
+    - field.field.node.literature_discussion.taxonomy_vocabulary_7
+    - field.field.node.literature_discussion.upload
+    - node.type.literature_discussion
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.literature_discussion.default
+targetEntityType: node
+bundle: literature_discussion
+mode: default
+content:
+  field_addl_authors:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_assessment:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_couples:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_faculty_files:
+    label: above
+    weight: 6
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_implementation_notes:
+    label: above
+    weight: 9
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_instructor_experience:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lc_moderator_new:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_learning_goals:
+    label: above
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_time_required:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_web_resources:
+    label: above
+    weight: 11
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_3:
+    label: above
+    weight: 34
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: above
+    weight: 31
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_5:
+    label: above
+    weight: 33
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 30
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    label: above
+    weight: 29
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 2d963251-dfa5-4a6a-8efd-854238d82cdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_collection
+field_name: comment_node_collection
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_collection
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

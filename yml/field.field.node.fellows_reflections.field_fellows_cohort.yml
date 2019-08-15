@@ -1,0 +1,26 @@
+uuid: e93d3d5b-321f-49aa-92be-894b7847df0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fellows_cohort
+    - node.type.fellows_reflections
+    - taxonomy.vocabulary.fellows_cohort
+id: node.fellows_reflections.field_fellows_cohort
+field_name: field_fellows_cohort
+entity_type: node
+bundle: fellows_reflections
+label: 'Fellows Cohort'
+description: 'Enter your cohort'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      fellows_cohort: fellows_cohort
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

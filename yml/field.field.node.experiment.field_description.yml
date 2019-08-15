@@ -1,0 +1,23 @@
+uuid: 3f66c30a-2eb1-4c0a-9be5-abe5870385c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.experiment
+  module:
+    - text
+id: node.experiment.field_description
+field_name: field_description
+entity_type: node
+bundle: experiment
+label: Description
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: text_long

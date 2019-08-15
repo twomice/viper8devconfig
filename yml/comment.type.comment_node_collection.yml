@@ -1,0 +1,8 @@
+uuid: f06182c0-fb83-4b3f-be2c-2f53ed1e9316
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_collection
+label: 'Collection comment'
+target_entity_type_id: node
+description: null

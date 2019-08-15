@@ -1,0 +1,73 @@
+uuid: 820e0aef-4b8d-4cc6-9c62-a109088dccbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.experiment.comment_node_experiment
+    - field.field.node.experiment.field_addl_authors
+    - field.field.node.experiment.field_assessment
+    - field.field.node.experiment.field_couples
+    - field.field.node.experiment.field_description
+    - field.field.node.experiment.field_faculty_files
+    - field.field.node.experiment.field_implementation_notes
+    - field.field.node.experiment.field_instructor_experience
+    - field.field.node.experiment.field_instrumentation
+    - field.field.node.experiment.field_lc_moderator_new
+    - field.field.node.experiment.field_learning_goals
+    - field.field.node.experiment.field_time_required
+    - field.field.node.experiment.field_web_resources
+    - field.field.node.experiment.taxonomy_vocabulary_3
+    - field.field.node.experiment.taxonomy_vocabulary_4
+    - field.field.node.experiment.taxonomy_vocabulary_5
+    - field.field.node.experiment.taxonomy_vocabulary_6
+    - field.field.node.experiment.taxonomy_vocabulary_7
+    - field.field.node.experiment.upload
+    - node.type.experiment
+  module:
+    - file
+    - user
+id: node.experiment.rss
+targetEntityType: node
+bundle: experiment
+mode: rss
+content:
+  field_faculty_files:
+    label: above
+    weight: 28
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_experiment: true
+  field_addl_authors: true
+  field_assessment: true
+  field_couples: true
+  field_description: true
+  field_implementation_notes: true
+  field_instructor_experience: true
+  field_instrumentation: true
+  field_lc_moderator_new: true
+  field_learning_goals: true
+  field_time_required: true
+  field_web_resources: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true

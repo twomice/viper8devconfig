@@ -1,0 +1,19 @@
+uuid: dbb02f5a-f1ee-4972-9220-6e8bdc1d86dd
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_related_syllabi
+field_name: field_related_syllabi
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

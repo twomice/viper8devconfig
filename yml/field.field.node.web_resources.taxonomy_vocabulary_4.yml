@@ -1,0 +1,26 @@
+uuid: ae1c909d-e785-45d9-9c93-c52b027e0871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_4
+    - node.type.web_resources
+    - taxonomy.vocabulary.vocabulary_4
+id: node.web_resources.taxonomy_vocabulary_4
+field_name: taxonomy_vocabulary_4
+entity_type: node
+bundle: web_resources
+label: 'Course Level'
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_4: vocabulary_4
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

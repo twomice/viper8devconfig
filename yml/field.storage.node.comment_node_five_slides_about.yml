@@ -1,0 +1,20 @@
+uuid: b0e52a6a-ad37-44bc-8efa-0b13afa9106a
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_five_slides_about
+field_name: comment_node_five_slides_about
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_five_slides_about
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

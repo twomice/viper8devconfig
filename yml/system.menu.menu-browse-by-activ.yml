@@ -1,0 +1,8 @@
+uuid: 9db375e1-6c66-43d5-a3ba-b207ba0aee11
+langcode: en
+status: true
+dependencies: {  }
+id: menu-browse-by-activ
+label: 'Browse by Type'
+description: ''
+locked: false

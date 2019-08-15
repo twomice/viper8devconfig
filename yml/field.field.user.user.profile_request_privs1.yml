@@ -1,0 +1,22 @@
+uuid: 701cd034-d4f6-4295-a3df-e53f21122ae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_request_privs1
+  module:
+    - user
+id: user.user.profile_request_privs1
+field_name: profile_request_privs1
+entity_type: user
+bundle: user
+label: 'Request Faculty Privileges'
+description: "<P>\r\nMost of the content on VIPEr is viewable by everyone. However, users with faculty status have the ability to post their own materials to the web site, see Problem Set learning objects, and view and post to the Faculty Only forum. Graduate students and post-docs may also request faculty privileges. \r\n<P>You will also be signing up for the VIPEr Newsletter Email List.\r\n<P>\r\n"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

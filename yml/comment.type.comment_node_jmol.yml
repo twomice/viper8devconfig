@@ -1,0 +1,8 @@
+uuid: 5ed17a27-f819-48a8-a109-c5790eeb3bd7
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_jmol
+label: 'Jmol comment'
+target_entity_type_id: node
+description: null

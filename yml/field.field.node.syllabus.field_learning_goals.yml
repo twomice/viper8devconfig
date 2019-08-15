@@ -1,0 +1,21 @@
+uuid: bd53599a-5a23-4f6c-a424-5b9f88323f70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learning_goals
+    - node.type.syllabus
+  module:
+    - text
+id: node.syllabus.field_learning_goals
+field_name: field_learning_goals
+entity_type: node
+bundle: syllabus
+label: 'Learning Goals'
+description: 'This should be the course-level learning goals, preferably written in “outcomes” language: “Students will know or be able to….”'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

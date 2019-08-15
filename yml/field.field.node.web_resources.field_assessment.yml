@@ -1,0 +1,21 @@
+uuid: a5a9b1da-3e77-4674-8748-27987c49c167
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment
+    - node.type.web_resources
+  module:
+    - text
+id: node.web_resources.field_assessment
+field_name: field_assessment
+entity_type: node
+bundle: web_resources
+label: 'Evaluation Methods'
+description: 'How do you assess student learning or performance?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

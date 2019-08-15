@@ -1,0 +1,36 @@
+uuid: bbeb76ac-f79d-4adb-9bd5-4d9296ca885e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_lab_associated
+field_name: field_lab_associated
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Yes, required, must be taken concurrently'
+      label: 'Yes, required, concurrently'
+    -
+      value: 'Yes, optional, must be taken concurrently'
+      label: 'Yes, optional, concurrently'
+    -
+      value: 'Yes, optional, can be taken concurrently or following the course'
+      label: 'Yes, optional, concurrently or following'
+    -
+      value: 'Yes, standalone lab class'
+      label: 'Yes, standalone'
+    -
+      value: 'No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

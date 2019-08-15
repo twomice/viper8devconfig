@@ -1,0 +1,34 @@
+uuid: 427cba83-5cdf-4bc7-988f-2d1bb825f125
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jmol.body
+    - field.field.node.jmol.comment_node_jmol
+    - field.field.node.jmol.field_jmol_file
+    - node.type.jmol
+  module:
+    - text
+    - user
+id: node.jmol.teaser
+targetEntityType: node
+bundle: jmol
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_jmol: true
+  field_jmol_file: true

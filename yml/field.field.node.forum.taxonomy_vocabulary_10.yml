@@ -1,0 +1,26 @@
+uuid: 2c7191df-9700-414f-9a77-f13a9d78e9b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_10
+    - node.type.forum
+    - taxonomy.vocabulary.vocabulary_10
+id: node.forum.taxonomy_vocabulary_10
+field_name: taxonomy_vocabulary_10
+entity_type: node
+bundle: forum
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_10: vocabulary_10
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

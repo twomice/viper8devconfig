@@ -1,0 +1,26 @@
+uuid: 0912059e-d4cd-45cd-a884-ab42e391eee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_5
+    - node.type.collection
+    - taxonomy.vocabulary.vocabulary_5
+id: node.collection.taxonomy_vocabulary_5
+field_name: taxonomy_vocabulary_5
+entity_type: node
+bundle: collection
+label: 'Topics Covered'
+description: 'Scroll through the list and Control or Command-click to select multiple options.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      vocabulary_5: vocabulary_5
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

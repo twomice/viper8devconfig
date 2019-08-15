@@ -1,0 +1,21 @@
+uuid: ff75e7ec-6659-4b91-b543-fc99d534ea07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_addl_authors
+    - node.type.five_slides_about
+id: node.five_slides_about.field_addl_authors
+field_name: field_addl_authors
+entity_type: node
+bundle: five_slides_about
+label: 'Additional Authors'
+description: 'Control or command click to add more than one additional author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

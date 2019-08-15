@@ -1,0 +1,27 @@
+uuid: 5066d363-9592-4d04-b7e1-bad40fa675e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.class_activity
+  module:
+    - file
+id: node.class_activity.upload
+field_name: upload
+entity_type: node
+bundle: class_activity
+label: 'File attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'rtf jpg jpeg gif png txt html doc xls pdf ppt pps odt ods odp zip tar log out chk chm pdb cif cmdf jmol cdx docx xlsx pptx jcamp xrdml mry dae cdf'
+  max_filesize: '8 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

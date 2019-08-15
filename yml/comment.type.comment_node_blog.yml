@@ -1,0 +1,8 @@
+uuid: 26a9975d-3b7d-42c2-9dd6-81c381e3f832
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_blog
+label: 'Blog entry comment'
+target_entity_type_id: node
+description: null

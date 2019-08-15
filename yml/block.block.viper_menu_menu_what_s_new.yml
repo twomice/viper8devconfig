@@ -1,0 +1,29 @@
+uuid: 2bd759fc-65ff-47b4-977e-4dbbcad50800
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-what-s-new
+  module:
+    - system
+  theme:
+    - viper
+id: viper_menu_menu_what_s_new
+theme: viper
+region: ''
+weight: -37
+provider: null
+plugin: 'system_menu_block:menu-what-s-new'
+settings:
+  id: 'system_menu_block:menu-what-s-new'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

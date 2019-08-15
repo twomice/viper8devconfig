@@ -1,0 +1,19 @@
+uuid: 60a2b592-3513-4c00-b04a-d918d122e300
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_learning_goals
+field_name: field_learning_goals
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

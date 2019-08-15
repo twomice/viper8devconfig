@@ -1,0 +1,33 @@
+uuid: 20b8678f-3c6a-413b-ac38-12942784bf6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.profile_preferred_contact
+field_name: profile_preferred_contact
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Email
+      label: Email
+    -
+      value: 'Snail Mail'
+      label: 'Snail Mail'
+    -
+      value: Phone
+      label: Phone
+    -
+      value: '0'
+      label: '0'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

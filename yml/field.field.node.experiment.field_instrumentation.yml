@@ -1,0 +1,21 @@
+uuid: b5ad16ef-7574-4e0e-b942-cbfa19850b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrumentation
+    - node.type.experiment
+  module:
+    - text
+id: node.experiment.field_instrumentation
+field_name: field_instrumentation
+entity_type: node
+bundle: experiment
+label: 'Equipment needs'
+description: 'Instruments required for the experiment.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 50e15d6d-2fc3-4ac4-94b6-f5706cf8eb09
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: 'Literature Discussion'
+type: literature_discussion
+description: 'Literature discussion'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

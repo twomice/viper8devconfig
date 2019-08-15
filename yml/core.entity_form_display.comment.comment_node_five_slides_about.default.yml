@@ -1,0 +1,29 @@
+uuid: 41575f13-a56e-4ca0-87c0-01f4a2eeba7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_five_slides_about
+    - field.field.comment.comment_node_five_slides_about.comment_body
+  module:
+    - text
+id: comment.comment_node_five_slides_about.default
+targetEntityType: comment
+bundle: comment_node_five_slides_about
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  subject: true

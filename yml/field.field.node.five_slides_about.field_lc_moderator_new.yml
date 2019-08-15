@@ -1,0 +1,21 @@
+uuid: 9ea9822a-bf7b-49d7-ab27-ef997491b575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_moderator_new
+    - node.type.five_slides_about
+id: node.five_slides_about.field_lc_moderator_new
+field_name: field_lc_moderator_new
+entity_type: node
+bundle: five_slides_about
+label: 'LC Moderator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

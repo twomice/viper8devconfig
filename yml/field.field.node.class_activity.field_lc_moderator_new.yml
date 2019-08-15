@@ -1,0 +1,21 @@
+uuid: 5fb783d3-72e1-4b1c-aae4-58d171f61720
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_moderator_new
+    - node.type.class_activity
+id: node.class_activity.field_lc_moderator_new
+field_name: field_lc_moderator_new
+entity_type: node
+bundle: class_activity
+label: 'LC Moderator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

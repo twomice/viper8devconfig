@@ -1,0 +1,27 @@
+uuid: 0daf236e-44ea-4c2a-adae-0a4d97f4cea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_fellows_news
+    - field.field.comment.comment_node_fellows_news.comment_body
+  module:
+    - text
+id: comment.comment_node_fellows_news.default
+targetEntityType: comment
+bundle: comment_node_fellows_news
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

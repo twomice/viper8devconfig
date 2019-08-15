@@ -1,0 +1,29 @@
+uuid: 2e49c18a-620f-4e05-ac54-3e118f5d203c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-browse-by-activ
+  module:
+    - system
+  theme:
+    - bartik
+id: bamboo_viper_menu_menu_browse_by_activ
+theme: bartik
+region: content
+weight: -35
+provider: null
+plugin: 'system_menu_block:menu-browse-by-activ'
+settings:
+  id: 'system_menu_block:menu-browse-by-activ'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

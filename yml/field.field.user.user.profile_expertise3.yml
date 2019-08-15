@@ -1,0 +1,21 @@
+uuid: 108ba484-c1a9-47fd-85dc-e67bcecca65a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_expertise3
+  module:
+    - options
+    - user
+id: user.user.profile_expertise3
+field_name: profile_expertise3
+entity_type: user
+bundle: user
+label: 'Area of Expertise - Supplemental 1'
+description: 'Choose an additional area of expertise.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

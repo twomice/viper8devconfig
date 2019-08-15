@@ -1,0 +1,27 @@
+uuid: 98695b41-340e-4e98-ad96-895abee906ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_jmol
+    - field.field.comment.comment_node_jmol.comment_body
+  module:
+    - text
+id: comment.comment_node_jmol.default
+targetEntityType: comment
+bundle: comment_node_jmol
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

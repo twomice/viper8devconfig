@@ -1,0 +1,18 @@
+uuid: d56df63d-c935-4f88-aa6a-27381b6dae4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jmol
+id: node.jmol.title
+field_name: title
+entity_type: node
+bundle: jmol
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,34 @@
+uuid: a509ca62-3e9b-475e-8145-c33839deb64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.upload
+    - node.type.page
+  module:
+    - file
+    - user
+id: node.page.rss
+targetEntityType: node
+bundle: page
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_page: true

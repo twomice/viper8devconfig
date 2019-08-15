@@ -1,0 +1,27 @@
+uuid: b896e19a-5ec9-4d62-8b9f-4109bb5b2c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jmol_file
+    - node.type.jmol
+  module:
+    - file
+id: node.jmol.field_jmol_file
+field_name: field_jmol_file
+entity_type: node
+bundle: jmol
+label: 'Jmol file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: pdb
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

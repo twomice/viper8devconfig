@@ -1,0 +1,21 @@
+uuid: d0902087-04c5-4681-900d-927ff3c511ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_phone
+  module:
+    - text
+    - user
+id: user.user.profile_phone
+field_name: profile_phone
+entity_type: user
+bundle: user
+label: 'Phone Number'
+description: 'Your preferred phone number, with country code, only visible to privileged users..'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

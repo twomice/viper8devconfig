@@ -1,0 +1,19 @@
+uuid: 12a6ad5b-1b04-4ff2-a825-b8a55730b706
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typical_student_population
+    - node.type.syllabus
+id: node.syllabus.field_typical_student_population
+field_name: field_typical_student_population
+entity_type: node
+bundle: syllabus
+label: 'Typical Student Population'
+description: 'Example: "This is a course taken by a mixture of biochemistry and chemistry majors."'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

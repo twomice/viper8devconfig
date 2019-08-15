@@ -1,0 +1,36 @@
+uuid: 5bd72c1b-865e-42aa-8c99-86e146c90dc0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_number_of_meetings_per_wee
+field_name: field_number_of_meetings_per_wee
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: '1 meeting / week'
+    -
+      value: 2
+      label: '2 meetings / week'
+    -
+      value: 3
+      label: '3 meetings / week'
+    -
+      value: 4
+      label: '4 meetings / week'
+    -
+      value: 5
+      label: '5 meetings / week'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

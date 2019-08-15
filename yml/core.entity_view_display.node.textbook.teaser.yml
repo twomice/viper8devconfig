@@ -1,0 +1,99 @@
+uuid: 7c160497-3d94-41b4-9dd1-83c20a90a27f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.textbook.comment_node_textbook
+    - field.field.node.textbook.field_addl_authors
+    - field.field.node.textbook.field_couples
+    - field.field.node.textbook.field_description
+    - field.field.node.textbook.field_implementation_notes
+    - field.field.node.textbook.field_lc_moderator_new
+    - field.field.node.textbook.field_web_resources
+    - field.field.node.textbook.taxonomy_vocabulary_3
+    - field.field.node.textbook.taxonomy_vocabulary_4
+    - field.field.node.textbook.taxonomy_vocabulary_5
+    - field.field.node.textbook.taxonomy_vocabulary_6
+    - field.field.node.textbook.taxonomy_vocabulary_7
+    - field.field.node.textbook.upload
+    - node.type.textbook
+  module:
+    - link
+    - text
+    - user
+id: node.textbook.teaser
+targetEntityType: node
+bundle: textbook
+mode: teaser
+content:
+  field_description:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_implementation_notes:
+    label: above
+    weight: 12
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_web_resources:
+    label: above
+    weight: 14
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_3:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_textbook: true
+  field_addl_authors: true
+  field_couples: true
+  field_lc_moderator_new: true
+  taxonomy_vocabulary_5: true
+  upload: true

@@ -1,0 +1,8 @@
+uuid: b2da2bd8-cd0a-4958-a401-470aebd3075d
+langcode: en
+status: true
+dependencies: {  }
+name: Subdiscipline
+vid: vocabulary_3
+description: 'Specific field related to the material.'
+weight: -5

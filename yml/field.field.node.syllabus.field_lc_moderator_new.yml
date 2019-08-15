@@ -1,0 +1,21 @@
+uuid: 669c4473-9cdc-472c-ac91-c1597d020d5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_moderator_new
+    - node.type.syllabus
+id: node.syllabus.field_lc_moderator_new
+field_name: field_lc_moderator_new
+entity_type: node
+bundle: syllabus
+label: 'LC Moderator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,255 @@
+uuid: f57ec9ab-5432-4a3f-9f94-cf1ef8221d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_syllabus.default
+    - field.field.node.syllabus.comment_node_syllabus
+    - field.field.node.syllabus.field_addl_authors
+    - field.field.node.syllabus.field_average_class_size
+    - field.field.node.syllabus.field_couples
+    - field.field.node.syllabus.field_course_area_and_number
+    - field.field.node.syllabus.field_description
+    - field.field.node.syllabus.field_faculty_files
+    - field.field.node.syllabus.field_grading_scheme
+    - field.field.node.syllabus.field_how_the_course_is_taught
+    - field.field.node.syllabus.field_institution
+    - field.field.node.syllabus.field_lab_associated
+    - field.field.node.syllabus.field_lc_moderator_new
+    - field.field.node.syllabus.field_learning_goals
+    - field.field.node.syllabus.field_location
+    - field.field.node.syllabus.field_number_of_meetings_per_wee
+    - field.field.node.syllabus.field_number_of_weeks
+    - field.field.node.syllabus.field_related_syllabi
+    - field.field.node.syllabus.field_textbook
+    - field.field.node.syllabus.field_time_per_meeting_minutes_
+    - field.field.node.syllabus.field_typical_student_population
+    - field.field.node.syllabus.field_web_resources
+    - field.field.node.syllabus.taxonomy_vocabulary_4
+    - field.field.node.syllabus.taxonomy_vocabulary_5
+    - field.field.node.syllabus.taxonomy_vocabulary_6
+    - field.field.node.syllabus.taxonomy_vocabulary_7
+    - field.field.node.syllabus.upload
+    - node.type.syllabus
+  module:
+    - comment
+    - file
+    - link
+    - options
+    - text
+    - user
+id: node.syllabus.default
+targetEntityType: node
+bundle: syllabus
+mode: default
+content:
+  comment_node_syllabus:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_addl_authors:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_average_class_size:
+    label: above
+    weight: 12
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_couples:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_course_area_and_number:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_description:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_faculty_files:
+    label: above
+    weight: 6
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_grading_scheme:
+    label: above
+    weight: 13
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_how_the_course_is_taught:
+    label: above
+    weight: 8
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_institution:
+    label: above
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_lab_associated:
+    label: above
+    weight: 11
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lc_moderator_new:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_learning_goals:
+    label: above
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_location:
+    label: above
+    weight: 7
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_number_of_meetings_per_wee:
+    label: above
+    weight: 10
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_number_of_weeks:
+    label: above
+    weight: 12
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_related_syllabi:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_textbook:
+    label: above
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_time_per_meeting_minutes_:
+    label: above
+    weight: 11
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_typical_student_population:
+    label: above
+    weight: 13
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_web_resources:
+    label: above
+    weight: 9
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: above
+    weight: 32
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_5:
+    label: above
+    weight: 19
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 30
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    label: above
+    weight: 31
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: above
+    weight: 5
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden: {  }

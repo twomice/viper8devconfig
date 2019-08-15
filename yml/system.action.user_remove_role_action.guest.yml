@@ -1,0 +1,14 @@
+uuid: e09af332-7ed4-418c-9542-f9d352da8e5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.guest
+  module:
+    - user
+id: user_remove_role_action.guest
+label: 'Remove the Guest role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: guest

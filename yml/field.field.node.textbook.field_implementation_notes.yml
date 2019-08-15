@@ -1,0 +1,23 @@
+uuid: ed5ca4bb-9812-4894-a05c-350668199870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implementation_notes
+    - node.type.textbook
+  module:
+    - text
+id: node.textbook.field_implementation_notes
+field_name: field_implementation_notes
+entity_type: node
+bundle: textbook
+label: 'Implementation Notes'
+description: 'Include: level and assumptions for student use; coverage, length, cost, website & ancillaries; advantages & disadvantages.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: text_long

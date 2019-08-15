@@ -1,0 +1,21 @@
+uuid: dc866f56-fac3-45bc-a1dc-d9f3417bf86d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_addl_authors
+    - node.type.class_activity
+id: node.class_activity.field_addl_authors
+field_name: field_addl_authors
+entity_type: node
+bundle: class_activity
+label: 'Additional Authors'
+description: 'Control or command click to add more than one additional author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

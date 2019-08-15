@@ -1,0 +1,21 @@
+uuid: e8aea451-e855-4d41-926b-7dc6852c38b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_name
+  module:
+    - text
+    - user
+id: user.user.profile_name
+field_name: profile_name
+entity_type: user
+bundle: user
+label: 'Real Name'
+description: 'Full, real name, visible only to privileged users.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

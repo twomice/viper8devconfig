@@ -1,0 +1,8 @@
+uuid: a7971656-4403-4105-93ad-6f388934ddea
+langcode: en
+status: true
+dependencies: {  }
+id: menu-what-s-new
+label: 'What''s New'
+description: ''
+locked: false

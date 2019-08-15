@@ -1,0 +1,21 @@
+uuid: 55ca53df-5ffc-4c90-b7da-1f9ac05cc3f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_degrees
+  module:
+    - text
+    - user
+id: user.user.profile_degrees
+field_name: profile_degrees
+entity_type: user
+bundle: user
+label: Degrees
+description: 'Academic degrees earned.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

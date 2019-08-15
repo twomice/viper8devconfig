@@ -1,0 +1,44 @@
+uuid: f484a345-ae20-44f5-a96a-6a569bec2e58
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access news feeds'
+  - 'access own webform submissions'
+  - 'delete own webform submissions'
+  - 'edit own webform submissions'
+  - 'participate in workflow'
+  - 'search all content'
+  - 'search by category'
+  - 'search by node type'
+  - 'search content'
+  - 'use advanced search'
+  - 'use custom search'
+  - 'use custom search blocks'
+  - 'use keyword search'
+  - 'use text format 1'
+  - 'view Terms and Conditions'
+  - 'view field_addl_authors'
+  - 'view field_assessment'
+  - 'view field_coll_learning_objects'
+  - 'view field_couples'
+  - 'view field_description'
+  - 'view field_event_date'
+  - 'view field_event_description'
+  - 'view field_exam_question'
+  - 'view field_implementation_notes'
+  - 'view field_instructor_experience'
+  - 'view field_instrumentation'
+  - 'view field_learning_goals'
+  - 'view field_time_required'
+  - 'view field_web_resources'
+  - 'view files uploaded to comments'
+  - 'view uploaded files'

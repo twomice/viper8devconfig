@@ -1,0 +1,60 @@
+uuid: 046bf473-d5fb-466d-a87c-2ac724ad38aa
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_number_of_weeks
+field_name: field_number_of_weeks
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: ' < 5 weeks'
+    -
+      value: 5
+      label: '5 weeks'
+    -
+      value: 6
+      label: '6 weeks'
+    -
+      value: 7
+      label: '7 weeks'
+    -
+      value: 8
+      label: '8 weeks'
+    -
+      value: 9
+      label: '9 weeks'
+    -
+      value: 10
+      label: '10 weeks'
+    -
+      value: 11
+      label: '11 weeks'
+    -
+      value: 12
+      label: '12 weeks'
+    -
+      value: 13
+      label: '13 weeks'
+    -
+      value: 14
+      label: '14 weeks'
+    -
+      value: 15
+      label: '15 weeks'
+    -
+      value: 20
+      label: ' > 15 weeks'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

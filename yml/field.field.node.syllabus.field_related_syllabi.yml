@@ -1,0 +1,21 @@
+uuid: 2b7dc31d-6d53-49cd-916d-f70cd233ce7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_syllabi
+    - node.type.syllabus
+id: node.syllabus.field_related_syllabi
+field_name: field_related_syllabi
+entity_type: node
+bundle: syllabus
+label: 'Related Syllabi'
+description: 'Enter some title text to search for other syllabi.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

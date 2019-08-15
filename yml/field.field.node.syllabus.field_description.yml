@@ -1,0 +1,21 @@
+uuid: 3d5d1ba9-8ede-4ce7-a17c-f1ca806293d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.syllabus
+  module:
+    - text
+id: node.syllabus.field_description
+field_name: field_description
+entity_type: node
+bundle: syllabus
+label: Description
+description: 'This could come from your catalog.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

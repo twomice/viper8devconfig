@@ -1,0 +1,30 @@
+uuid: b7404ae3-17b9-4f3f-b658-a1ff2f88373c
+langcode: en
+status: true
+dependencies: {  }
+id: guest
+label: Guest
+weight: 0
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access news feeds'
+  - 'access own webform submissions'
+  - 'access site-wide contact form'
+  - 'delete own webform submissions'
+  - 'edit own webform submissions'
+  - 'participate in workflow'
+  - 'search by category'
+  - 'search by node type'
+  - 'search content'
+  - 'show vote results'
+  - 'upload files'
+  - 'use advanced search'
+  - 'use custom search'
+  - 'use custom search blocks'
+  - 'use keyword search'
+  - 'use text format 1'
+  - 'view Terms and Conditions'
+  - 'view files uploaded to comments'
+  - 'view uploaded files'
+  - 'vote on polls'

@@ -1,0 +1,20 @@
+uuid: c909e547-82ec-4692-89c7-249b138d3ed3
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_degrees
+field_name: profile_degrees
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

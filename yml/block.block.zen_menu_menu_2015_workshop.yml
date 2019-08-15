@@ -1,0 +1,29 @@
+uuid: 20f8cce7-954a-4016-98dd-2cb797aa65fa
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu-2015-workshop
+  module:
+    - system
+  theme:
+    - zen
+id: zen_menu_menu_2015_workshop
+theme: zen
+region: ''
+weight: -28
+provider: null
+plugin: 'system_menu_block:menu-2015-workshop'
+settings:
+  id: 'system_menu_block:menu-2015-workshop'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/2664\n/node/2665\n/node/2666\n/node/2667"

@@ -1,0 +1,23 @@
+uuid: 172f3755-7bc4-450a-b1b1-c3d67eb24bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_institution_website1
+  module:
+    - link
+    - user
+id: user.user.profile_institution_website1
+field_name: profile_institution_website1
+entity_type: user
+bundle: user
+label: 'Institution Website'
+description: 'The complete URL for your department or institution (starting with "http://").'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

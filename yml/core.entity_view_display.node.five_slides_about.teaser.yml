@@ -1,0 +1,141 @@
+uuid: 7302b9f7-1668-4c94-87f6-41889b2d65ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.five_slides_about.comment_node_five_slides_about
+    - field.field.node.five_slides_about.field_addl_authors
+    - field.field.node.five_slides_about.field_assessment
+    - field.field.node.five_slides_about.field_couples
+    - field.field.node.five_slides_about.field_description
+    - field.field.node.five_slides_about.field_faculty_files
+    - field.field.node.five_slides_about.field_implementation_notes
+    - field.field.node.five_slides_about.field_instructor_experience
+    - field.field.node.five_slides_about.field_lc_moderator_new
+    - field.field.node.five_slides_about.field_learning_goals
+    - field.field.node.five_slides_about.field_time_required
+    - field.field.node.five_slides_about.field_web_resources
+    - field.field.node.five_slides_about.taxonomy_vocabulary_3
+    - field.field.node.five_slides_about.taxonomy_vocabulary_4
+    - field.field.node.five_slides_about.taxonomy_vocabulary_5
+    - field.field.node.five_slides_about.taxonomy_vocabulary_6
+    - field.field.node.five_slides_about.taxonomy_vocabulary_7
+    - field.field.node.five_slides_about.upload
+    - node.type.five_slides_about
+  module:
+    - link
+    - text
+    - user
+id: node.five_slides_about.teaser
+targetEntityType: node
+bundle: five_slides_about
+mode: teaser
+content:
+  field_assessment:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_description:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_implementation_notes:
+    label: above
+    weight: 14
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_instructor_experience:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_learning_goals:
+    label: above
+    weight: 10
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_time_required:
+    label: above
+    weight: 16
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_web_resources:
+    label: above
+    weight: 18
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_3:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_5:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_five_slides_about: true
+  field_addl_authors: true
+  field_couples: true
+  field_faculty_files: true
+  field_lc_moderator_new: true
+  upload: true
