@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.problem_set.field_learning_goals
     - field.field.node.problem_set.field_time_required
     - field.field.node.problem_set.field_web_resources
+    - field.field.node.problem_set.field_workflow
     - field.field.node.problem_set.taxonomy_vocabulary_3
     - field.field.node.problem_set.taxonomy_vocabulary_4
     - field.field.node.problem_set.taxonomy_vocabulary_5
@@ -28,6 +29,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.problem_set.default
 targetEntityType: node
 bundle: problem_set
@@ -133,6 +135,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

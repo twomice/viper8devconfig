@@ -1,0 +1,10 @@
+uuid: 1b78001f-d4bf-429f-aee2-0382c384e7de
+langcode: en
+status: true
+dependencies: {  }
+id: learning_object_review_published
+label: Published
+module: workflow
+wid: learning_object_review
+weight: -6
+sysid: 0

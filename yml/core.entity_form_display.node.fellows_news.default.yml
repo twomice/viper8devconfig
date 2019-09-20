@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.fellows_news.body
     - field.field.node.fellows_news.comment_node_fellows_news
+    - field.field.node.fellows_news.field_workflow_fellowsreivew
     - node.type.fellows_news
   module:
     - comment
     - path
     - text
+    - workflow
 id: node.fellows_news.default
 targetEntityType: node
 bundle: fellows_news
@@ -36,6 +38,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_workflow_fellowsreivew:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
+    region: content
   path:
     type: path
     weight: 30

@@ -1,0 +1,13 @@
+uuid: c0c31b4e-22dc-4d56-9fba-10d3930b78f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favorites.unflag
+label: 'Favorites ([node:flag-favorites-count]) (click to unset)'
+type: node
+plugin: 'flag_action:favorites.unflag'
+configuration:
+  flag_id: favorites
+  flag_action: unflag

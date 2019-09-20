@@ -1,0 +1,13 @@
+uuid: 657265a5-cdb9-4dcb-adb5-1cd818cc3d37
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.adopted_lo.unflag
+label: 'Adopted ([node:flag-adopted-lo-count]) (click to unset)'
+type: node
+plugin: 'flag_action:adopted_lo.unflag'
+configuration:
+  flag_id: adopted_lo
+  flag_action: unflag

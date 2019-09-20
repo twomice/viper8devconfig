@@ -1,0 +1,10 @@
+uuid: f2562f2b-7507-49ab-b450-f6e0e0393074
+langcode: en
+status: true
+dependencies: {  }
+id: blog_review_creation
+label: Creation
+module: workflow
+wid: blog_review
+weight: -11
+sysid: 1

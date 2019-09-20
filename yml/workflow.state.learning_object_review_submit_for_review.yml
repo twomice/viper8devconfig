@@ -1,0 +1,10 @@
+uuid: 73fba9e4-33a3-4b80-87cf-096e0d52cf21
+langcode: en
+status: true
+dependencies: {  }
+id: learning_object_review_submit_for_review
+label: 'Submit for Review'
+module: workflow
+wid: learning_object_review
+weight: -7
+sysid: 0

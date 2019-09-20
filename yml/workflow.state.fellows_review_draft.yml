@@ -1,0 +1,10 @@
+uuid: 6b75b274-d8dd-48a1-b4bb-df4403abb8e4
+langcode: en
+status: true
+dependencies: {  }
+id: fellows_review_draft
+label: Draft
+module: workflow
+wid: fellows_review
+weight: -8
+sysid: 0

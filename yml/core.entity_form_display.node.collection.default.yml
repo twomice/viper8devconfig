@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.collection.field_syllabus
     - field.field.node.collection.field_textbook_lo
     - field.field.node.collection.field_web_resources_and_apps
+    - field.field.node.collection.field_workflow
     - field.field.node.collection.taxonomy_vocabulary_3
     - field.field.node.collection.taxonomy_vocabulary_4
     - field.field.node.collection.taxonomy_vocabulary_5
@@ -27,6 +28,7 @@ dependencies:
     - file
     - path
     - text
+    - workflow
 id: node.collection.default
 targetEntityType: node
 bundle: collection
@@ -142,6 +144,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

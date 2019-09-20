@@ -1,0 +1,21 @@
+uuid: 65b16db5-c358-44e8-b72a-928ecca02f0e
+langcode: en
+status: true
+dependencies: {  }
+id: fellows_review_draft_submit_for_review
+label: null
+module: workflow
+from_sid: fellows_review_draft
+to_sid: fellows_review_submit_for_review
+roles:
+  workflow_author: workflow_author
+  global_administrator: global_administrator
+  leadership_council: leadership_council
+  anonymous: '0'
+  authenticated: '0'
+  faculty: '0'
+  guest: '0'
+  student: '0'
+  blogger: '0'
+  administrator: '0'
+  viper_fellow: '0'

@@ -1,0 +1,10 @@
+uuid: 1cef7a1d-9f75-48a5-8643-9b068300b1c3
+langcode: en
+status: true
+dependencies: {  }
+id: fellows_review_published_published
+label: null
+module: workflow
+from_sid: fellows_review_published
+to_sid: fellows_review_published
+roles: {  }

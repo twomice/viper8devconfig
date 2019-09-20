@@ -1,0 +1,13 @@
+uuid: 939ecf9a-58d1-433f-a251-f7e18d1abe75
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.adopted_lo.flag
+label: 'I Have Adopted This ([node:flag-adopted-lo-count] adopted)'
+type: node
+plugin: 'flag_action:adopted_lo.flag'
+configuration:
+  flag_id: adopted_lo
+  flag_action: flag

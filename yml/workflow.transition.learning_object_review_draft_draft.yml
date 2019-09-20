@@ -1,0 +1,10 @@
+uuid: 8ed85352-a0e8-477a-9645-27bfd66695e1
+langcode: en
+status: true
+dependencies: {  }
+id: learning_object_review_draft_draft
+label: null
+module: workflow
+from_sid: learning_object_review_draft
+to_sid: learning_object_review_draft
+roles: {  }

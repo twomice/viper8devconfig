@@ -1,0 +1,22 @@
+uuid: d51568f9-8e20-436a-b87a-65e8f557b62d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workflow
+    - node.type.textbook
+  module:
+    - workflow
+id: node.textbook.field_workflow
+field_name: field_workflow
+entity_type: node
+bundle: textbook
+label: Workflow
+description: ''
+required: true
+translatable: true
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

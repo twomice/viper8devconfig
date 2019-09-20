@@ -28,24 +28,46 @@ content:
 hidden:
   member_for: true
   profile_address: true
+  profile_address1: true
   profile_degrees: true
+  profile_degrees1: true
   profile_expertise: true
+  profile_expertise1: true
   profile_expertise2: true
+  profile_expertise21: true
   profile_expertise3: true
+  profile_expertise31: true
   profile_expertise_other: true
+  profile_expertise_other1: true
   profile_faculty_privilege_revi: true
+  profile_faculty_privilege_revi1: true
   profile_fav_element: true
+  profile_fav_element1: true
   profile_institution: true
+  profile_institution1: true
   profile_institution_website: true
+  profile_institution_website1: true
   profile_least_fav_element: true
+  profile_least_fav_element1: true
   profile_name: true
+  profile_name1: true
   profile_orbital: true
+  profile_orbital1: true
   profile_phone: true
+  profile_phone1: true
   profile_position: true
+  profile_position1: true
   profile_preferred_contact: true
+  profile_preferred_contact1: true
   profile_public_name: true
+  profile_public_name1: true
   profile_request_privs: true
+  profile_request_privs1: true
   profile_research: true
+  profile_research1: true
   profile_start_date: true
+  profile_start_date1: true
   profile_starting_role: true
+  profile_starting_role1: true
   profile_url: true
+  profile_url1: true

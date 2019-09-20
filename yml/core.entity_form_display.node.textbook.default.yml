@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.textbook.field_implementation_notes
     - field.field.node.textbook.field_lc_moderator_new
     - field.field.node.textbook.field_web_resources
+    - field.field.node.textbook.field_workflow
     - field.field.node.textbook.taxonomy_vocabulary_3
     - field.field.node.textbook.taxonomy_vocabulary_4
     - field.field.node.textbook.taxonomy_vocabulary_5
@@ -23,6 +24,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.textbook.default
 targetEntityType: node
 bundle: textbook
@@ -90,6 +92,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

@@ -1,0 +1,14 @@
+uuid: 76c8c6c0-7c4f-4a7e-839b-c7f8715b13c4
+langcode: en
+status: true
+dependencies: {  }
+id: fellows_review
+label: 'Fellows Review'
+module: workflow
+options:
+  name_as_title: 1
+  fieldset: 1
+  options: radios
+  schedule_timezone: 1
+  comment_log_node: 1
+  watchdog_log: 0

@@ -1,0 +1,10 @@
+uuid: c9e35ec6-7dcb-494f-b719-1c74b7b1b9ef
+langcode: en
+status: true
+dependencies: {  }
+id: blog_review_published
+label: Published
+module: workflow
+wid: blog_review
+weight: -7
+sysid: 0

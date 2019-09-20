@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.literature_discussion.field_learning_goals
     - field.field.node.literature_discussion.field_time_required
     - field.field.node.literature_discussion.field_web_resources
+    - field.field.node.literature_discussion.field_workflow
     - field.field.node.literature_discussion.taxonomy_vocabulary_3
     - field.field.node.literature_discussion.taxonomy_vocabulary_4
     - field.field.node.literature_discussion.taxonomy_vocabulary_5
@@ -24,6 +25,7 @@ dependencies:
   module:
     - file
     - link
+    - options
     - text
     - user
 id: node.literature_discussion.default
@@ -116,6 +118,23 @@ content:
       url_plain: false
       rel: ''
       target: ''
+    third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  flag_adopted_lo:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
     region: content
   links:

@@ -1,0 +1,22 @@
+uuid: e72a6965-750c-4cac-a17c-43e7082fa2b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workflow
+    - node.type.five_slides_about
+  module:
+    - workflow
+id: node.five_slides_about.field_workflow
+field_name: field_workflow
+entity_type: node
+bundle: five_slides_about
+label: Workflow
+description: ''
+required: true
+translatable: true
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

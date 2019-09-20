@@ -1,0 +1,21 @@
+uuid: ac7a2c3e-cdc8-4d0f-bd6c-05082e0d6447
+langcode: en
+status: true
+dependencies: {  }
+id: learning_object_review_published_submit_for_review
+label: null
+module: workflow
+from_sid: learning_object_review_published
+to_sid: learning_object_review_submit_for_review
+roles:
+  global_administrator: global_administrator
+  leadership_council: leadership_council
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  faculty: '0'
+  guest: '0'
+  student: '0'
+  blogger: '0'
+  administrator: '0'
+  viper_fellow: '0'

@@ -37,6 +37,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  rules: 0
   search: 0
   shortcut: 0
   system: 0
@@ -44,9 +45,13 @@ module:
   text: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
   update: 0
   user: 0
   views_ui: 0
+  workflow: 0
+  workflow_operations: 0
+  workflow_ui: 0
   forum: 1
   menu_link_content: 1
   views: 10

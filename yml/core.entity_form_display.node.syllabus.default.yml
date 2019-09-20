@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.syllabus.field_time_per_meeting_minutes_
     - field.field.node.syllabus.field_typical_student_population
     - field.field.node.syllabus.field_web_resources
+    - field.field.node.syllabus.field_workflow
     - field.field.node.syllabus.taxonomy_vocabulary_4
     - field.field.node.syllabus.taxonomy_vocabulary_5
     - field.field.node.syllabus.taxonomy_vocabulary_6
@@ -36,6 +37,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.syllabus.default
 targetEntityType: node
 bundle: syllabus
@@ -205,6 +207,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

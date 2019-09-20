@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.literature_discussion.field_learning_goals
     - field.field.node.literature_discussion.field_time_required
     - field.field.node.literature_discussion.field_web_resources
+    - field.field.node.literature_discussion.field_workflow
     - field.field.node.literature_discussion.taxonomy_vocabulary_3
     - field.field.node.literature_discussion.taxonomy_vocabulary_4
     - field.field.node.literature_discussion.taxonomy_vocabulary_5
@@ -26,6 +27,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.literature_discussion.default
 targetEntityType: node
 bundle: literature_discussion
@@ -126,6 +128,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

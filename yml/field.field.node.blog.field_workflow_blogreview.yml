@@ -1,0 +1,22 @@
+uuid: d68efbc6-828a-4380-bc3f-9c8cf993be19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workflow_blogreview
+    - node.type.blog
+  module:
+    - workflow
+id: node.blog.field_workflow_blogreview
+field_name: field_workflow_blogreview
+entity_type: node
+bundle: blog
+label: Workflow
+description: ''
+required: true
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

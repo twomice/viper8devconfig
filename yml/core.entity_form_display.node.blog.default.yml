@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.comment_node_blog
+    - field.field.node.blog.field_workflow_blogreview
     - node.type.blog
   module:
     - comment
     - path
     - text
+    - workflow
 id: node.blog.default
 targetEntityType: node
 bundle: blog
@@ -36,6 +38,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_workflow_blogreview:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
+    region: content
   path:
     type: path
     weight: 30

@@ -6,9 +6,11 @@ dependencies:
     - core.entity_view_display.comment.comment_node_blog.default
     - field.field.node.blog.body
     - field.field.node.blog.comment_node_blog
+    - field.field.node.blog.field_workflow_blogreview
     - node.type.blog
   module:
     - comment
+    - options
     - text
     - user
 id: node.blog.default
@@ -30,6 +32,18 @@ content:
     settings:
       view_mode: default
       pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_workflow_blogreview:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
     region: content
   links:

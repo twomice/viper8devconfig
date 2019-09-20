@@ -1,0 +1,21 @@
+uuid: 5244efcc-958c-491a-8b55-83d632046e0b
+langcode: en
+status: true
+dependencies: {  }
+id: blog_review_creation_draft
+label: null
+module: workflow
+from_sid: blog_review_creation
+to_sid: blog_review_draft
+roles:
+  workflow_author: workflow_author
+  global_administrator: global_administrator
+  leadership_council: leadership_council
+  blogger: blogger
+  anonymous: '0'
+  authenticated: '0'
+  faculty: '0'
+  guest: '0'
+  student: '0'
+  administrator: '0'
+  viper_fellow: '0'

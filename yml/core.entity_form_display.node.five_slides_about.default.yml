@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.five_slides_about.field_learning_goals
     - field.field.node.five_slides_about.field_time_required
     - field.field.node.five_slides_about.field_web_resources
+    - field.field.node.five_slides_about.field_workflow
     - field.field.node.five_slides_about.taxonomy_vocabulary_3
     - field.field.node.five_slides_about.taxonomy_vocabulary_4
     - field.field.node.five_slides_about.taxonomy_vocabulary_5
@@ -28,6 +29,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.five_slides_about.default
 targetEntityType: node
 bundle: five_slides_about
@@ -134,6 +136,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

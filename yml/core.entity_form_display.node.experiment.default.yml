@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.experiment.field_learning_goals
     - field.field.node.experiment.field_time_required
     - field.field.node.experiment.field_web_resources
+    - field.field.node.experiment.field_workflow
     - field.field.node.experiment.taxonomy_vocabulary_3
     - field.field.node.experiment.taxonomy_vocabulary_4
     - field.field.node.experiment.taxonomy_vocabulary_5
@@ -29,6 +30,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.experiment.default
 targetEntityType: node
 bundle: experiment
@@ -143,6 +145,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path

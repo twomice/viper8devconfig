@@ -1,0 +1,10 @@
+uuid: 0af4b372-497a-4be1-8340-e59f6e1172ce
+langcode: en
+status: true
+dependencies: {  }
+id: blog_review_draft_draft
+label: null
+module: workflow
+from_sid: blog_review_draft
+to_sid: blog_review_draft
+roles: {  }

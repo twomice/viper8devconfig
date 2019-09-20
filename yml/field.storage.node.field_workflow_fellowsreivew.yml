@@ -1,0 +1,22 @@
+uuid: 3070f5f6-4a9b-4b90-8172-686543ac7fde
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - workflow
+id: node.field_workflow_fellowsreivew
+field_name: field_workflow_fellowsreivew
+entity_type: node
+type: workflow
+settings:
+  workflow_type: fellows_review
+  allowed_values: {  }
+  allowed_values_function: ''
+module: workflow
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

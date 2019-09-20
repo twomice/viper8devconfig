@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.collection.field_syllabus
     - field.field.node.collection.field_textbook_lo
     - field.field.node.collection.field_web_resources_and_apps
+    - field.field.node.collection.field_workflow
     - field.field.node.collection.taxonomy_vocabulary_3
     - field.field.node.collection.taxonomy_vocabulary_4
     - field.field.node.collection.taxonomy_vocabulary_5
@@ -26,6 +27,7 @@ dependencies:
   module:
     - comment
     - file
+    - options
     - text
     - user
 id: node.collection.default
@@ -128,6 +130,23 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_workflow:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  flag_adopted_lo:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
   links:
     weight: 100

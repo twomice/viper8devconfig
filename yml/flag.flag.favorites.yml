@@ -1,0 +1,52 @@
+uuid: df44b82d-e52c-4296-bfd0-206e91857001
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: favorites
+label: Favorites
+bundles:
+  - blog
+  - class_activity
+  - collection
+  - event
+  - experiment
+  - five_slides_about
+  - forum
+  - jmol
+  - literature_discussion
+  - problem_set
+  - story
+  - syllabus
+  - textbook
+  - web_resources
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Add to My Favorites ([node:flag-favorites-count] favorites)'
+flag_long: 'Add this post to my favorites'
+flag_message: 'Added to my favorites'
+unflag_short: 'Favorites ([node:flag-favorites-count]) (click to unset)'
+unflag_long: 'Remove this post from my favorites'
+unflag_message: 'Removed from your favorites'
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    teaser: '0'
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    diff_standard: '0'
+    token: '0'
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions: {  }
+  access_author: ''
+linkTypeConfig:
+  flag_confirmation: null
+  unflag_confirmation: null

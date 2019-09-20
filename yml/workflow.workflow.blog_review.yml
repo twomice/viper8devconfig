@@ -1,0 +1,14 @@
+uuid: 6696561c-a77f-47e2-8469-a4c3e1ab03cf
+langcode: en
+status: true
+dependencies: {  }
+id: blog_review
+label: 'Blog Review'
+module: workflow
+options:
+  name_as_title: 1
+  fieldset: 1
+  options: radios
+  schedule_timezone: 1
+  comment_log_node: 1
+  watchdog_log: 0

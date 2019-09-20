@@ -1,0 +1,22 @@
+uuid: 9f2cb045-bae0-4576-b7dc-9ba96b961219
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workflow
+    - node.type.collection
+  module:
+    - workflow
+id: node.collection.field_workflow
+field_name: field_workflow
+entity_type: node
+bundle: collection
+label: Workflow
+description: ''
+required: true
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

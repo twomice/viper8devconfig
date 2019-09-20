@@ -1,0 +1,10 @@
+uuid: 333c2baf-ca18-4725-9819-a01ecf4aba6a
+langcode: en
+status: true
+dependencies: {  }
+id: blog_review_draft
+label: Draft
+module: workflow
+wid: blog_review
+weight: -8
+sysid: 0

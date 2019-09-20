@@ -7,8 +7,11 @@ label: 'VIPEr fellow'
 weight: 2
 is_admin: null
 permissions:
+  - 'create blog_review workflow_transition'
   - 'create fellows_news content'
   - 'create fellows_reflections content'
+  - 'create fellows_review workflow_transition'
+  - 'create learning_object_review workflow_transition'
   - 'delete own fellows_news content'
   - 'delete own fellows_reflections content'
   - 'edit own fellows_news content'

@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.problem_set.field_learning_goals
     - field.field.node.problem_set.field_time_required
     - field.field.node.problem_set.field_web_resources
+    - field.field.node.problem_set.field_workflow
     - field.field.node.problem_set.taxonomy_vocabulary_3
     - field.field.node.problem_set.taxonomy_vocabulary_4
     - field.field.node.problem_set.taxonomy_vocabulary_5
@@ -128,6 +129,23 @@ content:
       url_plain: false
       rel: ''
       target: ''
+    third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  flag_adopted_lo:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
     region: content
   links:

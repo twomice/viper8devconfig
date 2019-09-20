@@ -1,0 +1,22 @@
+uuid: e673d504-23c2-4b74-90cb-2e475d3594bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workflow_fellowsreivew
+    - node.type.fellows_news
+  module:
+    - workflow
+id: node.fellows_news.field_workflow_fellowsreivew
+field_name: field_workflow_fellowsreivew
+entity_type: node
+bundle: fellows_news
+label: Workflow
+description: ''
+required: true
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow
