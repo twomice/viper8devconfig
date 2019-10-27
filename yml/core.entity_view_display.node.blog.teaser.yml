@@ -23,6 +23,11 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -30,3 +35,4 @@ content:
     region: content
 hidden:
   comment_node_blog: true
+  field_workflow_blogreview: true

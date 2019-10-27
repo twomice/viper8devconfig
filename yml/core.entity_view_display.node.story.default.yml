@@ -32,6 +32,11 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }

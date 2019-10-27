@@ -31,6 +31,16 @@ targetEntityType: node
 bundle: problem_set
 mode: rss
 content:
+  flag_adopted_lo:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -57,6 +67,7 @@ hidden:
   field_learning_goals: true
   field_time_required: true
   field_web_resources: true
+  field_workflow: true
   taxonomy_vocabulary_3: true
   taxonomy_vocabulary_4: true
   taxonomy_vocabulary_5: true

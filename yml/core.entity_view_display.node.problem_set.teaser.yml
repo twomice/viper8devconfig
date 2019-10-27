@@ -94,6 +94,16 @@ content:
       target: ''
     third_party_settings: {  }
     region: content
+  flag_adopted_lo:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_favorites:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -144,4 +154,5 @@ hidden:
   field_addl_authors: true
   field_couples: true
   field_lc_moderator_new: true
+  field_workflow: true
   upload: true

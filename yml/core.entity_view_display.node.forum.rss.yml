@@ -18,6 +18,11 @@ targetEntityType: node
 bundle: forum
 mode: rss
 content:
+  flag_favorites:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }

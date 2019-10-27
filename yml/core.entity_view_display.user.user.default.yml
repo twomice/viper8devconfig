@@ -4,49 +4,27 @@ status: true
 dependencies:
   config:
     - field.field.user.user.profile_address
-    - field.field.user.user.profile_address1
     - field.field.user.user.profile_degrees
-    - field.field.user.user.profile_degrees1
     - field.field.user.user.profile_expertise
-    - field.field.user.user.profile_expertise1
     - field.field.user.user.profile_expertise2
-    - field.field.user.user.profile_expertise21
     - field.field.user.user.profile_expertise3
-    - field.field.user.user.profile_expertise31
     - field.field.user.user.profile_expertise_other
-    - field.field.user.user.profile_expertise_other1
     - field.field.user.user.profile_faculty_privilege_revi
-    - field.field.user.user.profile_faculty_privilege_revi1
     - field.field.user.user.profile_fav_element
-    - field.field.user.user.profile_fav_element1
     - field.field.user.user.profile_institution
-    - field.field.user.user.profile_institution1
     - field.field.user.user.profile_institution_website
-    - field.field.user.user.profile_institution_website1
     - field.field.user.user.profile_least_fav_element
-    - field.field.user.user.profile_least_fav_element1
     - field.field.user.user.profile_name
-    - field.field.user.user.profile_name1
     - field.field.user.user.profile_orbital
-    - field.field.user.user.profile_orbital1
     - field.field.user.user.profile_phone
-    - field.field.user.user.profile_phone1
     - field.field.user.user.profile_position
-    - field.field.user.user.profile_position1
     - field.field.user.user.profile_preferred_contact
-    - field.field.user.user.profile_preferred_contact1
     - field.field.user.user.profile_public_name
-    - field.field.user.user.profile_public_name1
     - field.field.user.user.profile_request_privs
-    - field.field.user.user.profile_request_privs1
     - field.field.user.user.profile_research
-    - field.field.user.user.profile_research1
     - field.field.user.user.profile_start_date
-    - field.field.user.user.profile_start_date1
     - field.field.user.user.profile_starting_role
-    - field.field.user.user.profile_starting_role1
     - field.field.user.user.profile_url
-    - field.field.user.user.profile_url1
     - field.field.user.user.user_picture
   module:
     - image
@@ -64,6 +42,15 @@ content:
   member_for:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  profile_address:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_degrees:
     label: hidden
     settings: {  }
@@ -93,12 +80,12 @@ content:
     third_party_settings: {  }
     region: content
   profile_expertise2:
-    label: hidden
-    settings: {  }
     type: list_default
-    weight: 20
-    third_party_settings: {  }
+    weight: 0
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_expertise21:
     label: hidden
     settings: {  }
@@ -107,12 +94,12 @@ content:
     third_party_settings: {  }
     region: content
   profile_expertise3:
-    label: hidden
-    settings: {  }
     type: list_default
-    weight: 19
-    third_party_settings: {  }
+    weight: 0
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_expertise31:
     label: hidden
     settings: {  }
@@ -134,6 +121,13 @@ content:
     weight: 30
     third_party_settings: {  }
     region: content
+  profile_faculty_privilege_revi:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_fav_element:
     label: hidden
     settings: {  }
@@ -200,6 +194,13 @@ content:
     weight: 25
     third_party_settings: {  }
     region: content
+  profile_name:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_orbital:
     label: hidden
     settings: {  }
@@ -214,6 +215,27 @@ content:
     weight: 27
     third_party_settings: {  }
     region: content
+  profile_phone:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  profile_position:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  profile_preferred_contact:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_public_name:
     label: hidden
     settings: {  }
@@ -229,12 +251,15 @@ content:
     third_party_settings: {  }
     region: content
   profile_request_privs:
-    label: hidden
-    settings: {  }
-    type: list_default
-    weight: 18
-    third_party_settings: {  }
+    type: boolean
+    weight: 0
     region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
   profile_request_privs1:
     label: hidden
     settings: {  }
@@ -256,6 +281,13 @@ content:
     weight: 28
     third_party_settings: {  }
     region: content
+  profile_start_date:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   profile_starting_role:
     label: hidden
     settings: {  }
@@ -295,26 +327,19 @@ content:
     third_party_settings: {  }
     region: content
   user_picture:
-    label: hidden
+    type: image
+    weight: 0
+    region: content
+    label: above
     settings:
       image_style: ''
-      image_link: content
-    type: image
-    weight: 37
+      image_link: ''
     third_party_settings: {  }
-    region: content
 hidden:
-  profile_address: true
   profile_address1: true
-  profile_faculty_privilege_revi: true
   profile_faculty_privilege_revi1: true
-  profile_name: true
   profile_name1: true
-  profile_phone: true
   profile_phone1: true
-  profile_position: true
   profile_position1: true
-  profile_preferred_contact: true
   profile_preferred_contact1: true
-  profile_start_date: true
   profile_start_date1: true

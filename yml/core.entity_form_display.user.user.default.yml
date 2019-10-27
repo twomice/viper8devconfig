@@ -4,49 +4,27 @@ status: true
 dependencies:
   config:
     - field.field.user.user.profile_address
-    - field.field.user.user.profile_address1
     - field.field.user.user.profile_degrees
-    - field.field.user.user.profile_degrees1
     - field.field.user.user.profile_expertise
-    - field.field.user.user.profile_expertise1
     - field.field.user.user.profile_expertise2
-    - field.field.user.user.profile_expertise21
     - field.field.user.user.profile_expertise3
-    - field.field.user.user.profile_expertise31
     - field.field.user.user.profile_expertise_other
-    - field.field.user.user.profile_expertise_other1
     - field.field.user.user.profile_faculty_privilege_revi
-    - field.field.user.user.profile_faculty_privilege_revi1
     - field.field.user.user.profile_fav_element
-    - field.field.user.user.profile_fav_element1
     - field.field.user.user.profile_institution
-    - field.field.user.user.profile_institution1
     - field.field.user.user.profile_institution_website
-    - field.field.user.user.profile_institution_website1
     - field.field.user.user.profile_least_fav_element
-    - field.field.user.user.profile_least_fav_element1
     - field.field.user.user.profile_name
-    - field.field.user.user.profile_name1
     - field.field.user.user.profile_orbital
-    - field.field.user.user.profile_orbital1
     - field.field.user.user.profile_phone
-    - field.field.user.user.profile_phone1
     - field.field.user.user.profile_position
-    - field.field.user.user.profile_position1
     - field.field.user.user.profile_preferred_contact
-    - field.field.user.user.profile_preferred_contact1
     - field.field.user.user.profile_public_name
-    - field.field.user.user.profile_public_name1
     - field.field.user.user.profile_request_privs
-    - field.field.user.user.profile_request_privs1
     - field.field.user.user.profile_research
-    - field.field.user.user.profile_research1
     - field.field.user.user.profile_start_date
-    - field.field.user.user.profile_start_date1
     - field.field.user.user.profile_starting_role
-    - field.field.user.user.profile_starting_role1
     - field.field.user.user.profile_url
-    - field.field.user.user.profile_url1
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -64,12 +42,26 @@ content:
   account:
     weight: -10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
   language:
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  profile_address:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   profile_degrees:
     type: text_textfield
     settings:
@@ -138,6 +130,14 @@ content:
     weight: 31
     third_party_settings: {  }
     region: content
+  profile_faculty_privilege_revi:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   profile_fav_element:
     type: text_textfield
     settings:
@@ -202,6 +202,14 @@ content:
     weight: 26
     third_party_settings: {  }
     region: content
+  profile_name:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   profile_orbital:
     type: text_textfield
     settings:
@@ -218,6 +226,28 @@ content:
     weight: 28
     third_party_settings: {  }
     region: content
+  profile_phone:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  profile_position:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  profile_preferred_contact:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   profile_public_name:
     type: text_textfield
     settings:
@@ -264,6 +294,14 @@ content:
     weight: 29
     third_party_settings: {  }
     region: content
+  profile_start_date:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   profile_starting_role:
     type: options_select
     settings: {  }
@@ -295,6 +333,8 @@ content:
   timezone:
     weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     settings:
       progress_indicator: throbber
@@ -304,17 +344,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  profile_address: true
   profile_address1: true
-  profile_faculty_privilege_revi: true
   profile_faculty_privilege_revi1: true
-  profile_name: true
   profile_name1: true
-  profile_phone: true
   profile_phone1: true
-  profile_position: true
   profile_position1: true
-  profile_preferred_contact: true
   profile_preferred_contact1: true
-  profile_start_date: true
   profile_start_date1: true
