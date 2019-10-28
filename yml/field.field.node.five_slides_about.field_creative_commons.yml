@@ -1,0 +1,23 @@
+uuid: 02e69dfb-19b2-43e1-99f7-3e9b0271479f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creative_commons
+    - node.type.five_slides_about
+  module:
+    - options
+id: node.five_slides_about.field_creative_commons
+field_name: field_creative_commons
+entity_type: node
+bundle: five_slides_about
+label: 'Creative Commons License'
+description: 'With a Creative Commons license, <em>you keep your copyright</em> but allow people to <a href="http://creativecommons.org/about/licenses/">copy and distribute your work</a> provided they <a href="http://wiki.creativecommons.org/Attribution">give you credit</a> -- and only on the conditions you specify here. For those new to Creative Commons licensing, visit the website for <a href="http://creativecommons.org/about/think">a list of things to think about</a>.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 6
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
