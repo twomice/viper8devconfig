@@ -1,0 +1,20 @@
+uuid: a9343d94-7145-464d-9b3c-b4f1320f2c9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: user.field_subscribed_con
+field_name: field_subscribed_con
+entity_type: user
+type: entity_reference
+settings:
+  target_type: node_type
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
