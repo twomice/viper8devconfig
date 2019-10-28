@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.problem_set.field_addl_authors
     - field.field.node.problem_set.field_assessment
     - field.field.node.problem_set.field_couples
+    - field.field.node.problem_set.field_creative_commons
     - field.field.node.problem_set.field_description
     - field.field.node.problem_set.field_exam_question
     - field.field.node.problem_set.field_implementation_notes
@@ -67,6 +68,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_creative_commons:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_description:
     label: above

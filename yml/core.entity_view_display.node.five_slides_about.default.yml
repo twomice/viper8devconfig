@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.five_slides_about.field_addl_authors
     - field.field.node.five_slides_about.field_assessment
     - field.field.node.five_slides_about.field_couples
+    - field.field.node.five_slides_about.field_creative_commons
     - field.field.node.five_slides_about.field_description
     - field.field.node.five_slides_about.field_faculty_files
     - field.field.node.five_slides_about.field_implementation_notes
@@ -67,6 +68,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_creative_commons:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_description:
     label: above

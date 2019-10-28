@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.textbook.comment_node_textbook
     - field.field.node.textbook.field_addl_authors
     - field.field.node.textbook.field_couples
+    - field.field.node.textbook.field_creative_commons
     - field.field.node.textbook.field_description
     - field.field.node.textbook.field_implementation_notes
     - field.field.node.textbook.field_lc_moderator_new
@@ -55,6 +56,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_creative_commons:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_description:
     label: above

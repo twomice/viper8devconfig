@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.syllabus.field_average_class_size
     - field.field.node.syllabus.field_couples
     - field.field.node.syllabus.field_course_area_and_number
+    - field.field.node.syllabus.field_creative_commons
     - field.field.node.syllabus.field_description
     - field.field.node.syllabus.field_faculty_files
     - field.field.node.syllabus.field_grading_scheme
@@ -83,6 +84,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
+  field_creative_commons:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_description:
     label: above

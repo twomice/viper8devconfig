@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.class_activity.field_addl_authors
     - field.field.node.class_activity.field_assessment
     - field.field.node.class_activity.field_couples
+    - field.field.node.class_activity.field_creative_commons
     - field.field.node.class_activity.field_description
     - field.field.node.class_activity.field_faculty_files
     - field.field.node.class_activity.field_implementation_notes
@@ -73,6 +74,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_creative_commons:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_description:
     weight: 4

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.web_resources.field_addl_authors
     - field.field.node.web_resources.field_assessment
     - field.field.node.web_resources.field_couples
+    - field.field.node.web_resources.field_creative_commons
     - field.field.node.web_resources.field_description
     - field.field.node.web_resources.field_faculty_files
     - field.field.node.web_resources.field_implementation_notes
@@ -70,6 +71,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_creative_commons:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_description:
     weight: 4

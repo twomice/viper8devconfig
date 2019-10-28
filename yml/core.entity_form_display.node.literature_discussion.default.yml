@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.literature_discussion.field_addl_authors
     - field.field.node.literature_discussion.field_assessment
     - field.field.node.literature_discussion.field_couples
+    - field.field.node.literature_discussion.field_creative_commons
     - field.field.node.literature_discussion.field_description
     - field.field.node.literature_discussion.field_faculty_files
     - field.field.node.literature_discussion.field_implementation_notes
@@ -64,6 +65,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_creative_commons:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_description:
     weight: 4
