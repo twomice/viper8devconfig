@@ -33,6 +33,8 @@ module:
   migrate_drupal: 0
   migrate_drupal_multilingual: 0
   migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
   node: 0
   options: 0
   page_cache: 0
@@ -41,6 +43,7 @@ module:
   profile: 0
   quickedit: 0
   rdf: 0
+  rules: 0
   realname: 0
   search: 0
   shortcut: 0
