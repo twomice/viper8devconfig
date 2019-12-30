@@ -1,0 +1,13 @@
+uuid: a2d0c168-009f-4555-84fb-8cc9a1433cae
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.content_subscription.unflag
+label: 'Unsubscribe from this content'
+type: node
+plugin: 'flag_action:content_subscription.unflag'
+configuration:
+  flag_id: content_subscription
+  flag_action: unflag

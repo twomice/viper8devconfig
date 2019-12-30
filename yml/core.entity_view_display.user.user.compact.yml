@@ -26,6 +26,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_subscribed_con: true
   member_for: true
   profile_address: true
   profile_address1: true

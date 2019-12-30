@@ -1,0 +1,13 @@
+uuid: 070f1edd-e52f-4d23-ad52-cc2a11b6f9bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.taxonomy_subscription.flag
+label: 'Subscribe to this category'
+type: taxonomy_term
+plugin: 'flag_action:taxonomy_subscription.flag'
+configuration:
+  flag_id: taxonomy_subscription
+  flag_action: flag

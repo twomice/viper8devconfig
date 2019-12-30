@@ -1,0 +1,22 @@
+uuid: c0d36e1c-ef49-4e5d-b570-68e37039a93b
+langcode: en
+status: true
+dependencies:
+  module:
+    - workflow
+  theme:
+    - iv
+_core:
+  default_config_hash: Vlu0W1a-S5N7EuSAx6SrVtfAkv0TdnMZV5WagVaBvJk
+id: iv_workflowtransitionform
+theme: iv
+region: content
+weight: -1
+provider: null
+plugin: workflow_transition_form_block
+settings:
+  id: workflow_transition_form_block
+  label: 'Workflow Transition form'
+  provider: workflow
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 22103c06-57a9-4925-bb18-2169dc799f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.active_discussions
+  module:
+    - system
+    - views
+  theme:
+    - iv
+id: views_block__active_discussions_block_1
+theme: iv
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:active_discussions-block_1'
+settings:
+  id: 'views_block:active_discussions-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

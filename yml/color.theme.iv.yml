@@ -1,0 +1,18 @@
+palette:
+  top: '#ffffff'
+  bottom: '#494c62'
+  bg: '#ffffff'
+  sidebar: '#f6f6f2'
+  sidebarborders: '#f9f9f9'
+  footer: '#acacaa'
+  button: '#494c62'
+  buttonhover: '#217e2c'
+  titleslogan: '#fffeff'
+  text: '#3b3b3b'
+  link: '#217e2c'
+logo: 'public://color/iv-3e3f2348/logo.svg'
+stylesheets:
+  - 'public://color/iv-3e3f2348/colors.css'
+files:
+  - 'public://color/iv-3e3f2348/logo.svg'
+  - 'public://color/iv-3e3f2348/colors.css'

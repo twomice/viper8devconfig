@@ -163,6 +163,7 @@ hidden:
   comment_node_experiment: true
   field_addl_authors: true
   field_couples: true
+  field_creative_commons: true
   field_lc_moderator_new: true
   field_workflow: true
   upload: true

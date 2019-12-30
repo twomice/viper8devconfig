@@ -1,0 +1,53 @@
+uuid: 3045ee72-49b3-4bc1-8295-0c480aeca727
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_subscription
+label: 'Content Subscription'
+bundles:
+  - blog
+  - class_activity
+  - collection
+  - event
+  - experiment
+  - fellows_news
+  - fellows_reflections
+  - five_slides_about
+  - forum
+  - literature_discussion
+  - problem_set
+  - story
+  - syllabus
+  - textbook
+  - web_resources
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Subscribe to this content'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Unsubscribe from this content'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    teaser: teaser
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    diff_standard: '0'
+    token: '0'
+  show_as_field: false
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions: {  }
+  access_author: ''
+linkTypeConfig:
+  flag_confirmation: null
+  unflag_confirmation: null

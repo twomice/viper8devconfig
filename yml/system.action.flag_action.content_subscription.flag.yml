@@ -1,0 +1,13 @@
+uuid: 6b19458f-1744-4157-bd72-cb1e4365d044
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.content_subscription.flag
+label: 'Subscribe to this content'
+type: node
+plugin: 'flag_action:content_subscription.flag'
+configuration:
+  flag_id: content_subscription
+  flag_action: flag

@@ -1,0 +1,39 @@
+uuid: 6786361b-78d0-4ab5-9ae7-6261821a03ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_subscription
+label: 'Taxonomy subscription'
+bundles:
+  - fellows_cohort
+  - vocabulary_10
+  - vocabulary_2
+  - vocabulary_3
+  - vocabulary_5
+entity_type: taxonomy_term
+global: false
+weight: 0
+flag_short: 'Subscribe to this category'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Unsubscribe from this category'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:taxonomy_term'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    diff_standard: '0'
+    token: '0'
+  show_as_field: false
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions: {  }
+  access_author: ''
+linkTypeConfig:
+  flag_confirmation: null
+  unflag_confirmation: null

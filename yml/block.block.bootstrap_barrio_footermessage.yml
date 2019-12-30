@@ -1,0 +1,25 @@
+uuid: 569eb40b-ec16-4183-ac32-07919087c7f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c3222c99-dfdb-4f2f-b726-69d539163c1f'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_footermessage
+theme: bootstrap_barrio
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:c3222c99-dfdb-4f2f-b726-69d539163c1f'
+settings:
+  id: 'block_content:c3222c99-dfdb-4f2f-b726-69d539163c1f'
+  label: 'Footer message'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

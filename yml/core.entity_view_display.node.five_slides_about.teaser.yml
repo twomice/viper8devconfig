@@ -146,6 +146,7 @@ hidden:
   comment_node_five_slides_about: true
   field_addl_authors: true
   field_couples: true
+  field_creative_commons: true
   field_faculty_files: true
   field_lc_moderator_new: true
   field_workflow: true

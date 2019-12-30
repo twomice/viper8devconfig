@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
     - field.field.node.blog.comment_node_blog
+    - field.field.node.blog.field_workflow_blogreview
     - node.type.blog
   module:
     - text
@@ -17,22 +18,14 @@ mode: teaser
 content:
   body:
     label: hidden
-    weight: 1
+    weight: 0
     type: text_summary_or_trimmed
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  flag_favorites:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   comment_node_blog: true
   field_workflow_blogreview: true
+  flag_favorites: true
+  links: true

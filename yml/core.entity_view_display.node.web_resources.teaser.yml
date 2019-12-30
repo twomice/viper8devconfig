@@ -146,6 +146,7 @@ hidden:
   comment_node_web_resources: true
   field_addl_authors: true
   field_couples: true
+  field_creative_commons: true
   field_faculty_files: true
   field_lc_moderator_new: true
   upload: true
