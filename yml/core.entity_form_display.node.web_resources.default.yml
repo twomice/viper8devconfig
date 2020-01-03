@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.web_resources.field_learning_goals
     - field.field.node.web_resources.field_time_required
     - field.field.node.web_resources.field_web_resources
+    - field.field.node.web_resources.field_workflow
     - field.field.node.web_resources.taxonomy_vocabulary_3
     - field.field.node.web_resources.taxonomy_vocabulary_4
     - field.field.node.web_resources.taxonomy_vocabulary_5
@@ -29,6 +30,7 @@ dependencies:
     - link
     - path
     - text
+    - workflow
 id: node.web_resources.default
 targetEntityType: node
 bundle: web_resources
@@ -144,6 +146,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
+  field_workflow:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: workflow_default
     region: content
   path:
     type: path
