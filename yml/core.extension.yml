@@ -42,9 +42,10 @@ module:
   profile: 0
   quickedit: 0
   rdf: 0
-  rules: 0
   realname: 0
+  rules: 0
   search: 0
+  search_file_attachments: 0
   shortcut: 0
   system: 0
   taxonomy: 0

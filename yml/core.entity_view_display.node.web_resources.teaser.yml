@@ -149,4 +149,5 @@ hidden:
   field_creative_commons: true
   field_faculty_files: true
   field_lc_moderator_new: true
+  field_workflow: true
   upload: true

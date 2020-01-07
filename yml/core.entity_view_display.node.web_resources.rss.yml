@@ -68,6 +68,7 @@ hidden:
   field_learning_goals: true
   field_time_required: true
   field_web_resources: true
+  field_workflow: true
   taxonomy_vocabulary_3: true
   taxonomy_vocabulary_4: true
   taxonomy_vocabulary_5: true
