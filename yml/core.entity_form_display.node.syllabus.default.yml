@@ -46,44 +46,42 @@ mode: default
 content:
   comment_node_syllabus:
     type: comment_default
-    weight: 20
+    weight: 28
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 32
     region: content
     settings: {  }
     third_party_settings: {  }
   field_addl_authors:
-    weight: 8
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_average_class_size:
-    weight: 12
+    weight: 10
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
   field_couples:
-    weight: 11
+    weight: 23
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_course_area_and_number:
-    weight: 5
+    weight: 1
     type: string_textfield
     settings:
       size: 60
@@ -91,13 +89,13 @@ content:
     third_party_settings: {  }
     region: content
   field_creative_commons:
-    weight: 122
+    weight: 25
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_description:
-    weight: 4
+    weight: 16
     type: text_textarea
     settings:
       rows: 10
@@ -105,14 +103,14 @@ content:
     third_party_settings: {  }
     region: content
   field_faculty_files:
-    weight: 6
+    weight: 18
     type: file_generic
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
   field_grading_scheme:
-    weight: 19
+    weight: 24
     type: string_textarea
     settings:
       rows: 5
@@ -120,7 +118,7 @@ content:
     third_party_settings: {  }
     region: content
   field_how_the_course_is_taught:
-    weight: 8
+    weight: 20
     type: string_textfield
     settings:
       size: 60
@@ -128,7 +126,7 @@ content:
     third_party_settings: {  }
     region: content
   field_institution:
-    weight: 6
+    weight: 2
     type: string_textfield
     settings:
       size: 60
@@ -136,23 +134,22 @@ content:
     third_party_settings: {  }
     region: content
   field_lab_associated:
-    weight: 11
+    weight: 9
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
   field_lc_moderator_new:
-    weight: 15
+    weight: 26
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_learning_goals:
-    weight: 7
+    weight: 19
     type: text_textarea
     settings:
       rows: 8
@@ -160,7 +157,7 @@ content:
     third_party_settings: {  }
     region: content
   field_location:
-    weight: 7
+    weight: 3
     type: string_textfield
     settings:
       size: 60
@@ -168,29 +165,28 @@ content:
     third_party_settings: {  }
     region: content
   field_number_of_meetings_per_wee:
-    weight: 13
+    weight: 6
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_number_of_weeks:
-    weight: 15
+    weight: 8
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_related_syllabi:
-    weight: 10
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_textbook:
-    weight: 9
+    weight: 5
     type: string_textfield
     settings:
       size: 60
@@ -198,13 +194,13 @@ content:
     third_party_settings: {  }
     region: content
   field_time_per_meeting_minutes_:
-    weight: 14
+    weight: 7
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_typical_student_population:
-    weight: 13
+    weight: 11
     type: string_textarea
     settings:
       rows: 5
@@ -212,7 +208,7 @@ content:
     third_party_settings: {  }
     region: content
   field_web_resources:
-    weight: 9
+    weight: 21
     type: link_default
     settings:
       placeholder_url: ''
@@ -220,7 +216,7 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 121
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: workflow_default
@@ -235,50 +231,50 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 34
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 33
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 29
     region: content
     third_party_settings: {  }
   taxonomy_vocabulary_4:
-    weight: 8
+    weight: 14
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   taxonomy_vocabulary_5:
-    weight: 9
+    weight: 15
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   taxonomy_vocabulary_6:
-    weight: 10
+    weight: 12
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   taxonomy_vocabulary_7:
-    weight: 11
+    weight: 13
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -286,16 +282,15 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 31
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     region: content
     third_party_settings: {  }
   upload:
-    weight: 5
+    weight: 17
     type: file_generic
     settings:
       progress_indicator: throbber

@@ -29,6 +29,9 @@ settings:
     -
       value: 'A graduate student/postdoc/faculty member'
       label: 'A graduate student/postdoc/faculty member'
+    -
+      value: '0'
+      label: '0'
   allowed_values_function: ''
 module: options
 locked: false

@@ -28,11 +28,66 @@ dependencies:
     - field.field.user.user.profile_url
     - field.field.user.user.user_picture
   module:
+    - field_group
     - image
     - link
     - options
     - text
     - user
+third_party_settings:
+  field_group:
+    group_personal_information:
+      children:
+        - profile_name
+        - profile_public_name
+        - profile_url
+        - profile_least_fav_element
+        - profile_fav_element
+        - profile_orbital
+        - profile_degrees
+        - profile_address
+        - profile_phone
+        - profile_preferred_contact
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Personal Information'
+    group_professional_information:
+      children:
+        - profile_institution
+        - profile_position
+        - profile_research
+        - profile_institution_website
+        - profile_expertise
+        - profile_expertise3
+        - profile_expertise2
+        - profile_expertise_other
+        - profile_start_date
+        - profile_starting_role
+        - profile_request_privs
+        - profile_faculty_privilege_revi
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Professional Information'
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default
@@ -41,7 +96,7 @@ bundle: user
 mode: default
 content:
   field_subscribed_con:
-    weight: 37
+    weight: 16
     label: above
     settings:
       link: true
@@ -49,22 +104,22 @@ content:
     type: entity_reference_label
     region: content
   member_for:
-    weight: 5
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   profile_address:
     type: text_default
-    weight: 0
+    weight: 8
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_degrees:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 15
+    weight: 7
     third_party_settings: {  }
     region: content
   profile_degrees1:
@@ -75,10 +130,10 @@ content:
     third_party_settings: {  }
     region: content
   profile_expertise:
-    label: hidden
+    label: above
     settings: {  }
     type: list_default
-    weight: 13
+    weight: 14
     third_party_settings: {  }
     region: content
   profile_expertise1:
@@ -90,7 +145,7 @@ content:
     region: content
   profile_expertise2:
     type: list_default
-    weight: 0
+    weight: 16
     region: content
     label: above
     settings: {  }
@@ -104,7 +159,7 @@ content:
     region: content
   profile_expertise3:
     type: list_default
-    weight: 0
+    weight: 15
     region: content
     label: above
     settings: {  }
@@ -117,10 +172,10 @@ content:
     third_party_settings: {  }
     region: content
   profile_expertise_other:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 14
+    weight: 17
     third_party_settings: {  }
     region: content
   profile_expertise_other1:
@@ -132,16 +187,16 @@ content:
     region: content
   profile_faculty_privilege_revi:
     type: text_default
-    weight: 0
+    weight: 21
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_fav_element:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 10
+    weight: 5
     third_party_settings: {  }
     region: content
   profile_fav_element1:
@@ -152,10 +207,10 @@ content:
     third_party_settings: {  }
     region: content
   profile_institution:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 6
+    weight: 10
     third_party_settings: {  }
     region: content
   profile_institution1:
@@ -166,7 +221,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_institution_website:
-    label: hidden
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -174,7 +229,7 @@ content:
       rel: ''
       target: ''
     type: link
-    weight: 17
+    weight: 13
     third_party_settings: {  }
     region: content
   profile_institution_website1:
@@ -190,10 +245,10 @@ content:
     third_party_settings: {  }
     region: content
   profile_least_fav_element:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 9
+    weight: 4
     third_party_settings: {  }
     region: content
   profile_least_fav_element1:
@@ -205,16 +260,16 @@ content:
     region: content
   profile_name:
     type: text_default
-    weight: 0
+    weight: 1
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_orbital:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 11
+    weight: 6
     third_party_settings: {  }
     region: content
   profile_orbital1:
@@ -226,30 +281,30 @@ content:
     region: content
   profile_phone:
     type: text_default
-    weight: 0
+    weight: 9
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_position:
     type: text_default
-    weight: 0
+    weight: 11
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_preferred_contact:
     type: list_default
-    weight: 0
+    weight: 10
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_public_name:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
-    weight: 7
+    weight: 2
     third_party_settings: {  }
     region: content
   profile_public_name1:
@@ -261,13 +316,13 @@ content:
     region: content
   profile_request_privs:
     type: boolean
-    weight: 0
+    weight: 20
     region: content
     label: above
     settings:
-      format: default
-      format_custom_false: ''
+      format: yes-no
       format_custom_true: ''
+      format_custom_false: ''
     third_party_settings: {  }
   profile_request_privs1:
     label: hidden
@@ -277,7 +332,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_research:
-    label: hidden
+    label: above
     settings: {  }
     type: text_default
     weight: 12
@@ -292,7 +347,7 @@ content:
     region: content
   profile_start_date:
     type: text_default
-    weight: 0
+    weight: 18
     region: content
     label: above
     settings: {  }
@@ -301,7 +356,7 @@ content:
     label: hidden
     settings: {  }
     type: list_default
-    weight: 16
+    weight: 19
     third_party_settings: {  }
     region: content
   profile_starting_role1:
@@ -312,7 +367,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_url:
-    label: hidden
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -320,7 +375,7 @@ content:
       rel: ''
       target: ''
     type: link
-    weight: 8
+    weight: 3
     third_party_settings: {  }
     region: content
   profile_url1:
@@ -337,7 +392,7 @@ content:
     region: content
   user_picture:
     type: image
-    weight: 0
+    weight: 2
     region: content
     label: above
     settings:

@@ -22,11 +22,51 @@ dependencies:
     - node.type.textbook
   module:
     - comment
+    - field_group
     - file
     - link
     - options
     - text
     - user
+third_party_settings:
+  field_group:
+    group_my_notes:
+      children:
+        - flag_adopted_lo
+        - flag_favorites
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'My Notes'
+    group_categories:
+      children:
+        - taxonomy_vocabulary_6
+        - taxonomy_vocabulary_7
+        - taxonomy_vocabulary_4
+        - taxonomy_vocabulary_5
+        - taxonomy_vocabulary_3
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: collapsible
+        speed: fast
+      label: Categories
 id: node.textbook.default
 targetEntityType: node
 bundle: textbook
@@ -35,14 +75,14 @@ content:
   comment_node_textbook:
     label: hidden
     type: comment_default
-    weight: 20
+    weight: 12
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
     region: content
   field_addl_authors:
-    weight: 104
+    weight: 0
     label: above
     settings:
       link: true
@@ -50,7 +90,7 @@ content:
     type: entity_reference_label
     region: content
   field_couples:
-    weight: 102
+    weight: 5
     label: above
     settings:
       link: true
@@ -58,7 +98,7 @@ content:
     type: entity_reference_label
     region: content
   field_creative_commons:
-    weight: 106
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -66,20 +106,20 @@ content:
     region: content
   field_description:
     label: above
-    weight: 4
+    weight: 3
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_implementation_notes:
     label: above
-    weight: 7
+    weight: 6
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_lc_moderator_new:
-    weight: 103
+    weight: 9
     label: above
     settings:
       link: true
@@ -88,7 +128,7 @@ content:
     region: content
   field_web_resources:
     label: above
-    weight: 8
+    weight: 7
     type: link
     settings:
       trim_length: 80
@@ -99,30 +139,30 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 105
+    weight: 10
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   flag_adopted_lo:
-    weight: 10
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   flag_favorites:
-    weight: 10
+    weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 11
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   taxonomy_vocabulary_3:
     label: above
-    weight: 31
+    weight: 12
     type: entity_reference_label
     settings:
       link: true
@@ -130,7 +170,7 @@ content:
     region: content
   taxonomy_vocabulary_4:
     label: above
-    weight: 28
+    weight: 10
     type: entity_reference_label
     settings:
       link: true
@@ -138,7 +178,7 @@ content:
     region: content
   taxonomy_vocabulary_5:
     label: above
-    weight: 30
+    weight: 11
     type: entity_reference_label
     settings:
       link: true
@@ -146,7 +186,7 @@ content:
     region: content
   taxonomy_vocabulary_6:
     label: above
-    weight: 27
+    weight: 8
     type: entity_reference_label
     settings:
       link: true
@@ -154,7 +194,7 @@ content:
     region: content
   taxonomy_vocabulary_7:
     label: above
-    weight: 26
+    weight: 9
     type: entity_reference_label
     settings:
       link: true
@@ -162,7 +202,7 @@ content:
     region: content
   upload:
     label: hidden
-    weight: 0
+    weight: 4
     type: file_table
     settings:
       use_description_as_link_text: true

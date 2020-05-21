@@ -36,6 +36,9 @@ settings:
       value: 'Other (describe below)'
       label: 'Other (describe below)'
     -
+      value: '0'
+      label: '0'
+    -
       value: Organometallic
       label: Organometallic
     -

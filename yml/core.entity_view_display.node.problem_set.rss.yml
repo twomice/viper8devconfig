@@ -1,6 +1,6 @@
 uuid: 6f3fb348-a7c4-411c-ba10-e2b98d7c7069
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.problem_set.field_addl_authors
     - field.field.node.problem_set.field_assessment
     - field.field.node.problem_set.field_couples
+    - field.field.node.problem_set.field_creative_commons
     - field.field.node.problem_set.field_description
     - field.field.node.problem_set.field_exam_question
     - field.field.node.problem_set.field_implementation_notes
@@ -16,6 +17,7 @@ dependencies:
     - field.field.node.problem_set.field_learning_goals
     - field.field.node.problem_set.field_time_required
     - field.field.node.problem_set.field_web_resources
+    - field.field.node.problem_set.field_workflow
     - field.field.node.problem_set.taxonomy_vocabulary_3
     - field.field.node.problem_set.taxonomy_vocabulary_4
     - field.field.node.problem_set.taxonomy_vocabulary_5

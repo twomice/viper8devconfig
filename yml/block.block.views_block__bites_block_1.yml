@@ -11,8 +11,8 @@ dependencies:
     - iv
 id: views_block__bites_block_1
 theme: iv
-region: featured_bottom_first
-weight: -5
+region: content
+weight: -2
 provider: null
 plugin: 'views_block:bites-block_1'
 settings:

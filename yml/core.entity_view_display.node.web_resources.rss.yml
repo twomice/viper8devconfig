@@ -1,6 +1,6 @@
 uuid: 21e71be4-0168-42a3-b9d9-c31ee68491d5
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.web_resources.field_addl_authors
     - field.field.node.web_resources.field_assessment
     - field.field.node.web_resources.field_couples
+    - field.field.node.web_resources.field_creative_commons
     - field.field.node.web_resources.field_description
     - field.field.node.web_resources.field_faculty_files
     - field.field.node.web_resources.field_implementation_notes
@@ -68,7 +69,6 @@ hidden:
   field_learning_goals: true
   field_time_required: true
   field_web_resources: true
-  field_workflow: true
   taxonomy_vocabulary_3: true
   taxonomy_vocabulary_4: true
   taxonomy_vocabulary_5: true

@@ -9,7 +9,7 @@ _core:
 id: iv_local_actions
 theme: iv
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

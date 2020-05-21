@@ -1,6 +1,6 @@
 uuid: ea7a3453-339d-415e-b711-745007b87092
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.five_slides_about.field_addl_authors
     - field.field.node.five_slides_about.field_assessment
     - field.field.node.five_slides_about.field_couples
+    - field.field.node.five_slides_about.field_creative_commons
     - field.field.node.five_slides_about.field_description
     - field.field.node.five_slides_about.field_faculty_files
     - field.field.node.five_slides_about.field_implementation_notes
@@ -16,6 +17,7 @@ dependencies:
     - field.field.node.five_slides_about.field_learning_goals
     - field.field.node.five_slides_about.field_time_required
     - field.field.node.five_slides_about.field_web_resources
+    - field.field.node.five_slides_about.field_workflow
     - field.field.node.five_slides_about.taxonomy_vocabulary_3
     - field.field.node.five_slides_about.taxonomy_vocabulary_4
     - field.field.node.five_slides_about.taxonomy_vocabulary_5

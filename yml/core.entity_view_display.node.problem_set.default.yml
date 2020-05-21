@@ -27,11 +27,68 @@ dependencies:
     - node.type.problem_set
   module:
     - comment
+    - field_group
     - file
     - link
     - options
     - text
     - user
+third_party_settings:
+  field_group:
+    group_my_notes:
+      children:
+        - flag_adopted_lo
+        - flag_favorites
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'My Notes'
+    group_categories:
+      children:
+        - taxonomy_vocabulary_6
+        - taxonomy_vocabulary_7
+        - taxonomy_vocabulary_4
+        - taxonomy_vocabulary_5
+        - taxonomy_vocabulary_3
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: collapsible
+        speed: fast
+      label: Categories
+    group_evaluation:
+      children:
+        - field_assessment
+        - field_instructor_experience
+      parent_name: ''
+      weight: 11
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Evaluation
 id: node.problem_set.default
 targetEntityType: node
 bundle: problem_set
@@ -40,14 +97,14 @@ content:
   comment_node_problem_set:
     label: hidden
     type: comment_default
-    weight: 20
+    weight: 16
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
     region: content
   field_addl_authors:
-    weight: 104
+    weight: 0
     label: above
     settings:
       link: true
@@ -56,13 +113,13 @@ content:
     region: content
   field_assessment:
     label: above
-    weight: 0
+    weight: 4
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_couples:
-    weight: 102
+    weight: 7
     label: above
     settings:
       link: true
@@ -70,7 +127,7 @@ content:
     type: entity_reference_label
     region: content
   field_creative_commons:
-    weight: 106
+    weight: 12
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -78,34 +135,34 @@ content:
     region: content
   field_description:
     label: above
-    weight: 4
+    weight: 3
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_exam_question:
     label: above
-    weight: 7
+    weight: 6
     type: list_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_implementation_notes:
     label: above
-    weight: 9
+    weight: 8
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_instructor_experience:
     label: above
-    weight: 1
+    weight: 5
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_lc_moderator_new:
-    weight: 103
+    weight: 13
     label: above
     settings:
       link: true
@@ -114,14 +171,14 @@ content:
     region: content
   field_learning_goals:
     label: above
-    weight: 6
+    weight: 5
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_time_required:
     label: above
-    weight: 10
+    weight: 9
     type: string
     settings:
       link_to_entity: false
@@ -129,7 +186,7 @@ content:
     region: content
   field_web_resources:
     label: above
-    weight: 11
+    weight: 10
     type: link
     settings:
       trim_length: 80
@@ -140,30 +197,30 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 105
+    weight: 14
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   flag_adopted_lo:
-    weight: 10
+    weight: 12
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   flag_favorites:
-    weight: 10
+    weight: 13
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 15
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   taxonomy_vocabulary_3:
     label: above
-    weight: 34
+    weight: 20
     type: entity_reference_label
     settings:
       link: true
@@ -171,7 +228,7 @@ content:
     region: content
   taxonomy_vocabulary_4:
     label: above
-    weight: 31
+    weight: 18
     type: entity_reference_label
     settings:
       link: true
@@ -179,7 +236,7 @@ content:
     region: content
   taxonomy_vocabulary_5:
     label: above
-    weight: 33
+    weight: 19
     type: entity_reference_label
     settings:
       link: true
@@ -187,7 +244,7 @@ content:
     region: content
   taxonomy_vocabulary_6:
     label: above
-    weight: 30
+    weight: 16
     type: entity_reference_label
     settings:
       link: true
@@ -195,7 +252,7 @@ content:
     region: content
   taxonomy_vocabulary_7:
     label: above
-    weight: 29
+    weight: 17
     type: entity_reference_label
     settings:
       link: true
@@ -203,7 +260,7 @@ content:
     region: content
   upload:
     label: hidden
-    weight: 0
+    weight: 4
     type: file_table
     settings:
       use_description_as_link_text: true

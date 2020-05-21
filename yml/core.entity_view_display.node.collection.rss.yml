@@ -1,6 +1,6 @@
 uuid: f6881d1e-9ca8-4710-8b7a-ef1d66c12855
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.collection.field_syllabus
     - field.field.node.collection.field_textbook_lo
     - field.field.node.collection.field_web_resources_and_apps
+    - field.field.node.collection.field_workflow
     - field.field.node.collection.taxonomy_vocabulary_3
     - field.field.node.collection.taxonomy_vocabulary_4
     - field.field.node.collection.taxonomy_vocabulary_5

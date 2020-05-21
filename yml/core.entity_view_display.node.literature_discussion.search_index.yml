@@ -1,12 +1,13 @@
 uuid: 71343758-90c0-46b9-a43d-57413284164b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.literature_discussion.field_addl_authors
     - field.field.node.literature_discussion.field_assessment
     - field.field.node.literature_discussion.field_couples
+    - field.field.node.literature_discussion.field_creative_commons
     - field.field.node.literature_discussion.field_description
     - field.field.node.literature_discussion.field_faculty_files
     - field.field.node.literature_discussion.field_implementation_notes
@@ -15,6 +16,7 @@ dependencies:
     - field.field.node.literature_discussion.field_learning_goals
     - field.field.node.literature_discussion.field_time_required
     - field.field.node.literature_discussion.field_web_resources
+    - field.field.node.literature_discussion.field_workflow
     - field.field.node.literature_discussion.taxonomy_vocabulary_3
     - field.field.node.literature_discussion.taxonomy_vocabulary_4
     - field.field.node.literature_discussion.taxonomy_vocabulary_5

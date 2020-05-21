@@ -19,11 +19,11 @@ bundles:
   - web_resources
 entity_type: node
 global: false
-weight: 0
-flag_short: 'I Have Adopted This ([node:flag-adopted-lo-count] adopted)'
+weight: -10
+flag_short: 'I Have Adopted This'
 flag_long: 'I have adopted this LO in class'
 flag_message: 'Added to your adopted LOs'
-unflag_short: 'Adopted ([node:flag-adopted-lo-count]) (click to unset)'
+unflag_short: 'Adopted (click to unset)'
 unflag_long: 'I have adopted this LO in class (click to unflag)'
 unflag_message: 'Removed from your adopted LOs'
 unflag_denied_text: ''
@@ -32,16 +32,11 @@ link_type: ajax_link
 flagTypeConfig:
   show_in_links:
     full: full
-    teaser: '0'
-    rss: '0'
-    search_index: '0'
-    search_result: '0'
-    diff_standard: '0'
-    token: '0'
   show_as_field: true
   show_on_form: false
   show_contextual_link: false
-  extra_permissions: {  }
+  extra_permissions:
+    owner: '0'
   access_author: ''
 linkTypeConfig:
   flag_confirmation: null

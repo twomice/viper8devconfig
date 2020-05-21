@@ -14,7 +14,7 @@ bundles:
   - vocabulary_5
 entity_type: taxonomy_term
 global: false
-weight: 0
+weight: -7
 flag_short: 'Subscribe to this category'
 flag_long: ''
 flag_message: ''

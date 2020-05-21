@@ -35,11 +35,108 @@ dependencies:
     - node.type.syllabus
   module:
     - comment
+    - field_group
     - file
     - link
     - options
     - text
     - user
+third_party_settings:
+  field_group:
+    group_my_notes:
+      children:
+        - flag_adopted_lo
+        - flag_favorites
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'My Notes'
+    group_specific_course_informatio:
+      children:
+        - field_course_area_and_number
+        - field_institution
+        - field_location
+        - field_addl_authors
+        - field_textbook
+        - group_course_meetings_and_time
+        - field_lab_associated
+        - field_average_class_size
+        - field_typical_student_population
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Specific Course Information'
+    group_course_meetings_and_time:
+      children:
+        - field_number_of_meetings_per_wee
+        - field_time_per_meeting_minutes_
+        - field_number_of_weeks
+      parent_name: group_specific_course_informatio
+      weight: 9
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Course Meetings and Time'
+    group_evaluation:
+      children:
+        - field_grading_scheme
+      parent_name: ''
+      weight: 11
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Evaluation
+    group_categories:
+      children:
+        - taxonomy_vocabulary_6
+        - taxonomy_vocabulary_7
+        - taxonomy_vocabulary_4
+        - taxonomy_vocabulary_5
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: field-group
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: collapsible
+        speed: fast
+      label: Categories
 id: node.syllabus.default
 targetEntityType: node
 bundle: syllabus
@@ -48,14 +145,14 @@ content:
   comment_node_syllabus:
     label: hidden
     type: comment_default
-    weight: 20
+    weight: 16
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
     region: content
   field_addl_authors:
-    weight: 105
+    weight: 7
     label: above
     settings:
       link: true
@@ -64,13 +161,13 @@ content:
     region: content
   field_average_class_size:
     label: above
-    weight: 12
+    weight: 11
     type: list_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_couples:
-    weight: 102
+    weight: 10
     label: above
     settings:
       link: true
@@ -79,14 +176,14 @@ content:
     region: content
   field_course_area_and_number:
     label: above
-    weight: 5
+    weight: 4
     type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
     region: content
   field_creative_commons:
-    weight: 107
+    weight: 12
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -94,14 +191,14 @@ content:
     region: content
   field_description:
     label: above
-    weight: 4
+    weight: 3
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_faculty_files:
     label: above
-    weight: 6
+    weight: 5
     type: file_default
     settings:
       use_description_as_link_text: true
@@ -109,14 +206,14 @@ content:
     region: content
   field_grading_scheme:
     label: above
-    weight: 13
+    weight: 12
     type: basic_string
     settings: {  }
     third_party_settings: {  }
     region: content
   field_how_the_course_is_taught:
     label: above
-    weight: 8
+    weight: 7
     type: string
     settings:
       link_to_entity: false
@@ -124,7 +221,7 @@ content:
     region: content
   field_institution:
     label: above
-    weight: 6
+    weight: 5
     type: string
     settings:
       link_to_entity: false
@@ -132,13 +229,13 @@ content:
     region: content
   field_lab_associated:
     label: above
-    weight: 11
+    weight: 10
     type: list_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_lc_moderator_new:
-    weight: 103
+    weight: 13
     label: above
     settings:
       link: true
@@ -147,14 +244,14 @@ content:
     region: content
   field_learning_goals:
     label: above
-    weight: 7
+    weight: 6
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_location:
     label: above
-    weight: 7
+    weight: 6
     type: string
     settings:
       link_to_entity: false
@@ -162,20 +259,20 @@ content:
     region: content
   field_number_of_meetings_per_wee:
     label: above
-    weight: 10
+    weight: 15
     type: list_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_number_of_weeks:
     label: above
-    weight: 12
+    weight: 17
     type: list_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_related_syllabi:
-    weight: 104
+    weight: 9
     label: above
     settings:
       link: true
@@ -184,7 +281,7 @@ content:
     region: content
   field_textbook:
     label: above
-    weight: 9
+    weight: 8
     type: string
     settings:
       link_to_entity: false
@@ -192,21 +289,21 @@ content:
     region: content
   field_time_per_meeting_minutes_:
     label: above
-    weight: 11
+    weight: 16
     type: list_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_typical_student_population:
     label: above
-    weight: 13
+    weight: 12
     type: basic_string
     settings: {  }
     third_party_settings: {  }
     region: content
   field_web_resources:
     label: above
-    weight: 9
+    weight: 8
     type: link
     settings:
       trim_length: 80
@@ -217,7 +314,7 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 106
+    weight: 14
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -225,22 +322,22 @@ content:
     region: content
   flag_adopted_lo:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   flag_favorites:
-    weight: 10
+    weight: 11
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 15
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   taxonomy_vocabulary_4:
     label: above
-    weight: 32
+    weight: 15
     type: entity_reference_label
     settings:
       link: true
@@ -248,7 +345,7 @@ content:
     region: content
   taxonomy_vocabulary_5:
     label: above
-    weight: 19
+    weight: 16
     type: entity_reference_label
     settings:
       link: true
@@ -256,7 +353,7 @@ content:
     region: content
   taxonomy_vocabulary_6:
     label: above
-    weight: 30
+    weight: 13
     type: entity_reference_label
     settings:
       link: true
@@ -264,7 +361,7 @@ content:
     region: content
   taxonomy_vocabulary_7:
     label: above
-    weight: 31
+    weight: 14
     type: entity_reference_label
     settings:
       link: true
@@ -272,7 +369,7 @@ content:
     region: content
   upload:
     label: above
-    weight: 5
+    weight: 4
     type: file_default
     settings:
       use_description_as_link_text: true

@@ -1,6 +1,6 @@
 uuid: d3799055-39d8-4696-8c06-8c0492fdf284
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.token
@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.class_activity.field_addl_authors
     - field.field.node.class_activity.field_assessment
     - field.field.node.class_activity.field_couples
+    - field.field.node.class_activity.field_creative_commons
     - field.field.node.class_activity.field_description
     - field.field.node.class_activity.field_faculty_files
     - field.field.node.class_activity.field_implementation_notes
@@ -17,6 +18,7 @@ dependencies:
     - field.field.node.class_activity.field_learning_goals
     - field.field.node.class_activity.field_time_required
     - field.field.node.class_activity.field_web_resources
+    - field.field.node.class_activity.field_workflow
     - field.field.node.class_activity.taxonomy_vocabulary_3
     - field.field.node.class_activity.taxonomy_vocabulary_4
     - field.field.node.class_activity.taxonomy_vocabulary_5

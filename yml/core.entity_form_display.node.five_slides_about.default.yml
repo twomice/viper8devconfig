@@ -38,13 +38,13 @@ mode: default
 content:
   comment_node_five_slides_about:
     type: comment_default
-    weight: 20
+    weight: 24
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -54,12 +54,11 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_assessment:
-    weight: 0
+    weight: 15
     type: text_textarea
     settings:
       rows: 8
@@ -67,23 +66,22 @@ content:
     third_party_settings: {  }
     region: content
   field_couples:
-    weight: 8
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_creative_commons:
-    weight: 122
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_description:
-    weight: 4
+    weight: 7
     type: text_textarea
     settings:
       rows: 10
@@ -91,14 +89,14 @@ content:
     third_party_settings: {  }
     region: content
   field_faculty_files:
-    weight: 6
+    weight: 9
     type: file_generic
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
   field_implementation_notes:
-    weight: 9
+    weight: 12
     type: text_textarea
     settings:
       rows: 8
@@ -106,7 +104,7 @@ content:
     third_party_settings: {  }
     region: content
   field_instructor_experience:
-    weight: 1
+    weight: 16
     type: text_textarea
     settings:
       rows: 8
@@ -114,17 +112,16 @@ content:
     third_party_settings: {  }
     region: content
   field_lc_moderator_new:
-    weight: 15
+    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_learning_goals:
-    weight: 7
+    weight: 10
     type: text_textarea
     settings:
       rows: 8
@@ -132,7 +129,7 @@ content:
     third_party_settings: {  }
     region: content
   field_time_required:
-    weight: 10
+    weight: 13
     type: string_textfield
     settings:
       size: 60
@@ -140,7 +137,7 @@ content:
     third_party_settings: {  }
     region: content
   field_web_resources:
-    weight: 11
+    weight: 14
     type: link_default
     settings:
       placeholder_url: ''
@@ -148,14 +145,14 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 121
+    weight: 19
     settings: {  }
     third_party_settings: {  }
     type: workflow_default
     region: content
   path:
     type: path
-    weight: 30
+    weight: 25
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -163,56 +160,56 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 22
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 26
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 23
     region: content
     third_party_settings: {  }
   taxonomy_vocabulary_3:
-    weight: 1
+    weight: 6
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   taxonomy_vocabulary_4:
-    weight: 2
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_5:
-    weight: 3
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_6:
     weight: 4
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
-  taxonomy_vocabulary_7:
+  taxonomy_vocabulary_5:
     weight: 5
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    weight: 2
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_7:
+    weight: 3
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -220,16 +217,15 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 20
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
     region: content
     third_party_settings: {  }
   upload:
-    weight: 5
+    weight: 8
     type: file_generic
     settings:
       progress_indicator: throbber

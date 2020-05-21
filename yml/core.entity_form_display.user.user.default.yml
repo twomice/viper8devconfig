@@ -29,10 +29,67 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_group
     - image
     - link
     - text
     - user
+third_party_settings:
+  field_group:
+    group_personal_information:
+      children:
+        - profile_name
+        - profile_public_name
+        - profile_url
+        - profile_least_fav_element
+        - profile_fav_element
+        - profile_orbital
+        - profile_degrees
+        - profile_address
+        - profile_phone
+        - profile_preferred_contact
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Personal Information'
+    group_professional_information:
+      children:
+        - profile_institution
+        - profile_position
+        - profile_research
+        - profile_institution_website
+        - profile_expertise
+        - profile_expertise3
+        - profile_expertise2
+        - profile_expertise_other
+        - profile_start_date
+        - profile_starting_role
+        - profile_request_privs
+        - profile_faculty_privilege_revi
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Professional Information'
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.default
@@ -41,29 +98,29 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
   contact:
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_subscribed_con:
-    weight: 39
+    weight: 19
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   language:
-    weight: 0
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   profile_address:
     type: text_textarea
-    weight: 0
+    weight: 15
     region: content
     settings:
       rows: 5
@@ -74,7 +131,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 16
+    weight: 14
     third_party_settings: {  }
     region: content
   profile_degrees1:
@@ -88,7 +145,7 @@ content:
   profile_expertise:
     type: options_select
     settings: {  }
-    weight: 14
+    weight: 13
     third_party_settings: {  }
     region: content
   profile_expertise1:
@@ -100,7 +157,7 @@ content:
   profile_expertise2:
     type: options_select
     settings: {  }
-    weight: 21
+    weight: 15
     third_party_settings: {  }
     region: content
   profile_expertise21:
@@ -112,7 +169,7 @@ content:
   profile_expertise3:
     type: options_select
     settings: {  }
-    weight: 20
+    weight: 14
     third_party_settings: {  }
     region: content
   profile_expertise31:
@@ -126,7 +183,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 15
+    weight: 16
     third_party_settings: {  }
     region: content
   profile_expertise_other1:
@@ -139,7 +196,7 @@ content:
     region: content
   profile_faculty_privilege_revi:
     type: text_textfield
-    weight: 0
+    weight: 20
     region: content
     settings:
       size: 60
@@ -150,7 +207,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 11
+    weight: 12
     third_party_settings: {  }
     region: content
   profile_fav_element1:
@@ -166,7 +223,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 7
+    weight: 9
     third_party_settings: {  }
     region: content
   profile_institution1:
@@ -182,7 +239,7 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    weight: 18
+    weight: 12
     third_party_settings: {  }
     region: content
   profile_institution_website1:
@@ -198,7 +255,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 10
+    weight: 11
     third_party_settings: {  }
     region: content
   profile_least_fav_element1:
@@ -211,7 +268,7 @@ content:
     region: content
   profile_name:
     type: text_textfield
-    weight: 0
+    weight: 8
     region: content
     settings:
       size: 60
@@ -222,7 +279,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 12
+    weight: 13
     third_party_settings: {  }
     region: content
   profile_orbital1:
@@ -235,7 +292,7 @@ content:
     region: content
   profile_phone:
     type: text_textfield
-    weight: 0
+    weight: 16
     region: content
     settings:
       size: 60
@@ -243,7 +300,7 @@ content:
     third_party_settings: {  }
   profile_position:
     type: text_textfield
-    weight: 0
+    weight: 10
     region: content
     settings:
       size: 60
@@ -251,7 +308,7 @@ content:
     third_party_settings: {  }
   profile_preferred_contact:
     type: options_select
-    weight: 0
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -260,7 +317,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    weight: 8
+    weight: 9
     third_party_settings: {  }
     region: content
   profile_public_name1:
@@ -290,7 +347,7 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    weight: 13
+    weight: 11
     third_party_settings: {  }
     region: content
   profile_research1:
@@ -303,7 +360,7 @@ content:
     region: content
   profile_start_date:
     type: text_textfield
-    weight: 0
+    weight: 17
     region: content
     settings:
       size: 60
@@ -312,7 +369,7 @@ content:
   profile_starting_role:
     type: options_select
     settings: {  }
-    weight: 17
+    weight: 18
     third_party_settings: {  }
     region: content
   profile_starting_role1:
@@ -326,7 +383,7 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    weight: 9
+    weight: 10
     third_party_settings: {  }
     region: content
   profile_url1:
@@ -338,7 +395,7 @@ content:
     third_party_settings: {  }
     region: content
   timezone:
-    weight: 6
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -347,7 +404,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     type: image_image
-    weight: 38
+    weight: 18
     third_party_settings: {  }
     region: content
 hidden:

@@ -1,9 +1,32 @@
 uuid: b3d8231a-aa30-4af6-a725-a3b076b2c856
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_subscribed_con
+    - field.field.user.user.profile_address
+    - field.field.user.user.profile_degrees
+    - field.field.user.user.profile_expertise
+    - field.field.user.user.profile_expertise2
+    - field.field.user.user.profile_expertise3
+    - field.field.user.user.profile_expertise_other
+    - field.field.user.user.profile_faculty_privilege_revi
+    - field.field.user.user.profile_fav_element
+    - field.field.user.user.profile_institution
+    - field.field.user.user.profile_institution_website
+    - field.field.user.user.profile_least_fav_element
+    - field.field.user.user.profile_name
+    - field.field.user.user.profile_orbital
+    - field.field.user.user.profile_phone
+    - field.field.user.user.profile_position
+    - field.field.user.user.profile_preferred_contact
+    - field.field.user.user.profile_public_name
+    - field.field.user.user.profile_request_privs
+    - field.field.user.user.profile_research
+    - field.field.user.user.profile_start_date
+    - field.field.user.user.profile_starting_role
+    - field.field.user.user.profile_url
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:

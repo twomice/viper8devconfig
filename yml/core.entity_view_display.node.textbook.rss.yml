@@ -1,16 +1,18 @@
 uuid: 31ece3f1-6a72-482e-b80e-aec381e6dc0b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.textbook.comment_node_textbook
     - field.field.node.textbook.field_addl_authors
     - field.field.node.textbook.field_couples
+    - field.field.node.textbook.field_creative_commons
     - field.field.node.textbook.field_description
     - field.field.node.textbook.field_implementation_notes
     - field.field.node.textbook.field_lc_moderator_new
     - field.field.node.textbook.field_web_resources
+    - field.field.node.textbook.field_workflow
     - field.field.node.textbook.taxonomy_vocabulary_3
     - field.field.node.textbook.taxonomy_vocabulary_4
     - field.field.node.textbook.taxonomy_vocabulary_5

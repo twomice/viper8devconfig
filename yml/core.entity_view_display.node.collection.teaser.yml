@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.collection.field_syllabus
     - field.field.node.collection.field_textbook_lo
     - field.field.node.collection.field_web_resources_and_apps
+    - field.field.node.collection.field_workflow
     - field.field.node.collection.taxonomy_vocabulary_3
     - field.field.node.collection.taxonomy_vocabulary_4
     - field.field.node.collection.taxonomy_vocabulary_5
@@ -39,61 +40,6 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  flag_adopted_lo:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  flag_favorites:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_3:
-    label: above
-    weight: 10
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_4:
-    label: above
-    weight: 10
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_5:
-    label: above
-    weight: 10
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_6:
-    label: above
-    weight: 10
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  taxonomy_vocabulary_7:
-    label: above
-    weight: 10
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
 hidden:
   comment_node_collection: true
   field_addl_authors: true
@@ -107,4 +53,12 @@ hidden:
   field_textbook_lo: true
   field_web_resources_and_apps: true
   field_workflow: true
+  flag_adopted_lo: true
+  flag_favorites: true
+  links: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true
   upload: true

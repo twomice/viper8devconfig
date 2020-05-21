@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.taxonomy_vocabulary_3
     - field.storage.node.taxonomy_vocabulary_4
-    - field.storage.user.profile_name
     - node.type.class_activity
     - node.type.collection
     - node.type.experiment
@@ -15,11 +14,11 @@ dependencies:
     - node.type.syllabus
     - node.type.textbook
     - node.type.web_resources
+    - system.menu.main
     - taxonomy.vocabulary.vocabulary_3
   module:
     - node
     - taxonomy
-    - text
     - user
 id: teaching_resources
 label: 'Teaching Resources'
@@ -95,7 +94,7 @@ display:
           description: ''
           columns:
             title: title
-            profile_name: profile_name
+            name: name
             type: type
             taxonomy_vocabulary_3: taxonomy_vocabulary_3
             taxonomy_vocabulary_4: taxonomy_vocabulary_4
@@ -108,7 +107,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            profile_name:
+            name:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -134,12 +133,12 @@ display:
               responsive: ''
             created:
               sortable: true
-              default_sort_order: asc
+              default_sort_order: desc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+          default: created
           empty_table: false
       row:
         type: fields
@@ -191,10 +190,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        profile_name:
-          id: profile_name
-          table: user__profile_name
-          field: profile_name
+        name:
+          id: name
+          table: users_field_data
+          field: name
           relationship: uid
           group_type: group
           admin_label: ''
@@ -203,8 +202,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/user/{{ name__value }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -217,14 +216,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 100
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: false
-            trim: false
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
@@ -240,8 +239,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: user_name
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -252,6 +252,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: user
+          entity_field: name
           plugin_id: field
         type:
           id: type
@@ -260,7 +262,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Type
+          label: 'LO Type'
           exclude: false
           alter:
             alter_text: false
@@ -373,7 +375,7 @@ display:
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: 3
+          delta_limit: 10
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -547,7 +549,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: 'LO Type'
             description: ''
             use_operator: false
             operator: type_op
@@ -705,7 +707,20 @@ display:
             label: ''
           granularity: second
       title: 'Teaching Resources'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<small>CTRL-click (CMD-click) multiple items to select several at once, or to de-select items.</small><br />\r\nYou can also <a href=\"/resources/search\">search by keywords and author and institution</a>."
+            format: '1'
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships:
@@ -722,6 +737,10 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -735,7 +754,6 @@ display:
       tags:
         - 'config:field.storage.node.taxonomy_vocabulary_3'
         - 'config:field.storage.node.taxonomy_vocabulary_4'
-        - 'config:field.storage.user.profile_name'
   page_1:
     display_plugin: page
     id: page_1
@@ -744,6 +762,15 @@ display:
     display_options:
       display_extenders: {  }
       path: resources/teaching-resources
+      menu:
+        type: normal
+        title: All
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:001c969d-47dc-4d16-a536-d3369d185fde'
+        weight: -70
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
@@ -757,4 +784,3 @@ display:
       tags:
         - 'config:field.storage.node.taxonomy_vocabulary_3'
         - 'config:field.storage.node.taxonomy_vocabulary_4'
-        - 'config:field.storage.user.profile_name'

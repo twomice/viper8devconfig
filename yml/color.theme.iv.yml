@@ -10,9 +10,9 @@ palette:
   titleslogan: '#fffeff'
   text: '#3b3b3b'
   link: '#217e2c'
-logo: 'public://color/iv-3e3f2348/logo.svg'
+logo: 'public://color/iv-70d59961/logo.svg'
 stylesheets:
-  - 'public://color/iv-3e3f2348/colors.css'
+  - 'public://color/iv-70d59961/colors.css'
 files:
-  - 'public://color/iv-3e3f2348/logo.svg'
-  - 'public://color/iv-3e3f2348/colors.css'
+  - 'public://color/iv-70d59961/logo.svg'
+  - 'public://color/iv-70d59961/colors.css'

@@ -2,6 +2,16 @@ uuid: 8ec3be78-4a17-444b-a9e5-79be6e258062
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.class_activity
+    - node.type.collection
+    - node.type.experiment
+    - node.type.five_slides_about
+    - node.type.literature_discussion
+    - node.type.problem_set
+    - node.type.syllabus
+    - node.type.textbook
+    - node.type.web_resources
   module:
     - node
     - user
@@ -54,10 +64,17 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: ''
+          row_class: mb-3
           default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            created: created
+          separator: ' '
+          hide_empty: false
       fields:
         title:
           id: title
@@ -143,7 +160,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: 'small text-muted'
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -187,6 +204,54 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            collection: collection
+            five_slides_about: five_slides_about
+            class_activity: class_activity
+            experiment: experiment
+            literature_discussion: literature_discussion
+            problem_set: problem_set
+            syllabus: syllabus
+            textbook: textbook
+            web_resources: web_resources
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
       sorts:
         created:
           id: created

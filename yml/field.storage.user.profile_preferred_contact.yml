@@ -20,6 +20,9 @@ settings:
     -
       value: Phone
       label: Phone
+    -
+      value: '0'
+      label: '0'
   allowed_values_function: ''
 module: options
 locked: false
