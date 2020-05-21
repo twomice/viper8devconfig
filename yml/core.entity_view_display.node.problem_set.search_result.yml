@@ -1,0 +1,68 @@
+uuid: 767a6cd4-0136-4c91-90e5-06ef7a07d7d5
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.problem_set.comment_node_problem_set
+    - field.field.node.problem_set.field_addl_authors
+    - field.field.node.problem_set.field_assessment
+    - field.field.node.problem_set.field_couples
+    - field.field.node.problem_set.field_creative_commons
+    - field.field.node.problem_set.field_description
+    - field.field.node.problem_set.field_exam_question
+    - field.field.node.problem_set.field_implementation_notes
+    - field.field.node.problem_set.field_instructor_experience
+    - field.field.node.problem_set.field_lc_moderator_new
+    - field.field.node.problem_set.field_learning_goals
+    - field.field.node.problem_set.field_time_required
+    - field.field.node.problem_set.field_web_resources
+    - field.field.node.problem_set.field_workflow
+    - field.field.node.problem_set.taxonomy_vocabulary_3
+    - field.field.node.problem_set.taxonomy_vocabulary_4
+    - field.field.node.problem_set.taxonomy_vocabulary_5
+    - field.field.node.problem_set.taxonomy_vocabulary_6
+    - field.field.node.problem_set.taxonomy_vocabulary_7
+    - field.field.node.problem_set.upload
+    - node.type.problem_set
+  module:
+    - text
+    - user
+id: node.problem_set.search_result
+targetEntityType: node
+bundle: problem_set
+mode: search_result
+content:
+  field_description:
+    label: above
+    weight: 0
+    type: text_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_problem_set: true
+  field_addl_authors: true
+  field_assessment: true
+  field_couples: true
+  field_creative_commons: true
+  field_exam_question: true
+  field_implementation_notes: true
+  field_instructor_experience: true
+  field_lc_moderator_new: true
+  field_learning_goals: true
+  field_time_required: true
+  field_web_resources: true
+  field_workflow: true
+  flag_adopted_lo: true
+  flag_favorites: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  taxonomy_vocabulary_3: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true
+  upload: true

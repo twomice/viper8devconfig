@@ -19,7 +19,7 @@ bundles:
   - web_resources
 entity_type: node
 global: false
-weight: -10
+weight: 0
 flag_short: 'I Have Adopted This'
 flag_long: 'I have adopted this LO in class'
 flag_message: 'Added to your adopted LOs'

@@ -23,7 +23,7 @@ bundles:
   - web_resources
 entity_type: node
 global: false
-weight: -8
+weight: 0
 flag_short: 'Add to My Favorites'
 flag_long: 'Add this post to my favorites'
 flag_message: 'Added to my favorites'

@@ -1,0 +1,25 @@
+uuid: e91ed766-27d0-4e5c-b59c-d23e664dd13e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fae749f8-7d29-42eb-a6a5-75d490f9164a'
+  module:
+    - block_content
+  theme:
+    - iv
+id: footermessagenew
+theme: iv
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:fae749f8-7d29-42eb-a6a5-75d490f9164a'
+settings:
+  id: 'block_content:fae749f8-7d29-42eb-a6a5-75d490f9164a'
+  label: 'Footer message'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

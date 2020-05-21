@@ -1,0 +1,84 @@
+uuid: 696ff5ce-789c-499f-a062-6fab803d55ff
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.syllabus.comment_node_syllabus
+    - field.field.node.syllabus.field_addl_authors
+    - field.field.node.syllabus.field_average_class_size
+    - field.field.node.syllabus.field_couples
+    - field.field.node.syllabus.field_course_area_and_number
+    - field.field.node.syllabus.field_creative_commons
+    - field.field.node.syllabus.field_description
+    - field.field.node.syllabus.field_faculty_files
+    - field.field.node.syllabus.field_grading_scheme
+    - field.field.node.syllabus.field_how_the_course_is_taught
+    - field.field.node.syllabus.field_institution
+    - field.field.node.syllabus.field_lab_associated
+    - field.field.node.syllabus.field_lc_moderator_new
+    - field.field.node.syllabus.field_learning_goals
+    - field.field.node.syllabus.field_location
+    - field.field.node.syllabus.field_number_of_meetings_per_wee
+    - field.field.node.syllabus.field_number_of_weeks
+    - field.field.node.syllabus.field_related_syllabi
+    - field.field.node.syllabus.field_textbook
+    - field.field.node.syllabus.field_time_per_meeting_minutes_
+    - field.field.node.syllabus.field_typical_student_population
+    - field.field.node.syllabus.field_web_resources
+    - field.field.node.syllabus.field_workflow
+    - field.field.node.syllabus.taxonomy_vocabulary_4
+    - field.field.node.syllabus.taxonomy_vocabulary_5
+    - field.field.node.syllabus.taxonomy_vocabulary_6
+    - field.field.node.syllabus.taxonomy_vocabulary_7
+    - field.field.node.syllabus.upload
+    - node.type.syllabus
+  module:
+    - text
+    - user
+id: node.syllabus.search_result
+targetEntityType: node
+bundle: syllabus
+mode: search_result
+content:
+  field_description:
+    label: above
+    weight: 0
+    type: text_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_syllabus: true
+  field_addl_authors: true
+  field_average_class_size: true
+  field_couples: true
+  field_course_area_and_number: true
+  field_creative_commons: true
+  field_faculty_files: true
+  field_grading_scheme: true
+  field_how_the_course_is_taught: true
+  field_institution: true
+  field_lab_associated: true
+  field_lc_moderator_new: true
+  field_learning_goals: true
+  field_location: true
+  field_number_of_meetings_per_wee: true
+  field_number_of_weeks: true
+  field_related_syllabi: true
+  field_textbook: true
+  field_time_per_meeting_minutes_: true
+  field_typical_student_population: true
+  field_web_resources: true
+  field_workflow: true
+  flag_adopted_lo: true
+  flag_favorites: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  taxonomy_vocabulary_4: true
+  taxonomy_vocabulary_5: true
+  taxonomy_vocabulary_6: true
+  taxonomy_vocabulary_7: true
+  upload: true

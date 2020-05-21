@@ -61,6 +61,8 @@ hidden:
   field_lc_moderator_new: true
   field_web_resources: true
   field_workflow: true
+  langcode: true
+  search_api_excerpt: true
   taxonomy_vocabulary_3: true
   taxonomy_vocabulary_4: true
   taxonomy_vocabulary_5: true

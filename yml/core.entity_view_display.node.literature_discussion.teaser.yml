@@ -55,7 +55,9 @@ hidden:
   field_workflow: true
   flag_adopted_lo: true
   flag_favorites: true
+  langcode: true
   links: true
+  search_api_excerpt: true
   taxonomy_vocabulary_3: true
   taxonomy_vocabulary_4: true
   taxonomy_vocabulary_5: true

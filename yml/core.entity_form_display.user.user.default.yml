@@ -408,6 +408,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  langcode: true
   profile_address1: true
   profile_faculty_privilege_revi1: true
   profile_name1: true

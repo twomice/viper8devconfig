@@ -50,6 +50,7 @@ content:
     label: hidden
 hidden:
   field_subscribed_con: true
+  langcode: true
   member_for: true
   profile_address: true
   profile_address1: true
@@ -96,3 +97,4 @@ hidden:
   profile_url: true
   profile_url1: true
   realname: true
+  search_api_excerpt: true

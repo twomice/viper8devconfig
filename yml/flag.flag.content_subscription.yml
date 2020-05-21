@@ -24,7 +24,7 @@ bundles:
   - web_resources
 entity_type: node
 global: false
-weight: -9
+weight: 0
 flag_short: 'Subscribe to this content'
 flag_long: ''
 flag_message: ''

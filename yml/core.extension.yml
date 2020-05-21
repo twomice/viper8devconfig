@@ -26,6 +26,7 @@ module:
   help: 0
   history: 0
   image: 0
+  language: 0
   link: 0
   mailsystem: 0
   menu_ui: 0
@@ -53,6 +54,10 @@ module:
   realname: 0
   rules: 0
   search: 0
+  search_api: 0
+  search_api_attachments: 0
+  search_api_solr: 0
+  search_api_solr_defaults: 0
   search_file_attachments: 0
   shortcut: 0
   swiftmailer: 0

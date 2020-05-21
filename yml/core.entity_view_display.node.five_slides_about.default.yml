@@ -270,4 +270,6 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

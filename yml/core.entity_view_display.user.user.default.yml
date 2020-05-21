@@ -400,6 +400,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  langcode: true
   profile_address1: true
   profile_faculty_privilege_revi1: true
   profile_name1: true
@@ -408,3 +409,4 @@ hidden:
   profile_preferred_contact1: true
   profile_start_date1: true
   realname: true
+  search_api_excerpt: true
