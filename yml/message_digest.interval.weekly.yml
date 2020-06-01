@@ -1,0 +1,10 @@
+uuid: d1be784d-4aeb-4b79-ba60-9bd8ca202202
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Vh6ErYCth5nLXge5GiAhBcrsn17BpCBjmwyCNKstvuM
+id: weekly
+label: Weekly
+interval: '1 week'
+description: 'Sends messages in 1 week intervals.'

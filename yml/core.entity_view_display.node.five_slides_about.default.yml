@@ -50,7 +50,7 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
+        id: my-notes
         classes: field-group
       label: 'My Notes'
     group_categories:
@@ -92,6 +92,24 @@ third_party_settings:
         id: ''
         classes: field-group
       label: Evaluation
+    group_subscriptions:
+      children:
+        - flag_subscribe_content_type
+        - flag_subscribe_node
+      parent_name: ''
+      weight: 15
+      format_type: html_element
+      format_settings:
+        label: Subscriptions
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+        id: subscriptions
+        classes: field-group
+      label: Subscriptions
 id: node.five_slides_about.default
 targetEntityType: node
 bundle: five_slides_about
@@ -100,7 +118,7 @@ content:
   comment_node_five_slides_about:
     label: hidden
     type: comment_default
-    weight: 16
+    weight: 17
     settings:
       view_mode: default
       pager_id: 0
@@ -217,8 +235,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  flag_subscribe_content_type:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }

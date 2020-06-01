@@ -1,0 +1,30 @@
+uuid: 365f51de-9c60-4460-a17a-80ca4f611a86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_user
+    - message.template.user_register
+_core:
+  default_config_hash: pTs5DcyqA_c3kvz2L2sDA-qvHJ4kUKnTJ-yspz_VISQ
+id: message.user_register.field_user
+field_name: field_user
+entity_type: message
+bundle: user_register
+label: User
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

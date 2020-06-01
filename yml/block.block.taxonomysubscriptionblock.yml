@@ -1,0 +1,26 @@
+uuid: 9ee372bd-f00d-4317-b905-dbd84541958c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - viper_subscribe
+  theme:
+    - iv
+id: taxonomysubscriptionblock
+theme: iv
+region: content
+weight: 0
+provider: null
+plugin: taxonomy_subscription_block
+settings:
+  id: taxonomy_subscription_block
+  label: 'Taxonomy Subscription Block'
+  provider: viper_subscribe
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/message-subscribe/subscribe_term'
+    negate: false
+    context_mapping: {  }

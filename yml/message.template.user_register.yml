@@ -1,0 +1,22 @@
+uuid: 33a1c676-1f4f-49cc-a19e-bb35cc4be644
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YNzfo9JM8uN1ZuhsV5Qbi6HCnLBvKnRSiS6916zrBeg
+template: user_register
+label: 'User registered'
+description: 'User registered.'
+text:
+  -
+    value: "[message:field_user:entity:account-name] registered\r\n"
+    format: plain_text
+  -
+    value: "<h2>[message:field_user:entity:account-name] registered</h2>\r\n\r\n<p>username: [message:field_user:entity:account-name]<br />\r\nurl:&nbsp;[message:field_user:entity:url]<br />\r\ntimestamp: [message:field_user:entity:created]</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

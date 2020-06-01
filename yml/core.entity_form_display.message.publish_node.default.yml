@@ -1,0 +1,44 @@
+uuid: 8ebaa867-c4ae-407d-8080-4eebc76e3950
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.publish_node.field_node_reference
+    - field.field.message.publish_node.field_published
+    - message.template.publish_node
+_core:
+  default_config_hash: w1VusYkHwtTNCP1N8u03jWGH4UntLqNtyhlBRkOveh8
+id: message.publish_node.default
+targetEntityType: message
+bundle: publish_node
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_node_reference:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    '#group': advanced
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_published: true

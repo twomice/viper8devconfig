@@ -1,0 +1,26 @@
+uuid: 3d0ff9a6-bfa8-4c07-bf87-1d321973d62a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.publish_node.field_node_reference
+    - field.field.message.publish_node.field_published
+    - message.template.publish_node
+  module:
+    - user
+_core:
+  default_config_hash: D4QxnVvVrqmf_OSm3VDOzSkkZTfuB3iA95dr9i8KsD0
+id: message.publish_node.mail_body
+targetEntityType: message
+bundle: publish_node
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_node_reference: true
+  field_published: true
+  partial_0: true
+  search_api_excerpt: true

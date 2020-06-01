@@ -25,6 +25,7 @@ module:
   flag: 0
   help: 0
   history: 0
+  html_title: 0
   image: 0
   language: 0
   link: 0
@@ -52,6 +53,7 @@ module:
   quickedit: 0
   rdf: 0
   realname: 0
+  reroute_email: 0
   rules: 0
   search: 0
   search_api: 0

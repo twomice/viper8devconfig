@@ -1,0 +1,26 @@
+uuid: 5ce657a1-882b-409e-a83c-b7dd40f20493
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - viper_subscribe
+  theme:
+    - iv
+id: contenttypesubscriptionblock
+theme: iv
+region: content
+weight: 0
+provider: null
+plugin: content_type_subscription_block
+settings:
+  id: content_type_subscription_block
+  label: 'Content Type Subscription Block'
+  provider: viper_subscribe
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/message-subscribe'
+    negate: false
+    context_mapping: {  }

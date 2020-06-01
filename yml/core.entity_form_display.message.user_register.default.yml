@@ -1,0 +1,44 @@
+uuid: f05a060a-7b21-4a30-8fc1-643f58249340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.user_register.field_published
+    - field.field.message.user_register.field_user
+    - message.template.user_register
+_core:
+  default_config_hash: 3nCPPnkT3DIAuE3m-5go2EDfiUbOTiCMWSR9vS09vgA
+id: message.user_register.default
+targetEntityType: message
+bundle: user_register
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_user:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    '#group': advanced
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_published: true
