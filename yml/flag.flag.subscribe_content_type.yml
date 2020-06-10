@@ -14,10 +14,10 @@ bundles: {  }
 entity_type: node
 global: false
 weight: -5
-flag_short: 'Subscribe to [viper_subscribe:bundle]'
+flag_short: 'Subscribe to this Content Type'
 flag_long: ''
 flag_message: ''
-unflag_short: 'Unsubscribe from [viper_subscribe:bundle]'
+unflag_short: 'Unsubscribe from this Content Type'
 unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''
