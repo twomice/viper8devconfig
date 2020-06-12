@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: iv
 region: content
-weight: -3
+weight: -12
 provider: null
 plugin: system_main_block
 settings:

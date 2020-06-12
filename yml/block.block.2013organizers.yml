@@ -1,0 +1,31 @@
+uuid: ca607d0e-edbb-4689-96f2-24fd460c2aa2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:583f1400-e731-4644-926b-911890a57a33'
+  module:
+    - block_content
+    - system
+  theme:
+    - iv
+id: 2013organizers
+theme: iv
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'block_content:583f1400-e731-4644-926b-911890a57a33'
+settings:
+  id: 'block_content:583f1400-e731-4644-926b-911890a57a33'
+  label: '2013 Organizers'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/solid-state-materials-alternative-energy-needs-2013-workshop\r\n/2013-workshop-presenters\r\n/2013-workshop-schedule\r\n/2013-workshop-participants"
+    negate: false
+    context_mapping: {  }

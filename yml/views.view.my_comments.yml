@@ -7,6 +7,7 @@ dependencies:
     - system.menu.main
   module:
     - comment
+    - html_title
     - node
     - text
     - user
@@ -397,8 +398,8 @@ display:
         title: 'My Comments'
         description: ''
         expanded: false
-        parent: 'menu_link_content:8aa668ca-a504-4068-bf33-5d848539da55'
-        weight: 6
+        parent: 'menu_link_content:e98dd97a-e133-4fba-bd54-655a7662520f'
+        weight: -83
         context: '0'
         menu_name: main
     cache_metadata:

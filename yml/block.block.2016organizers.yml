@@ -1,0 +1,31 @@
+uuid: f0d6b457-1402-410e-810b-e671e8bb9e78
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f1403f50-a193-4ec6-b3a0-d4cbddf2d27e'
+  module:
+    - block_content
+    - system
+  theme:
+    - iv
+id: 2016organizers
+theme: iv
+region: sidebar_second
+weight: -2
+provider: null
+plugin: 'block_content:f1403f50-a193-4ec6-b3a0-d4cbddf2d27e'
+settings:
+  id: 'block_content:f1403f50-a193-4ec6-b3a0-d4cbddf2d27e'
+  label: '2016 Organizers'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/2922\r\n/node/2923\r\n/node/2924\r\n/node/2921"
+    negate: false
+    context_mapping: {  }

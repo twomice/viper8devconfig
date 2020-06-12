@@ -1,0 +1,30 @@
+uuid: d2d081b6-d861-4ee8-97f1-fa3209f0429d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-2019-workshop
+  module:
+    - system
+  theme:
+    - iv
+id: 2019workshop
+theme: iv
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'system_menu_block:menu-2019-workshop'
+settings:
+  id: 'system_menu_block:menu-2019-workshop'
+  label: '2019 Workshop'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/3393\r\n/node/3394\r\n/node/3395\r\n/node/3396"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: 561b0f3f-75bd-43bf-81d3-ddb8474dd932
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-2020-workshop
+  module:
+    - system
+  theme:
+    - iv
+id: 2020workshop
+theme: iv
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'system_menu_block:menu-2020-workshop'
+settings:
+  id: 'system_menu_block:menu-2020-workshop'
+  label: '2020 Workshop'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/3559\r\n/node/3560\r\n/node/3561\r\n/node/3562"
+    negate: false
+    context_mapping: {  }

@@ -32,6 +32,16 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  flag_subscribe_content_type:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }

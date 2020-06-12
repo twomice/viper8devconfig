@@ -40,14 +40,15 @@ third_party_settings:
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
-        classes: field-group
+        label: 'My Notes'
         element: div
         show_label: true
         label_element: h5
         attributes: ''
         effect: none
         speed: fast
+        id: my-notes
+        classes: field-group
       label: 'My Notes'
     group_categories:
       children:
@@ -199,6 +200,16 @@ content:
     third_party_settings: {  }
   flag_favorites:
     weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_content_type:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

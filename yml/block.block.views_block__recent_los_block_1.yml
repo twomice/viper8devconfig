@@ -12,7 +12,7 @@ dependencies:
 id: views_block__recent_los_block_1
 theme: iv
 region: sidebar_second
-weight: 0
+weight: -16
 provider: null
 plugin: 'views_block:recent_los-block_1'
 settings:

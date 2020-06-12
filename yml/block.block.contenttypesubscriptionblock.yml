@@ -10,7 +10,7 @@ dependencies:
 id: contenttypesubscriptionblock
 theme: iv
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: content_type_subscription_block
 settings:

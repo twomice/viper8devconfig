@@ -17,6 +17,7 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.vocabulary_3
   module:
+    - html_title
     - node
     - taxonomy
     - user
@@ -766,8 +767,8 @@ display:
         title: All
         description: ''
         expanded: false
-        parent: 'menu_link_content:001c969d-47dc-4d16-a536-d3369d185fde'
-        weight: -70
+        parent: 'menu_link_content:eec4466d-5c40-49f4-b215-ab14e180fb21'
+        weight: -84
         context: '0'
         menu_name: main
     cache_metadata:

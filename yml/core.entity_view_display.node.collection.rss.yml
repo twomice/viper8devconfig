@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.collection.field_five_slides_about
     - field.field.node.collection.field_in_class_activity
     - field.field.node.collection.field_lab_experiment
+    - field.field.node.collection.field_lc_moderator_new
     - field.field.node.collection.field_literature_discussion
     - field.field.node.collection.field_problem_set
     - field.field.node.collection.field_syllabus
@@ -42,6 +43,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  flag_subscribe_content_type:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -63,6 +74,7 @@ hidden:
   field_five_slides_about: true
   field_in_class_activity: true
   field_lab_experiment: true
+  field_lc_moderator_new: true
   field_literature_discussion: true
   field_problem_set: true
   field_syllabus: true

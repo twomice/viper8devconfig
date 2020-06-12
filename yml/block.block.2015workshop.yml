@@ -1,0 +1,30 @@
+uuid: 81697dbb-81b0-4fc7-8cd4-9659c2810cd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-2015-workshop
+  module:
+    - system
+  theme:
+    - iv
+id: 2015workshop
+theme: iv
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'system_menu_block:menu-2015-workshop'
+settings:
+  id: 'system_menu_block:menu-2015-workshop'
+  label: '2015 Workshop'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/2664\r\n/node/2665\r\n/node/2666\r\n/node/2667"
+    negate: false
+    context_mapping: {  }

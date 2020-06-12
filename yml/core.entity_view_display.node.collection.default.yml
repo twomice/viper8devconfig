@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.collection.field_five_slides_about
     - field.field.node.collection.field_in_class_activity
     - field.field.node.collection.field_lab_experiment
+    - field.field.node.collection.field_lc_moderator_new
     - field.field.node.collection.field_literature_discussion
     - field.field.node.collection.field_problem_set
     - field.field.node.collection.field_syllabus
@@ -28,7 +29,6 @@ dependencies:
     - comment
     - field_group
     - file
-    - options
     - text
     - user
 third_party_settings:
@@ -41,14 +41,15 @@ third_party_settings:
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
-        classes: field-group
+        label: 'My Notes'
         element: div
         show_label: true
         label_element: h5
         attributes: ''
         effect: none
         speed: fast
+        id: my-notes
+        classes: field-group
       label: 'My Notes'
     group_categories:
       children:
@@ -109,7 +110,7 @@ content:
   comment_node_collection:
     label: hidden
     type: comment_default
-    weight: 17
+    weight: 10
     settings:
       view_mode: default
       pager_id: 0
@@ -149,6 +150,14 @@ content:
     region: content
   field_lab_experiment:
     weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lc_moderator_new:
+    weight: 8
     label: above
     settings:
       link: true
@@ -195,13 +204,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_workflow:
-    weight: 15
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   flag_adopted_lo:
     weight: 4
     region: content
@@ -212,8 +214,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  flag_subscribe_content_type:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 16
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -266,5 +278,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_workflow: true
   langcode: true
   search_api_excerpt: true

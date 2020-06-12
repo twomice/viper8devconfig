@@ -13,7 +13,7 @@ _core:
 id: iv_tools
 theme: iv
 region: sidebar_second
-weight: -6
+weight: 0
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

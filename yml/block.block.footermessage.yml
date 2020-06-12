@@ -1,21 +1,21 @@
-uuid: e91ed766-27d0-4e5c-b59c-d23e664dd13e
+uuid: 22c21358-58c6-42b7-a346-6bc2399e2935
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:fae749f8-7d29-42eb-a6a5-75d490f9164a'
+    - 'block_content:basic:21d7db56-3bb9-43f9-a8c4-6f5d9164c8eb'
   module:
     - block_content
   theme:
     - iv
-id: footermessagenew
+id: footermessage
 theme: iv
 region: footer_fifth
 weight: 0
 provider: null
-plugin: 'block_content:fae749f8-7d29-42eb-a6a5-75d490f9164a'
+plugin: 'block_content:21d7db56-3bb9-43f9-a8c4-6f5d9164c8eb'
 settings:
-  id: 'block_content:fae749f8-7d29-42eb-a6a5-75d490f9164a'
+  id: 'block_content:21d7db56-3bb9-43f9-a8c4-6f5d9164c8eb'
   label: 'Footer message'
   provider: block_content
   label_display: '0'

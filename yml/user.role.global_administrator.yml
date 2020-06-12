@@ -124,6 +124,7 @@ permissions:
   - 'delete any five_slides_about content'
   - 'delete any jmol content'
   - 'delete any poll content'
+  - 'delete any problem_set content'
   - 'delete any syllabus content'
   - 'delete backup files'
   - 'delete own blog content'

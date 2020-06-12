@@ -103,6 +103,11 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  flag_subscribe_user:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   member_for:
     weight: 9
     region: content

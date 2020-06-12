@@ -1,7 +1,0 @@
-tika:
-  path: /srv/bin
-  jar: tika-app-1.18.jar
-java_path: null
-files:
-  include: 'rtf,txt,html,doc,xls,pdf,ppt,pps,odt,ods,odp,zip,tar,log,chk,chm,pdb,cif,cmdf,jmol,cdx,docx,xlsx,pptx,jcamp,xrdml,mry,dae,cdf'
-debug: 0

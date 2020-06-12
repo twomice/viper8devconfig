@@ -42,6 +42,16 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  flag_subscribe_content_type:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   comment_node_class_activity: true
   field_addl_authors: true

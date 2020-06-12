@@ -1,0 +1,31 @@
+uuid: f0f32eda-e160-46e1-9e68-791515c36c69
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6e6ff60e-411b-42c2-85b2-d7d18ca094e2'
+  module:
+    - block_content
+    - system
+  theme:
+    - iv
+id: 2014organizers
+theme: iv
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'block_content:6e6ff60e-411b-42c2-85b2-d7d18ca094e2'
+settings:
+  id: 'block_content:6e6ff60e-411b-42c2-85b2-d7d18ca094e2'
+  label: '2014 Organizers'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/2411\r\n/node/2412\r\n/node/2413\r\n/node/2414"
+    negate: false
+    context_mapping: {  }

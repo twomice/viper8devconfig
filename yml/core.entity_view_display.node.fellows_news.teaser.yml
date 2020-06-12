@@ -24,13 +24,19 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  flag_subscribe_content_type:
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   comment_node_fellows_news: true
   field_workflow_fellowsreivew: true
   langcode: true
+  links: true
   search_api_excerpt: true

@@ -10,7 +10,7 @@ dependencies:
 id: taxonomysubscriptionblock
 theme: iv
 region: content
-weight: 0
+weight: -9
 provider: null
 plugin: taxonomy_subscription_block
 settings:

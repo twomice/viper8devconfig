@@ -1,4 +1,5 @@
 module:
+  acl: 0
   admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
@@ -10,6 +11,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_access: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -19,6 +21,7 @@ module:
   entity_reference: 0
   field: 0
   field_group: 0
+  field_permissions: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -30,7 +33,7 @@ module:
   language: 0
   link: 0
   mailsystem: 0
-  menu_export: 1
+  masquerade: 0
   menu_ui: 0
   message: 0
   message_digest: 0
@@ -61,7 +64,6 @@ module:
   search_api_attachments: 0
   search_api_solr: 0
   search_api_solr_defaults: 0
-  search_file_attachments: 0
   shortcut: 0
   swiftmailer: 0
   system: 0
@@ -79,7 +81,9 @@ module:
   workflow_operations: 0
   workflow_ui: 0
   forum: 1
+  menu_export: 1
   menu_link_content: 1
+  forum_access: 2
   views: 10
   standard: 1000
 theme:

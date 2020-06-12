@@ -1,0 +1,28 @@
+uuid: 27846f58-c74f-455b-8f81-d5d6eaaab284
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_moderator_new
+    - node.type.collection
+id: node.collection.field_lc_moderator_new
+field_name: field_lc_moderator_new
+entity_type: node
+bundle: collection
+label: 'LC Moderator'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

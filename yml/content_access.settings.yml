@@ -1,0 +1,15 @@
+content_access_roles_gids:
+  anonymous: 1
+  authenticated: 2
+  faculty: 3
+  global_administrator: 4
+  guest: 5
+  leadership_council: 6
+  student: 7
+  blogger: 8
+  administrator: 9
+  viper_fellow: 10
+_core:
+  default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
+content_access_node_type:
+  problem_set: 'a:2:{s:8:"view_own";a:4:{i:0;s:7:"faculty";i:1;s:20:"global_administrator";i:2;s:18:"leadership_council";i:3;s:13:"administrator";}s:4:"view";a:4:{i:0;s:7:"faculty";i:1;s:20:"global_administrator";i:2;s:18:"leadership_council";i:3;s:13:"administrator";}}'

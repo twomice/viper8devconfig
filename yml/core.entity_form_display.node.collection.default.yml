@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.collection.field_five_slides_about
     - field.field.node.collection.field_in_class_activity
     - field.field.node.collection.field_lab_experiment
+    - field.field.node.collection.field_lc_moderator_new
     - field.field.node.collection.field_literature_discussion
     - field.field.node.collection.field_problem_set
     - field.field.node.collection.field_syllabus
@@ -103,6 +104,16 @@ content:
       size: 60
       placeholder: ''
       match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_lc_moderator_new:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content

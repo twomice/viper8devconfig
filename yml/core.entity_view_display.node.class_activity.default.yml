@@ -51,7 +51,7 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
+        id: my-notes
         classes: field-group
       label: 'My Notes'
     group_evaluation:
@@ -222,6 +222,16 @@ content:
     third_party_settings: {  }
   flag_favorites:
     weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_content_type:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

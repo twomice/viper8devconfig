@@ -8,6 +8,7 @@ dependencies:
     - system.menu.main
   module:
     - flag
+    - html_title
     - node
     - user
 id: my_flags
@@ -390,8 +391,8 @@ display:
         title: 'LO''s I''ve Adopted'
         description: ''
         expanded: false
-        parent: 'menu_link_content:8aa668ca-a504-4068-bf33-5d848539da55'
-        weight: 3
+        parent: 'menu_link_content:e98dd97a-e133-4fba-bd54-655a7662520f'
+        weight: -85
         context: '0'
         menu_name: main
     cache_metadata:
@@ -434,8 +435,8 @@ display:
         title: 'My Favorites'
         description: ''
         expanded: false
-        parent: 'menu_link_content:8aa668ca-a504-4068-bf33-5d848539da55'
-        weight: 5
+        parent: 'menu_link_content:e98dd97a-e133-4fba-bd54-655a7662520f'
+        weight: -84
         context: '0'
         menu_name: main
     cache_metadata:

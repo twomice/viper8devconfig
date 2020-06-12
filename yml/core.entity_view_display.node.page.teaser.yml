@@ -26,6 +26,16 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  flag_subscribe_content_type:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 101
     region: content

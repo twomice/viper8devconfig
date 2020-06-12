@@ -1,0 +1,13 @@
+forum_access_roles_gids:
+  anonymous: 1
+  authenticated: 2
+  faculty: 3
+  global_administrator: 4
+  guest: 5
+  leadership_council: 6
+  student: 7
+  blogger: 8
+  administrator: 9
+  viper_fellow: 10
+_core:
+  default_config_hash: KQwOj3553sKrRoeRw2lrocD5DXwWP5geQMyKOrTSMUo

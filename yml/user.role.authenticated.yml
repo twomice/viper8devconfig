@@ -85,6 +85,8 @@ permissions:
   - 'view field_time_required'
   - 'view field_web_resources'
   - 'view files uploaded to comments'
+  - 'view media'
   - 'view own unpublished content'
+  - 'view the administration theme'
   - 'view uploaded files'
   - 'vote on polls'
