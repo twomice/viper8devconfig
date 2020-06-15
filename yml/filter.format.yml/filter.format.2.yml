@@ -1,0 +1,14 @@
+uuid: c715c8d0-9305-470a-b560-f4a67426d6ba
+langcode: en
+status: true
+dependencies: {  }
+name: 'PHP code (legacy)'
+format: '2'
+weight: 0
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
