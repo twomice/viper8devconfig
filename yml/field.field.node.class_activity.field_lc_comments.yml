@@ -1,0 +1,21 @@
+uuid: a747b691-724c-4a74-b00f-bc93b437f1f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_comments
+    - node.type.class_activity
+  module:
+    - text
+id: node.class_activity.field_lc_comments
+field_name: field_lc_comments
+entity_type: node
+bundle: class_activity
+label: 'LC Comments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

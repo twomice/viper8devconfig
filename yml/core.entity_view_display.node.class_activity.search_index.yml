@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.class_activity.field_implementation_notes
     - field.field.node.class_activity.field_instructor_experience
     - field.field.node.class_activity.field_instrumentation
+    - field.field.node.class_activity.field_lc_comments
     - field.field.node.class_activity.field_lc_moderator_new
     - field.field.node.class_activity.field_learning_goals
     - field.field.node.class_activity.field_time_required
@@ -77,6 +78,7 @@ hidden:
   field_implementation_notes: true
   field_instructor_experience: true
   field_instrumentation: true
+  field_lc_comments: true
   field_lc_moderator_new: true
   field_learning_goals: true
   field_time_required: true
