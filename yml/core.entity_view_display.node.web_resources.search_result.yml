@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.web_resources.field_learning_goals
     - field.field.node.web_resources.field_time_required
     - field.field.node.web_resources.field_web_resources
+    - field.field.node.web_resources.field_workflow
     - field.field.node.web_resources.taxonomy_vocabulary_3
     - field.field.node.web_resources.taxonomy_vocabulary_4
     - field.field.node.web_resources.taxonomy_vocabulary_5
@@ -63,6 +64,7 @@ hidden:
   field_learning_goals: true
   field_time_required: true
   field_web_resources: true
+  field_workflow: true
   flag_adopted_lo: true
   flag_favorites: true
   langcode: true
