@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.problem_set.field_exam_question
     - field.field.node.problem_set.field_implementation_notes
     - field.field.node.problem_set.field_instructor_experience
+    - field.field.node.problem_set.field_lc_comments
     - field.field.node.problem_set.field_lc_moderator_new
     - field.field.node.problem_set.field_learning_goals
     - field.field.node.problem_set.field_time_required
@@ -78,7 +79,7 @@ third_party_settings:
         - field_assessment
         - field_instructor_experience
       parent_name: ''
-      weight: 11
+      weight: 13
       format_type: html_element
       format_settings:
         id: ''
@@ -98,7 +99,7 @@ content:
   comment_node_problem_set:
     label: hidden
     type: comment_default
-    weight: 16
+    weight: 19
     settings:
       view_mode: default
       pager_id: 0
@@ -128,7 +129,7 @@ content:
     type: entity_reference_label
     region: content
   field_creative_commons:
-    weight: 12
+    weight: 14
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -162,8 +163,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_lc_comments:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_lc_moderator_new:
-    weight: 13
+    weight: 15
     label: above
     settings:
       link: true
@@ -187,7 +195,7 @@ content:
     region: content
   field_web_resources:
     label: above
-    weight: 10
+    weight: 11
     type: link
     settings:
       trim_length: 80
@@ -198,7 +206,7 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 14
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -215,7 +223,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   flag_subscribe_content_type:
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -225,7 +233,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 15
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }

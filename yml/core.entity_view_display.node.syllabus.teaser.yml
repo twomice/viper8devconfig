@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.syllabus.field_how_the_course_is_taught
     - field.field.node.syllabus.field_institution
     - field.field.node.syllabus.field_lab_associated
+    - field.field.node.syllabus.field_lc_comments
     - field.field.node.syllabus.field_lc_moderator_new
     - field.field.node.syllabus.field_learning_goals
     - field.field.node.syllabus.field_location
@@ -71,6 +72,7 @@ hidden:
   field_how_the_course_is_taught: true
   field_institution: true
   field_lab_associated: true
+  field_lc_comments: true
   field_lc_moderator_new: true
   field_learning_goals: true
   field_location: true

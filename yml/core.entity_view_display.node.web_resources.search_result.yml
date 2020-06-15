@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.web_resources.field_faculty_files
     - field.field.node.web_resources.field_implementation_notes
     - field.field.node.web_resources.field_instructor_experience
+    - field.field.node.web_resources.field_lc_comments
     - field.field.node.web_resources.field_lc_moderator_new
     - field.field.node.web_resources.field_learning_goals
     - field.field.node.web_resources.field_time_required
@@ -60,6 +61,7 @@ hidden:
   field_faculty_files: true
   field_implementation_notes: true
   field_instructor_experience: true
+  field_lc_comments: true
   field_lc_moderator_new: true
   field_learning_goals: true
   field_time_required: true

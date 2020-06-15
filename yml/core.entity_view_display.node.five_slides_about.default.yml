@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.five_slides_about.field_faculty_files
     - field.field.node.five_slides_about.field_implementation_notes
     - field.field.node.five_slides_about.field_instructor_experience
+    - field.field.node.five_slides_about.field_lc_comments
     - field.field.node.five_slides_about.field_lc_moderator_new
     - field.field.node.five_slides_about.field_learning_goals
     - field.field.node.five_slides_about.field_time_required
@@ -97,7 +98,7 @@ third_party_settings:
         - flag_subscribe_content_type
         - flag_subscribe_node
       parent_name: ''
-      weight: 15
+      weight: 16
       format_type: html_element
       format_settings:
         label: Subscriptions
@@ -118,7 +119,7 @@ content:
   comment_node_five_slides_about:
     label: hidden
     type: comment_default
-    weight: 17
+    weight: 18
     settings:
       view_mode: default
       pager_id: 0
@@ -183,6 +184,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_lc_comments:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_lc_moderator_new:
     weight: 13
     label: above
@@ -219,7 +227,7 @@ content:
     third_party_settings: {  }
     region: content
   field_workflow:
-    weight: 14
+    weight: 15
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -246,7 +254,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }

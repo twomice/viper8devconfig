@@ -1,0 +1,21 @@
+uuid: f5da3653-e6c8-41d8-8d1d-df690b145f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_comments
+    - node.type.textbook
+  module:
+    - text
+id: node.textbook.field_lc_comments
+field_name: field_lc_comments
+entity_type: node
+bundle: textbook
+label: 'LC Comments'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

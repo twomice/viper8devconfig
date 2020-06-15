@@ -1,0 +1,21 @@
+uuid: a47af31e-75d6-4557-9758-0175158e64ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_comments
+    - node.type.problem_set
+  module:
+    - text
+id: node.problem_set.field_lc_comments
+field_name: field_lc_comments
+entity_type: node
+bundle: problem_set
+label: 'LC Comments'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 676a23ed-80a1-428b-afe4-577dc13a8f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lc_comments
+    - node.type.literature_discussion
+  module:
+    - text
+id: node.literature_discussion.field_lc_comments
+field_name: field_lc_comments
+entity_type: node
+bundle: literature_discussion
+label: 'LC Comments'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.textbook.field_creative_commons
     - field.field.node.textbook.field_description
     - field.field.node.textbook.field_implementation_notes
+    - field.field.node.textbook.field_lc_comments
     - field.field.node.textbook.field_lc_moderator_new
     - field.field.node.textbook.field_web_resources
     - field.field.node.textbook.field_workflow
@@ -52,6 +53,7 @@ hidden:
   field_couples: true
   field_creative_commons: true
   field_implementation_notes: true
+  field_lc_comments: true
   field_lc_moderator_new: true
   field_web_resources: true
   field_workflow: true
