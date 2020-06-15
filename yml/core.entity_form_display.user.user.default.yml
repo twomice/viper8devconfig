@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_subscribed_con
     - field.field.user.user.profile_address
     - field.field.user.user.profile_degrees
     - field.field.user.user.profile_expertise
@@ -107,12 +106,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_subscribed_con:
-    weight: 19
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   language:
     weight: 4
     region: content

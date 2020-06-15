@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_subscribed_con
     - field.field.user.user.profile_address
     - field.field.user.user.profile_degrees
     - field.field.user.user.profile_expertise
@@ -95,14 +94,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_subscribed_con:
-    weight: 16
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   flag_subscribe_user:
     weight: 10
     settings: {  }
