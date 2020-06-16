@@ -16,10 +16,10 @@ bundles: {  }
 entity_type: node
 global: false
 weight: -6
-flag_short: 'Subscribe to this Node'
+flag_short: 'Subscribe to this item'
 flag_long: ''
 flag_message: 'You are now subscribed to this item.'
-unflag_short: 'Unsubscribe from this Node'
+unflag_short: 'Unsubscribe from this item'
 unflag_long: ''
 unflag_message: 'You are no longer subscribed to this item.'
 unflag_denied_text: ''
