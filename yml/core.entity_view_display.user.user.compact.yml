@@ -4,8 +4,6 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.field_te
-    - field.field.user.user.field_text_plain
     - field.field.user.user.profile_address
     - field.field.user.user.profile_degrees
     - field.field.user.user.profile_expertise
@@ -60,8 +58,6 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_te: true
-  field_text_plain: true
   langcode: true
   member_for: true
   profile_address: true

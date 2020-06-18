@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.user.profile_address
   module:
-    - text
     - user
 id: user.user.profile_address
 field_name: profile_address
@@ -18,4 +17,4 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string_long

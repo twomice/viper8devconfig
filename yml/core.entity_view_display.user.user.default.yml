@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_te
-    - field.field.user.user.field_text_plain
     - field.field.user.user.profile_address
     - field.field.user.user.profile_degrees
     - field.field.user.user.profile_expertise
@@ -33,7 +31,6 @@ dependencies:
     - image
     - link
     - options
-    - text
     - user
 third_party_settings:
   field_group:
@@ -96,22 +93,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_te:
-    weight: 52
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_text_plain:
-    weight: 51
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   flag_subscribe_user:
     weight: 10
     settings: {  }
@@ -128,7 +109,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   profile_address:
-    type: text_default
+    type: basic_string
     weight: 8
     region: content
     label: above
@@ -353,14 +334,14 @@ content:
   profile_research:
     label: above
     settings: {  }
-    type: text_default
+    type: basic_string
     weight: 12
     third_party_settings: {  }
     region: content
   profile_research1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: basic_string
     weight: 28
     third_party_settings: {  }
     region: content
