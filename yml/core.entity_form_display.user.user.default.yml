@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_te
+    - field.field.user.user.field_text_plain
     - field.field.user.user.profile_address
     - field.field.user.user.profile_degrees
     - field.field.user.user.profile_expertise
@@ -106,6 +108,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_te:
+    weight: 39
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_plain:
+    weight: 38
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   language:
     weight: 4
     region: content
@@ -116,11 +134,11 @@ content:
     weight: 15
     region: content
     settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   profile_degrees:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -128,7 +146,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_degrees1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -167,12 +185,14 @@ content:
     region: content
   profile_expertise31:
     type: options_select
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     weight: 36
     third_party_settings: {  }
     region: content
   profile_expertise_other:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -180,7 +200,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_expertise_other1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -188,7 +208,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_faculty_privilege_revi:
-    type: text_textfield
+    type: string_textfield
     weight: 20
     region: content
     settings:
@@ -196,7 +216,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   profile_fav_element:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -204,7 +224,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_fav_element1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -212,7 +232,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_institution:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -220,7 +240,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_institution1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -244,7 +264,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_least_fav_element:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -252,7 +272,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_least_fav_element1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -260,7 +280,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_name:
-    type: text_textfield
+    type: string_textfield
     weight: 8
     region: content
     settings:
@@ -268,7 +288,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   profile_orbital:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -276,7 +296,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_orbital1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -284,7 +304,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_phone:
-    type: text_textfield
+    type: string_textfield
     weight: 16
     region: content
     settings:
@@ -292,7 +312,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   profile_position:
-    type: text_textfield
+    type: string_textfield
     weight: 10
     region: content
     settings:
@@ -306,7 +326,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   profile_public_name:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -314,7 +334,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_public_name1:
-    type: text_textfield
+    type: string_textfield
     settings:
       size: 60
       placeholder: ''
@@ -352,7 +372,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_start_date:
-    type: text_textfield
+    type: string_textfield
     weight: 17
     region: content
     settings:

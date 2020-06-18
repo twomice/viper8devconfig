@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.user.profile_faculty_privilege_revi
   module:
-    - text
     - user
 id: user.user.profile_faculty_privilege_revi
 field_name: profile_faculty_privilege_revi
@@ -18,4 +17,4 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

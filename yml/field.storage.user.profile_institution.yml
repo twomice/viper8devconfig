@@ -3,15 +3,14 @@ langcode: en
 status: true
 dependencies:
   module:
-    - text
     - user
 id: user.profile_institution
 field_name: profile_institution
 entity_type: user
-type: text
+type: string
 settings:
   max_length: 255
-module: text
+module: core
 locked: false
 cardinality: 1
 translatable: true

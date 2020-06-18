@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_te
+    - field.field.user.user.field_text_plain
     - field.field.user.user.profile_address
     - field.field.user.user.profile_degrees
     - field.field.user.user.profile_expertise
@@ -94,6 +96,22 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_te:
+    weight: 52
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_plain:
+    weight: 51
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   flag_subscribe_user:
     weight: 10
     settings: {  }
@@ -119,14 +137,14 @@ content:
   profile_degrees:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 7
     third_party_settings: {  }
     region: content
   profile_degrees1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 31
     third_party_settings: {  }
     region: content
@@ -175,19 +193,19 @@ content:
   profile_expertise_other:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 17
     third_party_settings: {  }
     region: content
   profile_expertise_other1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 30
     third_party_settings: {  }
     region: content
   profile_faculty_privilege_revi:
-    type: text_default
+    type: string
     weight: 21
     region: content
     label: above
@@ -196,28 +214,28 @@ content:
   profile_fav_element:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 5
     third_party_settings: {  }
     region: content
   profile_fav_element1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 26
     third_party_settings: {  }
     region: content
   profile_institution:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 10
     third_party_settings: {  }
     region: content
   profile_institution1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 22
     third_party_settings: {  }
     region: content
@@ -248,19 +266,19 @@ content:
   profile_least_fav_element:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 4
     third_party_settings: {  }
     region: content
   profile_least_fav_element1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 25
     third_party_settings: {  }
     region: content
   profile_name:
-    type: text_default
+    type: string
     weight: 1
     region: content
     label: above
@@ -269,26 +287,26 @@ content:
   profile_orbital:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 6
     third_party_settings: {  }
     region: content
   profile_orbital1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 27
     third_party_settings: {  }
     region: content
   profile_phone:
-    type: text_default
+    type: string
     weight: 9
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   profile_position:
-    type: text_default
+    type: string
     weight: 11
     region: content
     label: above
@@ -304,14 +322,14 @@ content:
   profile_public_name:
     label: above
     settings: {  }
-    type: text_default
+    type: string
     weight: 2
     third_party_settings: {  }
     region: content
   profile_public_name1:
     label: hidden
     settings: {  }
-    type: text_default
+    type: string
     weight: 23
     third_party_settings: {  }
     region: content
@@ -347,7 +365,7 @@ content:
     third_party_settings: {  }
     region: content
   profile_start_date:
-    type: text_default
+    type: string
     weight: 18
     region: content
     label: above

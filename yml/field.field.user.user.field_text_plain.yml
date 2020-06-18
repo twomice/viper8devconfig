@@ -1,19 +1,19 @@
-uuid: 597929a3-0448-4a9a-80b9-8d2ded765919
+uuid: 1c7ea2e7-b387-492b-82a7-6f0267a4fc8b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.profile_orbital
+    - field.storage.user.field_text_plain
   module:
     - user
-id: user.user.profile_orbital
-field_name: profile_orbital
+id: user.user.field_text_plain
+field_name: field_text_plain
 entity_type: user
 bundle: user
-label: 'Orbital you''d most like to be'
+label: 'text plain'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

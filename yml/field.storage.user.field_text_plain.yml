@@ -1,15 +1,21 @@
-uuid: 62cb8090-6397-4232-9b1f-d6b12bef5053
+uuid: 67e11ec4-cf51-49fe-b9e3-6d2a16d6172b
 langcode: en
 status: true
 dependencies:
   module:
+    - field_permissions
     - user
-id: user.profile_orbital
-field_name: profile_orbital
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: user.field_text_plain
+field_name: field_text_plain
 entity_type: user
 type: string
 settings:
   max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1
